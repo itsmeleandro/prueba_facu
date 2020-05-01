@@ -7,7 +7,6 @@ $('#ingresar').click(
         e.preventDefault()
     }
 );
-
 $('#button-addon2').click(
     function(){
         let contrasenia = $('#contrasenia');
@@ -18,3 +17,5 @@ $('#button-addon2').click(
         }
     }
 );
+    e.preventDefault()
+}
