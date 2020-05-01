@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/itsmeleandro/prueba_facu#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "startbootstrap-sb-admin-2": "^4.0.7"
   }
 }
