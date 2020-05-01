@@ -5,13 +5,3 @@ document.querySelector('#ingresar').onclick = function(e){
     }
     e.preventDefault()
 }
-$('#button-addon2').click(
-    function(){
-        let contrasenia = $('#contrasenia');
-        if(contrasenia.prop('type') === 'password'){
-            contrasenia.clone().prop('type','text').insertAfter('#contrasenia').prev().remove();
-        }else{
-            contrasenia.clone().prop('type','password').insertAfter('#contrasenia').prev().remove();
-        }
-    }
-);
