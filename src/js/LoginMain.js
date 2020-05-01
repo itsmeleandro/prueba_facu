@@ -1,10 +1,13 @@
-document.querySelector('#ingresar').onclick = function(e){
-    let input = document.getElementById("usuario").value;
-    if (input.toUpperCase() === "INICIO") {
-        window.location.href = './inicio.html';
+$('#ingresar').click(
+    function(e){
+        let input = $('#usuario').val();
+        if (input.toUpperCase() === "INICIO") {
+            window.location.href = './inicio.html';
+        }
+        e.preventDefault()
     }
-    e.preventDefault()
-}
+);
+
 $('#button-addon2').click(
     function(){
         let contrasenia = $('#contrasenia');
