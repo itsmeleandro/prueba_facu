@@ -1,0 +1,22 @@
+{
+  "name": "prueba_facu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsmeleandro/prueba_facu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itsmeleandro/prueba_facu/issues"
+  },
+  "homepage": "https://github.com/itsmeleandro/prueba_facu#readme",
+  "dependencies": {
+    "startbootstrap-sb-admin-2": "^4.0.7"
+  }
+}
