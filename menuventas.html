@@ -28,24 +28,16 @@
  <header id="header" class="fixed-top">
   <div class="logo d-lg-block ml-5">
     <h1 class="text-light mt-3"><img src="src/imagenes/logo.png" alt="" style="top:auto; left: auto;"  class="izquierda"><a href="menuventas.html">Reci<span>plas</span></a></h1>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-white" title="Mi Cuenta">
-      <img src="src/imagenes/avatar.png" class="w3-circle" style="height:50px; width: 50px; position: absolute; top:35px; right: 15px;"  alt="Avatar">
-    </a>
-  </div>
-
-
-
-  <div class="ml-4 d-lg-block ">
-    <nav class="nav-menu d-none d-lg-block">
-      <ul>
-        <li class="drop-down"><a href="">Drop Down</a>
-          <ul>
-            <li><a href="#">Drop Down 1</a></li>
-            <li class="drop-down"><a href="#">Drop Down 2</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+    <div class="dropdown show" style="position: absolute; top:35px; right: 15px;">
+      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img src="src/imagenes/avatar.png" class="w3-circle" style="height:50px; width: 50px;"  alt="Avatar">
+      </a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
   </div>
  
 </header>
@@ -71,6 +63,9 @@
             </div>
         </div>
       </center>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="src/js/main2.js"></script>
       </body>
