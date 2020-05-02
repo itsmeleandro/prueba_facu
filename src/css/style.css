@@ -84,7 +84,7 @@ img {
 
 .container {
   padding: 15px 5px 15px 15px;
-  margin: 2px;
+  margin-bottom: 10%;
   display:inline-block;
   width: 250px;
   position: relative;
@@ -506,17 +506,8 @@ div#preloader {
   text-decoration: none;
 }
 
-.mobile-nav .drop-down > a:after {
-  content: "\ea99";
-  font-family: IcoFont;
-  padding-left: 10px;
-  position: absolute;
-  right: 15px;
-}
 
-.mobile-nav .active.drop-down > a:after {
-  content: "\eaa1";
-}
+
 
 .mobile-nav .drop-down > a {
   padding-right: 35px;
