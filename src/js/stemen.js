@@ -1,20 +1,12 @@
 $('#ingresar').click(
     function(e){
-        let input = $('#usuario').val();
-        if (input.toUpperCase() === "INICIO") {
-            window.location.href = './inicio.html';
+        var usuario= document.getElementById("usuario").value;
+        var contraseña= document.getElementById("contrasenia").value;
+        if (usuario == "ventas" && contraseña=="ventas") {
+            window.location.href= "./menuventas.html";
+            
         }
-        e.preventDefault()
-    }
-);
-$('#button-addon2').click(
-    function(e){
-        let contrasenia = $('#contrasenia');
-        if(contrasenia.prop('type') === 'password'){
-            contrasenia.clone().prop('type','text').insertAfter('#contrasenia').prev().remove();
-        }else{
-            contrasenia.clone().prop('type','password').insertAfter('#contrasenia').prev().remove();
-        }
-        e.preventDefault()
+
+                e.preventDefault()
     }
 );
