@@ -77,6 +77,14 @@ img {
   border: 2px solid rgba(58, 133, 191, 0.75);
 }
 
+@media screen and (max-width: 767px) {
+  .botonpequeno{
+      width: 7rem;
+      height: 2.1rem;
+      font-size: 70%;
+  }
+}
+
 /*.menuVentas{
   text-align: center;
   float: left;
