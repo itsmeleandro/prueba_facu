@@ -44,11 +44,10 @@ a:focus {
 
 img.izquierda {
   float: left;
-  height: 50px;
   width: 50px;
-  top:0px;
-  left:0px;
+  height: 50px;
   position: relative;
+
 }
 
 img {
@@ -317,7 +316,7 @@ div#preloader {
 
 @media (max-width: 768px) {
   #header {
-    height: 60px;
+    height: 90px;
     padding: 10px 0;
     background: #172B4D;
   }
@@ -325,6 +324,7 @@ div#preloader {
     font-size: 28px;
     padding: 4px 0;
   }
+ 
 }
 
 .header-bg {
