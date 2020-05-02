@@ -129,17 +129,18 @@ h5 {
 
 h6 {
   font-size: 16px;
-  line-height: 90px;
+  line-height: 100px;
 }
 
 a {
   transition: all 0.3s ease 0s;
   text-decoration: none;
+  color: rgb(6, 94, 107);
 }
 
 a:hover {
-  color: #3EC1D5;
-  text-decoration: none;
+  color: rgb(6, 94, 107);
+  -webkit-background-composite: border;
 }
 
 a:active, a:hover {
