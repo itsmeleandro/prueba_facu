@@ -9,7 +9,7 @@ if ($('.nav-menu').length) {
 
     $(document).on('click', '.mobile-nav-toggle', function(e) {
       $('body').toggleClass('mobile-nav-active');
-      $('.mobile-nav-toggle i').toggleClass('<i class="fas fa-times-circle" style="font-size:36px"></i>');
+      $('.mobile-nav-toggle i').toggleClass('<button style="font-size:36px"><i class="fas fa-times-circle"></i></button>');
       $('.mobile-nav-overly').toggle();
     });
 
@@ -24,7 +24,7 @@ if ($('.nav-menu').length) {
       if (!container.is(e.target) && container.has(e.target).length === 0) {
         if ($('body').hasClass('mobile-nav-active')) {
           $('body').removeClass('mobile-nav-active');
-          $('.mobile-nav-toggle i').toggleClass('<i class="fas fa-times-circle" style="font-size:36px"></i>');
+          $('.mobile-nav-toggle i').toggleClass('<button style="font-size:36px"><i class="fas fa-times-circle"></i></button>');
           $('.mobile-nav-overly').fadeOut();
         }
       }
