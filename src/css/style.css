@@ -44,11 +44,10 @@ a:focus {
 
 img.izquierda {
   float: left;
-  height: 50px;
   width: 50px;
-  top:0px;
-  left:0px;
+  height: 50px;
   position: relative;
+
 }
 
 img {
@@ -84,7 +83,7 @@ img {
 
 .container {
   padding: 15px 5px 15px 15px;
-  margin: 2px;
+  margin-bottom: 10%;
   display:inline-block;
   width: 250px;
   position: relative;
@@ -317,7 +316,7 @@ div#preloader {
 
 @media (max-width: 768px) {
   #header {
-    height: 60px;
+    height: 90px;
     padding: 10px 0;
     background: #172B4D;
   }
@@ -325,6 +324,7 @@ div#preloader {
     font-size: 28px;
     padding: 4px 0;
   }
+ 
 }
 
 .header-bg {
@@ -506,17 +506,8 @@ div#preloader {
   text-decoration: none;
 }
 
-.mobile-nav .drop-down > a:after {
-  content: "\ea99";
-  font-family: IcoFont;
-  padding-left: 10px;
-  position: absolute;
-  right: 15px;
-}
 
-.mobile-nav .active.drop-down > a:after {
-  content: "\eaa1";
-}
+
 
 .mobile-nav .drop-down > a {
   padding-right: 35px;
