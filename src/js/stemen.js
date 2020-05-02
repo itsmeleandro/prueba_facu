@@ -7,6 +7,10 @@ $('#ingresar').click(
             window.location.href= "./menuventas.html"; }
             if (usuario == "compras" && contraseña=="compras") {
                 window.location.href= "./menucompras.html"; }
+                if (usuario == "admin" && contraseña=="admin") {
+                    window.location.href= "./menuadmin.html"; }
+                    if (usuario == "produccion" && contraseña=="produccion") {
+                        window.location.href= "./menuprod.html"; }
         
         
  
