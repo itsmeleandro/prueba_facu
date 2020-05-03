@@ -9,10 +9,13 @@
     align-items: center;
     justify-content: center;
     visibility: hidden ;
+    display: none;
 }
 
 .overlay.active{
     visibility: visible;
+    display: BLOCK
+    ;
 }
 
 .popup{
