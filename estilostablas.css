@@ -1,0 +1,29 @@
+table{
+    background-color: white;
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+h3{
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 150px;  
+    font-size: 30px;
+}
+th,td{
+    margin-top: 40px;
+    left: 30px;
+    padding: 10px;
+    margin-left: 60px;
+}
+
+thead{
+    background-color: #102e4d;
+    border-bottom: solid 5px grey;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+}
