@@ -446,8 +446,8 @@ div#preloader {
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
-  right: 15px;
-  top: 15px;
+  right: 105px;
+  top: 30px;
   z-index: 9998;
   border: 0;
   background: none;
@@ -465,7 +465,7 @@ div#preloader {
 
 .mobile-nav {
   position: fixed;
-  top: 55px;
+  top: 5px;
   right: 15px;
   bottom: 15px;
   left: 15px;
