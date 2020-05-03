@@ -12,7 +12,7 @@
 }
 
 .overlay.active{
-    visibility: visible;
+ visibility: block;
 }
 
 .popup{
