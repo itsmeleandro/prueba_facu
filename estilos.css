@@ -1,3 +1,4 @@
+/*COMIENZA POPUP*/
 .overlay{
     background: rgba(0, 0, 0, .3);
     position: fixed;
@@ -9,13 +10,10 @@
     align-items: center;
     justify-content: center;
     visibility: hidden ;
-    display: none;
 }
 
 .overlay.active{
     visibility: visible;
-    display: BLOCK
-    ;
 }
 
 .popup{
@@ -66,3 +64,4 @@
     text-align: center;
     transition: .3s ease all;
 }
+/*FIN POPUP*/
