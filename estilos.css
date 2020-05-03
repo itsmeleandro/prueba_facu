@@ -1,4 +1,3 @@
-/*COMIENZA POPUP*/
 .overlay{
     background: rgba(0, 0, 0, .3);
     position: fixed;
@@ -64,4 +63,3 @@
     text-align: center;
     transition: .3s ease all;
 }
-/*FIN POPUP*/
