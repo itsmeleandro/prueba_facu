@@ -551,3 +551,52 @@ div#preloader {
 .datepicker {
   margin-bottom: 0.7rem;
 }
+
+.conten{
+  position: absolute;
+  bottom: 10px;
+}
+/*notificacion de barra*/
+.notEmail{
+  display: none;
+  position: relative;
+  width: 320px;
+  height: 90px;
+  margin-bottom: 5px;
+  background-color: #ffffff;
+  padding: 5px;
+  border: 1px solid rgba(0,0,0,0.5);
+  box-sizing: border-box;
+  overflow: hidden; 
+-webkit-border-radius: 0 5px 5px 0;
+border-radius: 0 5px 5px 0;
+  
+-webkit-box-shadow: 9px 5px 7px 0 rgba(0,0,0,0.3);
+box-shadow: 9px 5px 7px 0 rgba(0,0,0,0.3);
+  
+animation-name: slideIn;
+animation-duration: 1s;
+animation-timing-function: ease-out;
+animation-iteration-count: 1;
+opacity:1;
+animation-delay:0s;
+}
+.mensaje_not{
+  float: left;
+  width: 60%;
+  height: 100%;
+  text-align: center;
+  line-height: 90px;
+  font-size: 0.9em;
+}
+.notEmail>img{
+  float: right;
+  height: 100%;
+  background-size: contain;
+  
+}
+@keyframes slideIn{
+0%   {margin-left: -500px; opacity:0;}
+100% {margin-left: 0px; opacity:1;}
+}
+
