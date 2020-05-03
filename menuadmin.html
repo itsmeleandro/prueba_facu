@@ -25,49 +25,82 @@
 
 <body data-spy="scroll" data-target="#navbar-example">
 
- <!-- ======= Header ======= -->
+<!-- ======= Header ======= -->
  <header id="header" class="fixed-top">
-    <div class="logo d-lg-block ml-5">
-      <h1 class="text-light mt-3"><img src="src/imagenes/logo.png" alt="" style="top:auto; left: auto;"  class="izquierda"><a href="menuventas.html">Reci<span>plas</span></a></h1>
+  <div class="logo d-lg-block ml-5">
+    <h1 class="text-light mt-3"><img src="src/imagenes/logo.png" alt="" style="top:-6px ; left: 0%;"  class="izquierda"><a href="menuventas.html">Reci<span>plas</span></a></h1>
+  </div>
+  <div class="dropdown show" style="position: absolute; top:27%; right:3%;">
+    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <img src="src/imagenes/avatar.png" class="w3-circle" style="height:35px; width: 35px;"  alt="Avatar">
+    </a>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <a class="dropdown-item" href="#"><i class='fas fa-user-circle' style='font-size:24px'></i> &nbsp; Perfil</a>
+      <a class="dropdown-item" href="index.html"><i class='fas fa-door-open' style='font-size:24px'></i> Cerrar Sesión</a>
     </div>
-    <div class="dropdown show" style="position: absolute; top:35px; right: 15px;">
-      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <img src="src/imagenes/avatar.png" class="w3-circle" style="height:50px; width: 50px;"  alt="Avatar">
-      </a>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <a class="dropdown-item" href="#"><i class='fas fa-user-circle' style='font-size:24px'></i> &nbsp; Perfil</a>
-        <a class="dropdown-item" href="index.html"><i class='fas fa-door-open' style='font-size:24px'></i> Cerrar Sesión</a>
-      </div>
-    </div>
+  </div>
  
 </header>
+    
+<div  class="container-fluid ">
+  <div class="container py-5 mt-5">
+    <div class="row py-5 mt-5">
 
-      <main id="main">
-        <center>
-        <div id="menuAdministración">
-            <div class="container">
-              <a href="index.html"><img src="src/imagenes/usuarios.png" alt="" style="width:auto;height:auto; top: 220px;" class="img-fluid"></a>
-              <a href="index.html" style="width:auto;height:auto; left:40px;" class="btn btn-primary">PERSONAL</a>
-            </div>
-            <div class="container">
-              <a href="index.html"><img src="src/imagenes/materiaprima2.png" alt="" style="width:auto;height:auto; top:220px " class="img-fluid"></a>
-              <button type="button" style="width:auto;height:auto; left:20px;" class="btn btn-primary">MATERIA PRIMA</button>
-            </div>
-            <div class="container">
-              <a href="index.html"><img src="src/imagenes/stock.png" alt="" style="width:auto;height:auto; top: 220px; left: 0px;" class="img-fluid"></a>
-              <button type="button" style="width:auto;height:auto; left:50px;" class="btn btn-primary">PRODUCTOS</button>
-            </div>
-            <div class="container">
-              <a href="index.html"><img src="src/imagenes/reporte.png" alt="" style="width:auto;height:auto; top: 220px; left: 0px;" class="img-fluid"></a>
-              <button type="button" style="width:auto;height:auto; left:57px;" class="btn btn-primary">REPORTES</button>
-            </div>
+  <div   class="col-md-3">
+    <div style="color: transparent;" class="card text-center border-0 bg-light">
+      <div class="card-block">
+        <div class="py-5">
+          <a href=""><img src="src/imagenes/usuarios.png" alt="" style="width:auto;height:auto;  " class="img-fluid"></a>
         </div>
-      </center>
+      </div>
+        <a href="" style="width:auto; height:auto; position: relative;" class="card-footer btn btn-primary">PERSONAL</a>
+    </div>
+  </div>
+
+  <div   class="col-md-3">
+    <div class="card text-center border-0 bg-light">
+      <div class="card-block">
+        <div class="py-5">
+          <a href=""><img src="src/imagenes/materiaprima2.png" alt="" style="width:auto;height:auto;  " class="img-fluid"></a>
+        </div>
+      </div>
+        <a href="" style="width:auto; height:auto; position: relative;" class="card-footer btn btn-primary">MATERIA PRIMA</a>
+    </div>
+  </div>
+
+  <div   class="col-md-3">
+    <div style="color: transparent;" class="card text-center  border-0 bg-light">
+      <div class="card-block">
+        <div class="py-5">
+          <a href=""><img src="src/imagenes/stock.png" alt="" style="width:auto;height:auto;  " class="img-fluid"></a>
+        </div>
+      </div>
+        <a href="" style="width:auto; height:auto; position: relative;" class="card-footer btn btn-primary">PRODUCTOS</a>
+    </div>
+  </div>
+
+  <div   class="col-md-3">
+    <div style="color: transparent;" class="card text-center  border-0 bg-light">
+      <div class="card-block">
+        <div class="py-5">
+          <a href=""><img src="src/imagenes/reporte.png" alt="" style="width:auto;height:auto;  " class="img-fluid"></a>
+        </div>
+      </div>
+        <a href="#" style="width:auto; height:auto; position: relative;" class="card-footer btn btn-primary">REPORTES</a>
+        <button type="button" id="btn-abrir-popup" class="btn btn-primary">REPORTES</button>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+     
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="src/js/main2.js"></script>
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-      </body>
-      </html>
+     
+ </body>
+ </html>
