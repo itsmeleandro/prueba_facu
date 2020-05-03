@@ -84,7 +84,7 @@
             <table class="table table-bordered table-hover  " id="dataTable" width="100%" cellspacing="0">
               <thead>
                 <tr>
-                  <td><a href="#borrarseleccionados"><i class='fas fa-trash' style='font-size:24px; color: #1ea6bb;'></i></a></td>
+                  <td id="eliminarvarios" data-toggle="modal" data-target="#myModal2"><a href="#borrarseleccionados"><i class='fas fa-trash' style='font-size:24px; color: #1ea6bb;'></i></a></td>
                   <th>ID</th>
                   <th>Nombre</th>
                   <th>Tipo</th>
@@ -109,7 +109,7 @@
               <tbody>
                 <tr>
                     <td >
-                  <div  class="custom-control custom-checkbox mb-3">
+                  <div  class="custom-control custom-checkbox mb-3 " >
                     <input type="checkbox" class="custom-control-input" id="customCheck0"  >
                     <label class="custom-control-label" for="customCheck0"></label>
                   </div></td>
@@ -789,13 +789,38 @@
     </div>
   </div>
 
+  <div class="modal" id="myModal2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Confirmar Eliminación</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          ¿Está seguro que desea borrar los clientes seleccionados?
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" style="width: 40px; height: 40px;" class="btn btn-danger" data-dismiss="modal">Si</button>
+          <button type="button" style="width: 40px; height: 40px;" class="btn btn-secondary" data-dismiss="modal">No</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="src/js/main2.js"></script>
-        <script src="src/js/noordenar.js"></script>
+        <script src="src/js/check.js"></script>
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
         
   <!-- Page level plugins -->
@@ -804,6 +829,8 @@
 
   <!-- Page level custom scripts -->
   <script src="src/js/datatables-demo.js"></script>
+
+
 
       </body>
       
