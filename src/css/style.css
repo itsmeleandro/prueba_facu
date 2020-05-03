@@ -64,7 +64,7 @@ img {
   letter-spacing: 1px;
   line-height: 15px;
   border: 2px solid rgba(9, 92, 155, 0.75);
-  border-radius: 90px;
+  border-radius: 3px;
   background: transparent;
   transition: all 0.3s ease 0s;
   position: absolute;
@@ -309,7 +309,7 @@ div#preloader {
 
 @media (max-width: 768px) {
   #header {
-    height: 90px;
+    height: 70px;
     padding: 10px 0;
     background: #172B4D;
   }
