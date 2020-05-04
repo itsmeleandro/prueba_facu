@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>INFOME VENTAS</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="css/elegant-icons-style.css" rel="stylesheet" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <div class="container">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900"
+      rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="src/vendor/icofont.min.css" rel="stylesheet">
+    <link href="src/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="src/css/style.css" rel="stylesheet">
+    <!--popup-->
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <!--estlos tablas-->
+    <link rel="stylesheet" href="estilostablas.css">
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="logo d-lg-block ml-5">
+      <h1 class="text-light mt-3"><img src="src/imagenes/logo.png" alt="" style="top:-6px ; left: 0%;"
+          class="izquierda"><a href="menuventas.html">Reci<span>plas</span></a></h1>
+    </div>
+    <div class="dropdown show" style="position: absolute; top:27%; right:3%;">
+      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        <img src="src/imagenes/avatar.png" class="w3-circle" style="height:35px; width: 35px;" alt="Avatar">
+      </a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="position: absolute; top:0%;">
+        <a class="dropdown-item" href="#"><i class='fas fa-user-circle' style='font-size:24px'></i> &nbsp; Perfil</a>
+        <a class="dropdown-item" href="index.html"><i class='fas fa-door-open' style='font-size:24px'></i> Cerrar
+          Sesión</a>
+      </div>
+    </div>
+
+    <div class="ml-4 d-lg-block ">
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="menuventas.html">Home</a></li>
+          <li><a href="#clientes">Clientes</a></li>
+          <li><a href="#pedidos">Pedidos</a></li>
+          <li class="active"><a href="#ventas">Ventas</a></li>
+          <li><a href="#reporte" id="btn-abrir-popup" >Reporte</a></li>
+          <li class="drop-down"><a href="">Drop Down <i class='fas fa-sort-down' style='font-size:24px'></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="drop-down"><a href="#">Drop Down 2</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div id="main-container">
+    <h3>Ventas del producto</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>MES</th><th>VENTAS</th><th>CRECIMIENTO</th><th>% RESPECTO AL MES ANTERIOR</th> <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Enero</td><td>$15000</td><td>$15000</td><td>%75</td><td></td>
+              </tr>
+              <tr>
+                <td>Febrero</td><td>$15000</td> <td>$15000</td><td>%60</td><td></td>
+              </tr>
+              <tr>
+                <td>Marzo</td><td>$14000</td><td>$14000</td><td>%55</td><td></td>
+              </tr>
+              <tr>
+                <td>Abril</td><td>$14000</td><td>$14000</td><td>%60</td><td></td>
+              </tr>
+              <tr>
+                <td>Mayo</td><td>$15000</td><td>$15000</td><td>%45</td><td></td>
+              </tr>
+              <tr>
+                <td>Junio</td><td>$15000</td><td>$15000</td><td>%30</td><td></td> 
+              </tr>
+              <tr>
+                <td>Julio</td><td>$14000</td><td>$15000</td><td>%55</td><td></td>
+              </tr>
+              <tr>
+                <td>Agosto</td><td>$15000</td><td>$13000</td><td>%49</td><td></td>
+              </tr>
+              <tr>
+                <td>Septiembre</td><td>$14000</td><td>$15000</td><td>%69</td><td></td>
+              </tr>
+              <tr>
+                <td>Octubre</td><td>$14500</td><td>$12000</td><td>%60</td><td></td>
+              </tr>
+              <tr>
+                <td>Noviembre</td><td>$12000</td><td>$12000</td><td>%70</td><td></td>
+              </tr>
+              <tr>
+                <td>Diciembre</td><td>$11000</td><td>$15000</td><td>%70</td><td></td>
+              </tr>
+              <tr>
+                <td>Totales</td><td>$168500</td><td>$169000</td><td>%60</td><td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>   
+
+<!-- /.grafico de barras -->
+<style>
+  .chart-wrap {
+      --chart-width:420px;
+      --grid-color:#aaa;
+      --bar-color:#172B4D;
+      --bar-thickness:40px;
+      --bar-rounded: 3px;
+      --bar-spacing:10px;
+
+      font-family:sans-serif;
+      width:var(--chart-width);
+  }
+  .chart-wrap.horizontal .grid{
+      transform:rotate(-90deg);
+  }
+
+  .chart-wrap.horizontal .bar::after{
+      transform: rotate(45deg);
+      padding-top:0px;
+      display: block;
+  }
+
+  /* posicionamos el % del gráfico*/
+  .chart-wrap .grid::before{
+      font-size:0.8em;
+      font-weight:bold;
+      content:'0%';
+      position:absolute;
+      left:-0.5em;
+      top:-3em;
+  }
+  .chart-wrap .grid::after{
+      font-size:0.8em;
+      font-weight:bold;
+      content:'100%';
+      position:absolute;
+      right:-1.5em;
+      top:-3em;
+  }
+  /* giramos las valores de 0% y 100% para horizontal */
+  .chart-wrap.horizontal .grid::before, .chart-wrap.horizontal .grid::after {
+      transform: rotate(90deg);
+  }
+  .chart-wrap .bar {
+      width: var(--bar-value);
+      height:var(--bar-thickness);
+      margin:var(--bar-spacing) 0;
+      background-color:var(--bar-color);
+      border-radius:0 var(--bar-rounded) var(--bar-rounded) 0;
+  }
+
+  .chart-wrap .bar:hover{
+      opacity:0.7;
+  }
+
+  .chart-wrap .bar::after{
+      content:attr(data-name);
+      margin-left:100%;
+      padding:10px;
+      display:inline-block;
+      white-space:nowrap;
+  }
+  *{
+      margin: auto;
+      margin-top: auto;
+      padding: auto;
+  }
+  </style>
+
+<div class="chart-wrap horizontal"> <!-- quitar el estilo "horizontal" para visualizar verticalmente -->
+<div><h6></h6><h5>Grafico representativo de la tabla anterior:</h5></div>
+<div class="grid">
+    <div class="bar" style="--bar-value:75%;" data-name="Enero" title="Enero 75%"></div>
+    <div class="bar" style="--bar-value:60%;" data-name="Febrero" title="Febrero 60%"></div>
+    <div class="bar" style="--bar-value:55%;" data-name="Marzo" title="Marzo 55%"></div>
+    <div class="bar" style="--bar-value:60%;" data-name="Abril" title="Abril 60%"></div>
+    <div class="bar" style="--bar-value:45%;" data-name="Mayo" title="Mayo 45%"></div>
+    <div class="bar" style="--bar-value:30%;" data-name="Junio" title="Junio 30%"></div>
+    <div class="bar" style="--bar-value:55%;" data-name="Julio" title="Julio 55%"></div>
+    <div class="bar" style="--bar-value:49%;" data-name="Agosto" title="Agosto 49%"></div>
+    <div class="bar" style="--bar-value:69%;" data-name="Septiembre" title="Septiembre 69%"></div>
+    <div class="bar" style="--bar-value:60%;" data-name="Octubre" title="Octubre 60%"></div>
+    <div class="bar" style="--bar-value:70%;" data-name="Noviembre" title="Noviembre 70%"></div>
+    <div class="bar" style="--bar-value:70%;" data-name="Diciembre" title="Diciembre 70%"></div>
+</div>
+</div>
+</body>
+
+  <!--start popup-->
+  <div class="overlay" id="overlay"  >
+    <div class="popup"  id="popup" >
+        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+        <h4>Seleccione el reporte que desea visualizar.</h4>
+        <div>
+          <a href="informeproveedores.html"><input type="button" value="CLIENTES"></a>
+          <a href="informeproveedores.html"><input type="button" value="PROVEEDORES"></a>
+          <a href="informeproveedores.html"><input type="button" value="VENTAS"></a>
+          <a href="informeProductosBuscar.html"><input type="button" value="PRODUCTOS"></a>
+        </div>
+    </div>
+</div>
+
+<!--end popup-->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="src/js/main2.js"></script>
+  <script src="src/js/check.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script src="js/calendario.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="src/vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="src/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="src/js/datatables-demo.js"></script>
+
+<!--ENLACE JS POPUP-->
+<script src="popup.js"></script>
+
+</body>
+
+</html>
