@@ -2,7 +2,7 @@ table{
     background-color: white;
     text-align: center;
     border-collapse: collapse;
-    width: 100%;
+    width: 1120px;
     margin-top: 20px;
 }
 h3{
@@ -10,6 +10,7 @@ h3{
     font-weight: 500;
     margin-top: 150px;  
     font-size: 30px;
+    margin-left: 5px;
 }
 th,td{
     margin-top: 40px;
@@ -27,4 +28,14 @@ thead{
 
 tr:nth-child(even){
     background-color: #ddd;
+}
+.tabla-datos{
+    margin-top: 0px;
+}
+.main-container{
+    overflow-x: auto;
+}
+
+.tabla-datos-buscarcliente{
+    margin-top: 400px;
 }
