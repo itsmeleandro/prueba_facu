@@ -95,72 +95,100 @@
 
 
 
-    <div class="row justify-content-center mt-5 py-5" style="width: 100%;" >
-        <div id="bodyForm" class="col-12 col-12  pb-5 mt-5" >
+    <div class="row justify-content-center mt-5 py-5">
+        <div id="bodyForm" class="col-12 col-md-10  pb-5 mt-5">
 
 
             <!--Form with header-->
 
-            <form>
-                <div class="form-row mt-3">
-                    <div class="form-group col-md-3 mr-auto">
-                        <label for="idpedido">Número de Pedido</label>
-                        <input type="text" class="form-control" id="numpedido" readonly value="10001">
+            <form id="registro" data-toggle="validator" role="form">
+                <div class="card border-primary rounded-0">
+                    <div class="card-header p-0">
+                        <div class="bg-info text-white text-center py-2">
+                            <h3><i class="fas fa-info-circle"></i> Información sobre el Pedido</h3>
+                        </div>
                     </div>
-                    <div class="form-group col-md-3 mr-auto">
-                        <label for="inputPassword4">ID del Cliente</label>
-                        <input type="text" class="form-control" id="idcli" readonly value="10005">
+                    <div class="card-body p-3">
+
+                        <!--Body-->
+                        <div class="form-group" id="formulario">
+                            <fieldset disabled></fieldset>
+                            <div class="form-row mt-3">
+                                <div class="form-group col-md-3 mr-auto">
+                                    <label for="idpedido">Número de Pedido</label>
+                                    <input type="text" class="form-control" id="numpedido" readonly value="10001">
+                                </div>
+                                <div class="form-group col-md-3 mr-auto">
+                                    <label for="inputPassword4">ID del Cliente</label>
+                                    <input type="text" class="form-control" id="idcli" readonly value="10005">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Nombre del Cliente</label>
+                                    <input type="text" class="form-control" id="nombrecli" readonly
+                                        value="Maria Romero">
+                                </div>
+                            </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="form-group" id="formulario">
+                            <fieldset disabled></fieldset>
+                            <div class="form-row mt-3">
+                                <div class="form-group col-md-3 mr-auto">
+                                    <label for="idpedido">Fecha de Pedido</label>
+                                    <input type="text" class="form-control" id="fechapedido" readonly value="11/04/20">
+                                </div>
+                                <div class="form-group col-md-3 mr-auto">
+                                    <label for="inputPassword4">Estado del Pedido</label>
+                                    <input type="text" class="form-control" id="estado" readonly value="Ingresado">
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="inputPassword4">Monto Abonado</label>
+                                    <input type="text" class="form-control" id="abonado" readonly value="$230">
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="inputPassword4">Monto Total</label>
+                                    <input type="text" class="form-control" id="montototal" readonly value="$500">
+                                </div>
+                            </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="table-responsive mt-5" style="width: 70%; align-self: center;">
+                            <table class="table table-hover table-bordered">
+                                <thead class="thead-light">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Cantidad</th>
+                                            <th scope="col">Producto</th>
+                                        </tr>
+                                    </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Sillas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Mesas</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="text-center">
+                            <input type="submit" id="registrar" value="Registrar Cliente" style="font-size: 22px;"
+                                class="btn btn-info btn-block rounded-0 py-2 ">
+                        </div>
+
                     </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputPassword4">Nombre del Cliente</label>
-                        <input type="text" class="form-control" id="nombrecli" readonly value="Maria Romero">
-                    </div>
+
                 </div>
-                <div class="form-row mt-3">
-                    <div class="form-group col-md-3 mr-auto">
-                        <label for="idpedido">Fecha de Pedido</label>
-                        <input type="text" class="form-control" id="fechapedido" readonly value="11/04/20">
-                    </div>
-                    <div class="form-group col-md-3 mr-auto">
-                        <label for="inputPassword4">Estado del Pedido</label>
-                        <input type="text" class="form-control" id="estado" readonly value="Ingresado">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="inputPassword4">Monto Abonado</label>
-                        <input type="text" class="form-control" id="abonado" readonly value="$230">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="inputPassword4">Monto Total</label>
-                        <input type="text" class="form-control" id="montototal" readonly value="$500">
-                    </div>
-                </div>
-                <div class="table-responsive mt-5" style="width: 70%; align-self: center;">
-                    <table class="table table-hover table-bordered">
-                        <thead class="thead-light">
-                            <thead>
-                                <tr>
-                                  <th scope="col">Cantidad</th>
-                                  <th scope="col">Producto</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>10</td>
-                                  <td>Sillas</td>
-                                </tr>
-                                <tr>
-                                  <td>2</td>
-                                  <td>Mesas</td>
-                                </tr>
-                          </tbody>
-                    </table>
-                  </div>
-                <button type="submit" class="btn btn-primary">Sign in</button>
             </form>
 
 
+
         </div>
-    </div>
     </div>
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
