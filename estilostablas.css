@@ -28,3 +28,16 @@ thead{
 tr:nth-child(even){
     background-color: #ddd;
 }
+
+.row{
+    background-color: #102e4d;
+    border-bottom: solid 5px grey;
+    color: white;
+    width: 100%;
+    padding: 1%;
+    text-align: center; 
+    align-items: center;
+    margin-top: 10px;
+    margin-left: .3px;
+    font-size: 14px;
+    }
