@@ -153,7 +153,7 @@
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="	fas fa-phone text-info"></i></div>
                 </div>
-                <input type="tel" class="form-control" id="telefono" name="Telefono" placeholder="Teléfono" required>
+                <input type="tel" class="form-control" pattern="\+{0,1}(-{0,1}\d)+" id="telefono" name="Telefono" placeholder="+54-362-4385867" required>
               </div>
             </div>
 
@@ -172,8 +172,8 @@
             </div>
 
             <div class="text-center">
-              <input type="submit" id="registrar" value="Registrar Cliente" style="font-size: 22px;"
-                class="btn btn-info btn-block rounded-0 py-2 ">
+              <input type="submit" id="registrar" style="font-size: 22px;"
+                class="btn btn-info btn-block rounded-0 py-2 " value="Registrar Cliente"/>
             </div>
 
           </div>
@@ -203,7 +203,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 
-  <!-- <script src="src/js/clientesAgregar.js"></script> -->
+  <script src="src/js/clientesAgregar.js"></script>
 
 
 </body>
