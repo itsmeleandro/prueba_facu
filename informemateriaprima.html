@@ -95,7 +95,8 @@
     </div>
   </header>
 
-  <div id="main-container">
+  <div class="main-container">
+    <!--datos materia prima-->
     <h3>Listado de movimientos de Materia Prima</h3>
     <table>
       <thead>
@@ -106,14 +107,18 @@
         <tr>
           <td>MATPRIMUNO</td><td>0303456</td><td>Esto es una descripción</td><td>Un poquito</td><td>Re mucho</td>
         </tr>
-    </table>
-    <div class="row" >
-      <div class="col-3">MOVIMIENTO</div>
-      <div class="col-3">ENTRADAS</div>
-      <div class="col-3">SALIDAS</div>
-      <div class="col-3">EXISTENCIAS</div>
-    </div>
-    <table style="margin-top: 0px;">
+        <!--end datos materia prima-->  
+        <!--tabla movimientos-->
+        <table class="tabla-movimientos">
+          <thead>
+            <tr>
+              <th>MOVIMIENTO</th><th>ENTRADAS</th><th>SALIDAS</th><th>EXISTENCIAS</th>
+            </tr>
+          </thead>
+        </table>
+        <!--tabla movimientos-->
+        <!--tabla datos-->
+        <table class="tabla-datos">
       <thead>
         <tr>
           <th>ID.emp.</th><th>Fecha</th><th>Descrip</th><th>Cant.KG</th><th>Cant.Unit.</th><th>Total</th><th>Cant.KG</th><th>Cant.Unit.</th><th>Total</th><th>Cant.KG</th><th>Cant.Unit.</th><th>Total</th>
@@ -137,6 +142,7 @@
           <td>0303456</td><td>20/04/20</td><td>esto es una descip</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td>
         </tr>
     </table>
+    <!--end tabla datos-->
   </div>
   </div>
 
