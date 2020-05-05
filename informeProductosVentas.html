@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>INFOME MATERIAS PRIMAS</title>
+  <title>INFORME PRODUCTOS</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -38,11 +38,10 @@
 
     <!-- Template Main CSS File -->
     <link href="src/css/style.css" rel="stylesheet">
-      <!--popup-->
-  <link rel="stylesheet" type="text/css" href="estilos.css">
-  <!--estlos tablas-->
-  <link rel="stylesheet" href="estilostablas.css">
-
+    <!--popup-->
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <!--estlos tablas-->
+    <link rel="stylesheet" href="estilostablas.css">
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example">
@@ -69,9 +68,9 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li><a href="menuventas.html">Home</a></li>
-          <li class="active"><a href="#clientes">Clientes</a></li>
+          <li><a href="#clientes">Clientes</a></li>
           <li><a href="#pedidos">Pedidos</a></li>
-          <li><a href="#ventas">Ventas</a></li>
+          <li class="active"><a href="#ventas">Ventas</a></li>
           <li><a href="#reporte" id="btn-abrir-popup" >Reporte</a></li>
           <li class="drop-down"><a href="">Drop Down <i class='fas fa-sort-down' style='font-size:24px'></i></a>
             <ul>
@@ -96,55 +95,127 @@
   </header>
 
   <div class="main-container">
-    <!--datos materia prima-->
-    <h3>Listado de movimientos de Materia Prima</h3>
-    <table>
-      <thead>
-        <tr>
-          <th>NOMBRE</th><th>CÓDIGO</th><th>DESCRIPCIÓN</th><th>ESISTENCIAS MINIMAS</th><th>EXISTENCIAS MÁXIMAS</th>
-        </tr>
-      </thead>
-        <tr>
-          <td>MATPRIMUNO</td><td>0303456</td><td>Esto es una descripción</td><td>Un poquito</td><td>Re mucho</td>
-        </tr>
-        <!--end datos materia prima-->  
-        <!--tabla movimientos-->
-        <table class="tabla-movimientos">
-          <thead>
-            <tr>
-              <th>MOVIMIENTO</th><th>ENTRADAS</th><th>SALIDAS</th><th>EXISTENCIAS</th>
-            </tr>
-          </thead>
-        </table>
-        <!--tabla movimientos-->
-        <!--tabla datos-->
-        <table class="tabla-datos">
-      <thead>
-        <tr>
-          <th>ID.emp.</th><th>Fecha</th><th>Descrip</th><th>Cant.KG</th><th>Cant.Unit.</th><th>Total</th><th>Cant.KG</th><th>Cant.Unit.</th><th>Total</th><th>Cant.KG</th><th>Cant.Unit.</th><th>Total</th>
-        </tr>
-      </thead>
-        <tr>
-          <td>0303456</td><td>20/04/20</td><td>esto es una descip</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td>
-        </tr><tr>
-          <td>0303456</td><td>20/04/20</td><td>esto es una descip</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td>
-        </tr><tr>
-          <td>0303456</td><td>20/04/20</td><td>esto es una descip</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td>
-        </tr><tr>
-          <td>0303456</td><td>20/04/20</td><td>esto es una descip</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td>
-        </tr><tr>
-          <td>0303456</td><td>20/04/20</td><td>esto es una descip</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td>
-        </tr><tr>
-          <td>0303456</td><td>20/04/20</td><td>esto es una descip</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td>
-        </tr><tr>
-          <td>0303456</td><td>20/04/20</td><td>esto es una descip</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td>
-        </tr><tr>
-          <td>0303456</td><td>20/04/20</td><td>esto es una descip</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td>
-        </tr>
-    </table>
-    <!--end tabla datos-->
-  </div>
-  </div>
+    <h3>Ventas del producto</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>MES</th><th>VENTAS</th><th>CRECIMIENTO</th><th>% RESPECTO AL MES ANTERIOR</th> <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Enero</td><td>$15000</td><td>$15000</td><td>%75</td><td></td>
+              </tr>
+              <tr>
+                <td>Febrero</td><td>$15000</td> <td>$15000</td><td>%60</td><td></td>
+              </tr>
+              <tr>
+                <td>Marzo</td><td>$14000</td><td>$14000</td><td>%55</td><td></td>
+              </tr>
+              <tr>
+                <td>Abril</td><td>$14000</td><td>$14000</td><td>%60</td><td></td>
+              </tr>
+              <tr>
+                <td>Mayo</td><td>$15000</td><td>$15000</td><td>%45</td><td></td>
+              </tr>
+              <tr>
+                <td>Junio</td><td>$15000</td><td>$15000</td><td>%30</td><td></td> 
+              </tr>
+              <tr>
+                <td>Julio</td><td>$14000</td><td>$15000</td><td>%55</td><td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>   
+
+<!-- /.grafico de barras -->
+<style>
+  .chart-wrap {
+      --chart-width:420px;
+      --grid-color:#aaa;
+      --bar-color:#102e4d;
+      --bar-thickness:40px;
+      --bar-rounded: 3px;
+      --bar-spacing:10px;
+
+      font-family:sans-serif;
+      width:var(--chart-width);
+  }
+  .chart-wrap.horizontal .grid{
+      transform:rotate(-90deg);
+  }
+
+  .chart-wrap.horizontal .bar::after{
+      transform: rotate(45deg);
+      padding-top:0px;
+      display: block;
+  }
+
+  /* posicionamos el % del gráfico*/
+  .chart-wrap .grid::before{
+      font-size:0.8em;
+      font-weight:bold;
+      content:'0%';
+      position:absolute;
+      left:-0.5em;
+      top:-3em;
+  }
+  .chart-wrap .grid::after{
+      font-size:0.8em;
+      font-weight:bold;
+      content:'100%';
+      position:absolute;
+      right:-1.5em;
+      top:-3em;
+  }
+  /* giramos las valores de 0% y 100% para horizontal */
+  .chart-wrap.horizontal .grid::before, .chart-wrap.horizontal .grid::after {
+      transform: rotate(90deg);
+  }
+  .chart-wrap .bar {
+      width: var(--bar-value);
+      height:var(--bar-thickness);
+      margin:var(--bar-spacing) 0;
+      background-color:var(--bar-color);
+      border-radius:0 var(--bar-rounded) var(--bar-rounded) 0;
+  }
+
+  .chart-wrap .bar:hover{
+      opacity:0.7;
+  }
+
+  .chart-wrap .bar::after{
+      content:attr(data-name);
+      margin-left:100%;
+      padding:10px;
+      display:inline-block;
+      white-space:nowrap;
+  }
+  *{
+      margin: auto;
+      margin-top: auto;
+      padding: auto;
+  }
+  </style>
+
+<div class="chart-wrap horizontal"> <!-- quitar el estilo "horizontal" para visualizar verticalmente -->
+<div><h5 style="margin-top: 20px;">Grafico representativo de la tabla anterior:</h5></div>
+<div class="grid">
+    <div class="bar" style="--bar-value:75%;" data-name="Enero" title="Enero 75%"></div>
+    <div class="bar" style="--bar-value:60%;" data-name="Febrero" title="Febrero 60%"></div>
+    <div class="bar" style="--bar-value:55%;" data-name="Marzo" title="Marzo 55%"></div>
+    <div class="bar" style="--bar-value:60%;" data-name="Abril" title="Abril 60%"></div>
+    <div class="bar" style="--bar-value:45%;" data-name="Mayo" title="Mayo 45%"></div>
+    <div class="bar" style="--bar-value:30%;" data-name="Junio" title="Junio 30%"></div>
+    <div class="bar" style="--bar-value:55%;" data-name="Julio" title="Julio 55%"></div>
+    <div class="bar" style="--bar-value:49%;" data-name="Agosto" title="Agosto 49%"></div>
+    <div class="bar" style="--bar-value:69%;" data-name="Septiembre" title="Septiembre 69%"></div>
+    <div class="bar" style="--bar-value:60%;" data-name="Octubre" title="Octubre 60%"></div>
+    <div class="bar" style="--bar-value:70%;" data-name="Noviembre" title="Noviembre 70%"></div>
+    <div class="bar" style="--bar-value:70%;" data-name="Diciembre" title="Diciembre 70%"></div>
+</div>
+</div>
+</body>
 
   <!--start popup-->
   <div class="overlay" id="overlay"  >
@@ -152,19 +223,15 @@
         <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
         <h4>Seleccione el reporte que desea visualizar.</h4>
         <div>
-          <a href="clientesbuscar.html"><input type="button" value="CLIENTES"></a>
-          <a href="clientesbuscar.html"><input type="button" value="PROVEEDORES"></a>
-          <a href="clientesbuscar.html"><input type="button" value="VENTAS"></a>
-          <a href="clientesbuscar.html"><input type="button" value="PRODUCTOS"></a>
+          <a href="informeclientes.html" target="_blank"><input type="button" value="CLIENTES"></a>
+        <a href="informeproveedores.html" target="_blank"><input type="button" value="PROVEEDORES"></a>
+        <a href="informeVentasBuscar.html" target="_blank"><input type="button" value="VENTAS"></a>
+        <a href="informeProductos.html" target="_blank"><input type="button" value="PRODUCTOS"></a>
         </div>
     </div>
 </div>
+
 <!--end popup-->
-
-  </div>
-  </div>
-  </div>
-
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -190,8 +257,6 @@
 
 <!--ENLACE JS POPUP-->
 <script src="popup.js"></script>
-
-
 
 </body>
 

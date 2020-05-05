@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>INFOME VENTAS</title>
+  <title>MATERIA PRIMA</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -38,10 +38,11 @@
 
     <!-- Template Main CSS File -->
     <link href="src/css/style.css" rel="stylesheet">
-    <!--popup-->
-    <link rel="stylesheet" type="text/css" href="estilos.css">
-    <!--estlos tablas-->
-    <link rel="stylesheet" href="estilostablas.css">
+      <!--popup-->
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+  <!--estlos tablas-->
+  <link rel="stylesheet" href="estilostablas.css">
+
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example">
@@ -68,9 +69,9 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li><a href="menuventas.html">Home</a></li>
-          <li><a href="#clientes">Clientes</a></li>
+          <li class="active"><a href="#clientes">Clientes</a></li>
           <li><a href="#pedidos">Pedidos</a></li>
-          <li class="active"><a href="#ventas">Ventas</a></li>
+          <li><a href="#ventas">Ventas</a></li>
           <li><a href="#reporte" id="btn-abrir-popup" >Reporte</a></li>
           <li class="drop-down"><a href="">Drop Down <i class='fas fa-sort-down' style='font-size:24px'></i></a>
             <ul>
@@ -94,30 +95,75 @@
     </div>
   </header>
 
-  <div>
-    <h3>Ingrese el producto del cual desea el reporte:</h3>
-    <input type="text" id="usuario" class="form-control" placeholder="Producto" maxlength="40"/>
-    <div>
-      <a href="informeProductos.html">
-        <input type="button" value="Ingresar">
-      </a>
-    </div>
-  </div>   
-
- <!--start popup-->
- <div class="overlay" id="overlay"  >
-  <div class="popup"  id="popup" >
-      <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
-      <h4>Seleccione el reporte que desea visualizar.</h4>
-      <div>
-        <a href="informeproveedores.html"><input type="button" value="CLIENTES"></a>
-        <a href="informeproveedores.html"><input type="button" value="PROVEEDORES"></a>
-        <a href="informeproveedores.html"><input type="button" value="VENTAS"></a>
-        <a href="informeProductosBuscar.html"><input type="button" value="PRODUCTOS"></a>
-      </div>
+  <div class="main-container">
+    <!--datos materia prima-->
+    <h3>Listado de movimientos de Materia Prima</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>NOMBRE</th><th>CÓDIGO</th><th>DESCRIPCIÓN</th><th>ESISTENCIAS MINIMAS</th><th>EXISTENCIAS MÁXIMAS</th>
+        </tr>
+      </thead>
+        <tr>
+          <td>MATPRIMUNO</td><td>0303456</td><td>Esto es una descripción</td><td>Un poquito</td><td>Re mucho</td>
+        </tr>
+        <!--end datos materia prima-->  
+        <!--tabla movimientos-->
+        <table class="tabla-movimientos">
+          <thead>
+            <tr>
+              <th>MOVIMIENTO</th><th>ENTRADAS</th><th>SALIDAS</th><th>EXISTENCIAS</th>
+            </tr>
+          </thead>
+        </table>
+        <!--tabla movimientos-->
+        <!--tabla datos-->
+        <table class="tabla-datos">
+      <thead>
+        <tr>
+          <th>ID.emp.</th><th>Fecha</th><th>Descrip</th><th>Cant.KG</th><th>Cant.Unit.</th><th>Total</th><th>Cant.KG</th><th>Cant.Unit.</th><th>Total</th><th>Cant.KG</th><th>Cant.Unit.</th><th>Total</th>
+        </tr>
+      </thead>
+        <tr>
+          <td>0303456</td><td>20/04/20</td><td>esto es una descip</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td>
+        </tr><tr>
+          <td>0303456</td><td>20/04/20</td><td>esto es una descip</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td>
+        </tr><tr>
+          <td>0303456</td><td>20/04/20</td><td>esto es una descip</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td>
+        </tr><tr>
+          <td>0303456</td><td>20/04/20</td><td>esto es una descip</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td>
+        </tr><tr>
+          <td>0303456</td><td>20/04/20</td><td>esto es una descip</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td>
+        </tr><tr>
+          <td>0303456</td><td>20/04/20</td><td>esto es una descip</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td>
+        </tr><tr>
+          <td>0303456</td><td>20/04/20</td><td>esto es una descip</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td>
+        </tr><tr>
+          <td>0303456</td><td>20/04/20</td><td>esto es una descip</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td>
+        </tr>
+    </table>
+    <!--end tabla datos-->
   </div>
+  </div>
+
+  <!--start popup-->
+  <div class="overlay" id="overlay"  >
+    <div class="popup"  id="popup" >
+        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+        <h4>Seleccione el reporte que desea visualizar.</h4>
+        <div>
+          <a href="informeclientes.html" target="_blank"><input type="button" value="CLIENTES"></a>
+        <a href="informeproveedores.html" target="_blank"><input type="button" value="PROVEEDORES"></a>
+        <a href="informeVentasBuscar.html" target="_blank"><input type="button" value="VENTAS"></a>
+        <a href="informeProductos.html" target="_blank"><input type="button" value="PRODUCTOS"></a>
+        </div>
+    </div>
 </div>
 <!--end popup-->
+
+  </div>
+  </div>
+  </div>
 
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -144,6 +190,8 @@
 
 <!--ENLACE JS POPUP-->
 <script src="popup.js"></script>
+
+
 
 </body>
 
