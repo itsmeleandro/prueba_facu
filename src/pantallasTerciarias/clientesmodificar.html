@@ -10,34 +10,31 @@
     <meta content="" name="keywords">
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="css/elegant-icons-style.css" rel="stylesheet" />
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
         integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <div class="container">
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+         <!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
 
-        <!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
-        <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
-
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
-        <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
         <!-- Google Fonts -->
         <link
             href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900"
             rel="stylesheet">
 
         <!-- Vendor CSS Files -->
-        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="src/vendor/icofont.min.css" rel="stylesheet">
-        <link href="src/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+        <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../vendor/icofont.min.css" rel="stylesheet">
+        <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
         <!-- Template Main CSS File -->
-        <link href="src/css/style.css" rel="stylesheet">
+        <link href="../css/style.css" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example">
@@ -45,19 +42,19 @@
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
         <div class="logo d-lg-block ml-5">
-            <h1 class="text-light mt-3"><img src="src/imagenes/logo.png" alt="" style="top:-6px ; left: 0%;"
-                    class="izquierda"><a href="menuventas.html">Reci<span>plas</span></a></h1>
+            <h1 class="text-light mt-3"><img src="../imagenes/logo.png" alt="" style="top:-6px ; left: 0%;"
+                    class="izquierda"><a href="../menusPrincipales/menuventas.html">Reci<span>plas</span></a></h1>
         </div>
         <div class="dropdown show" style="position: absolute; top:27%; right:3%;">
             <a class="btn btn-success dropdown-toggle"
                 style="background-color: #172B4D; border-color: #172B4D; border: 0px;" href="#" role="button"
                 id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img src="src/imagenes/avatar.png" class="w3-circle" style="height:35px; width: 35px;" alt="Avatar">
+                <img src="../imagenes/avatar.png" class="w3-circle" style="height:35px; width: 35px;" alt="Avatar">
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="position: absolute; top:0%;">
                 <a class="dropdown-item" href="#"><i class='fas fa-user-circle' style='font-size:24px'></i> &nbsp;
                     Perfil</a>
-                <a class="dropdown-item" href="index.html"><i class='fas fa-door-open' style='font-size:24px'></i>
+                <a class="dropdown-item" href="../../index.html"><i class='fas fa-door-open' style='font-size:24px'></i>
                     Cerrar
                     Sesión</a>
             </div>
@@ -66,11 +63,11 @@
         <div class="ml-4 d-lg-block ">
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
-                    <li><a href="menuventas.html">Home</a></li>
-                    <li class="active"><a href="clientesbuscar.html">Clientes</a></li>
-                    <li><a href="#pedidos">Pedidos</a></li>
-                    <li><a href="#ventas">Ventas</a></li>
-                    <li><a href="#reporte">Reporte</a></li>
+                    <li><a href="../menusPrincipales/menuventas.html">Home</a></li>
+                    <li class="active"><a href="../pantallasSecundarias/clientesbuscar.html">Clientes</a></li>
+                    <li><a href="../pantallasSecundarias/pedidosbuscar.html">Pedidos</a></li>
+                    <li><a href="../pantallasSecundarias/ventas.html">Ventas</a></li>
+                    <li><a href="../pantallasSecundarias/reportes.html">Reporte</a></li>
                 </ul>
             </nav>
         </div>
@@ -178,7 +175,6 @@
     </div>
     </div>
 
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -188,9 +184,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="src/js/main2.js"></script>
-    <script src="src/js/clientesAgregar.js"></script>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../js/main2.js"></script>
+    <script src="../js/clientesAgregar.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">

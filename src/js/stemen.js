@@ -4,13 +4,13 @@ $('#ingresar').click(
         var contraseña= document.getElementById("contrasenia").value;
         
         if (usuario == "ventas" && contraseña=="ventas") {
-            window.location.href= "./menuventas.html"; }
+            window.location.href= "src/menusPrincipales/menuventas.html"; }
             if (usuario == "compras" && contraseña=="compras") {
-                window.location.href= "./menucompras.html"; }
+                window.location.href= "src/menusPrincipales/menucompras.html"; }
                 if (usuario == "admin" && contraseña=="admin") {
-                    window.location.href= "./menuadmin.html"; }
+                    window.location.href= "src/menusPrincipales/menuadmin.html"; }
                     if (usuario == "produccion" && contraseña=="produccion") {
-                        window.location.href= "./menuprod.html"; }
+                        window.location.href= "src/menusPrincipales/menuprod.html"; }
         
         
  
