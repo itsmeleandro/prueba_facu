@@ -85,71 +85,46 @@
           <div class="card-body">
             <!--Body-->
             <div class="form-group" id="formulario">
-              <div class="form-row mt-0">
-                <div class="form-group col-md-4 mr-auto">
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text"><i class="fa fa-user" style="color:#102e4d; "></i></div>
-                    </div>
-                    <input type="text" class="form-control" id="id" placeholder="ID: 3981" required readonly>
+              <div class="form-row mt-3">
+                  <div class="form-group col-md-4 mr-auto">
+                      <label for="idpedido">ID del Proveedor</label>
+                      <input type="text" class="form-control" id="numpedido" readonly value="3981">
                   </div>
+                  <div class="form-group col-md-8">
+                      <label for="inputPassword4">Nombre del Proveedor</label>
+                      <input type="text" class="form-control" id="nombrecli" readonly
+                          value="Supermercado Los Alpes">
+                  </div>
+              </div>
+          </div>
+
+          <div class="form-group" id="formulario">
+            <div class="form-row mt-3">
+                <div class="form-group col-md-4 mr-auto">
+                    <label for="idpedido">Teléfono del Proveedor</label>
+                    <input type="text" class="form-control" id="numpedido" readonly value="+54-362-4986745">
                 </div>
                 <div class="form-group col-md-8">
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text"><i class="fa fa-user" style="color:#102e4d; "></i></div>
-                    </div>
-                    <input type="text" class="form-control" id="nombre" value="Supermercado Los Alpes" required
-                      readonly>
-                  </div>
+                    <label for="inputPassword4">Domicilio del Proveedor</label>
+                    <input type="text" class="form-control" id="nombrecli" readonly
+                        value="Las Heras 123">
                 </div>
-              </div>
+            </div>
+        </div>
 
-              <div class="form-row ">
-                <div class="form-group col-md-4 mr-auto">
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text"><i class="fas fa-phone" style="color:#102e4d; "></i></div>
-                    </div>
-                    <input type="tel" class="form-control" pattern="\+{0,1}(-{0,1}\d)+" id="telefono" name="Telefono"
-                      value="+54-362-4986745" required readonly>
-                  </div>
-                </div>
-                <div class="form-group col-md-8">
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text"><i class="fas fa-home" style="color:#102e4d; "></i></div>
-                    </div>
-                    <input type="text" class="form-control" id="direccion" value="Las Heras 123" required readonly>
-                  </div>
-                </div>
+        <div class="form-group" id="formulario">
+          <div class="form-row mt-3">
+              <div class="form-group col-md-4 mr-auto">
+                  <label for="idpedido">Fecha de Alta del Proveedor</label>
+                  <input type="text" class="form-control" id="numpedido" readonly value="11/04/20">
               </div>
-
-              <div class="form-row">
-                <div class="form-group col-md-4 mr-auto">
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend" style="width: 150%;">
-                      <input type="text" id="datepicker" class="form-control" name="fecha" value="11/04/20" required
-                        readonly>
-                      <script>
-                        $('#datepicker').datepicker({
-                          uiLibrary: 'bootstrap4'
-                        });
-                      </script>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group col-md-8">
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text"><i class="fa fa-envelope " style="color:#102e4d; "></i></div>
-                    </div>
-                    <input type="email" class="form-control" id="email" name="email" value="prov1@gmail.com" required
-                      readonly>
-                  </div>
-                </div>
+              <div class="form-group col-md-8">
+                  <label for="inputPassword4">Email del Proveedor</label>
+                  <input type="text" class="form-control" id="nombrecli" readonly
+                      value="prov1@gmail.com">
               </div>
-
+          </div>
+      </div>
 
               <label>Materia Prima que ofrece</label>
               <div class="form-row col-md-12">
