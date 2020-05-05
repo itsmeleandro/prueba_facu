@@ -77,6 +77,21 @@ img {
   border: 2px solid rgba(58, 133, 191, 0.75);
 }
 
+.btn-info {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  transition: all 0.3s ease 0s;
+  background-color: #102e4d;
+  border: #102e4d;
+}
+
+.btn-info:hover {
+  color: #FFF;
+  background:#174777;
+  border: 2px solid #174777;
+}
+
 @media screen and (max-width: 767px) {
   .botonpequeno{
       width: 7rem;
@@ -601,4 +616,9 @@ animation-delay:0s;
 100% {margin-left: 0px; opacity:1;}
 }
 
-  
+.paging_full_numbers a.paginate_button {
+  color: #fff !important;
+}
+.paging_full_numbers a.paginate_active {
+  color: #fff !important;
+}
