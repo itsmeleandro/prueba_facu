@@ -4,10 +4,10 @@ function deleteAlert() {
     }
 }
 $('document').ready(
-    function(){
+    function () {
         $('#registro').submit(
             function (e) {
-                if($('#alert')){
+                if ($('#alert')) {
                     deleteAlert();
                 }
                 let alert = $(`
@@ -15,7 +15,7 @@ $('document').ready(
                     Registro completado satisfactorimente.
                 </div>`);
                 $('#registro').before(alert);
-                resetInputs();
+                saveClient();
                 setTimeout(deleteAlert, 3000);
                 e.preventDefault();
                 e.stopPropagation();
@@ -24,10 +24,23 @@ $('document').ready(
     }
 );
 
-function resetInputs(){
+
+function resetInputs() {
     $('#nombre').val('');
     $('#tipo').val('');
     $('#email').val('');
     $('#telefono').val('');
     $('#datepicker').val('');
+}
+
+function saveClient() {
+    const dataOfClient = {
+        nombre: $('#nombre').val(),
+        tipo:    $('#tipo').val(),
+        email:    $('#email').val(),
+        telefono:    $('#telefono').val(),
+        date:    $('#datepicker').val(),
+    };
+    localStorage.setItem('dataOfClient', JSON.stringify(dataOfClient));
+    resetInputs();
 }
