@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>INFOME MATERIAS PRIMAS</title>
+  <title>INFOME VENTAS </title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -38,8 +38,6 @@
 
     <!-- Template Main CSS File -->
     <link href="src/css/style.css" rel="stylesheet">
-    <!--popup-->
-    <link rel="stylesheet" type="text/css" href="estilos.css">
     <!--estlos tablas-->
     <link rel="stylesheet" href="estilostablas.css">
 </head>
@@ -51,72 +49,61 @@
     <div class="logo d-lg-block ml-5">
       <h1 class="text-light mt-3"><img src="src/imagenes/logo.png" alt="" style="top:-6px ; left: 0%;"
           class="izquierda"><a href="menuventas.html">Reci<span>plas</span></a></h1>
-    </div>
-    <div class="dropdown show" style="position: absolute; top:27%; right:3%;">
-      <a class="btn btn-success dropdown-toggle" style="background-color: #172B4D; border-color: #172B4D; border: 0px;"
-        href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <img src="src/imagenes/avatar.png" class="w3-circle" style="height:35px; width: 35px;" alt="Avatar">
-      </a>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="position: absolute; top:0%;">
-        <a class="dropdown-item" href="#"><i class='fas fa-user-circle' style='font-size:24px'></i> &nbsp; Perfil</a>
-        <a class="dropdown-item" href="index.html"><i class='fas fa-door-open' style='font-size:24px'></i> Cerrar
-          Sesión</a>
-      </div>
-    </div>
-
-    <div class="ml-4 d-lg-block ">
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li><a href="menuventas.html">Home</a></li>
-          <li><a href="#clientes">Clientes</a></li>
-          <li><a href="#pedidos">Pedidos</a></li>
-          <li class="active"><a href="#ventas">Ventas</a></li>
-          <li><a href="#reporte" id="btn-abrir-popup" >Reporte</a></li>
-          <li class="drop-down"><a href="">Drop Down <i class='fas fa-sort-down' style='font-size:24px'></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </div>
   </header>
 
-  <div>
-    <h3>Ingrese la materia prima de la cual desea el reporte:</h3>
-    <input type="text" id="usuario" class="form-control" placeholder="Producto" maxlength="40"/>
-    <div>
-      <a href="informemateriaprimabuscar.html" target="_blank" style="width:auto; height:auto; font-size: 22px; margin-left: 0%; margin-top:2%; background: #102e4d; border-color: #102e4d;" class="btn btn-info">BUSCAR</a>
-      </a>
-    </div>
-  </div>   
-
- <!--start popup-->
- <div class="overlay" id="overlay"  >
-  <div class="popup"  id="popup" >
-      <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
-      <h4>Seleccione el reporte que desea visualizar.</h4>
-      <div>
-        <a href="informeclientes.html" target="_blank"><input type="button" value="CLIENTES"></a>
-        <a href="informeproveedores.html" target="_blank"><input type="button" value="PROVEEDORES"></a>
-        <a href="informeVentasBuscar.html" target="_blank"><input type="button" value="VENTAS"></a>
-        <a href="informeProductos.html" target="_blank"><input type="button" value="PRODUCTOS"></a>
-      </div>
-  </div>
-</div>
-<!--end popup-->
+  <div id="main-container">
+    <h3>Últimas 10 ventas realizadas</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>N° DE VENTA</th><th>FECHA</th><th>CLIENTE</th><th>PEDIDO</th><th>ESTADO</th><th>MONTO</th><th>FORMA DE PAGO</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1150</td><td>10/05/2020</td><td>34567</td><td>32345</td><td>En proceso</td><td>$15000</td><td>Tarjeta</td>
+              </tr>
+              <tr>
+                <td>1149</td><td>25/04/2020</td><td>89101</td><td>30001</td><td>En proceso</td><td>$7000</td><td>Efectivo</td>
+              </tr>
+              <tr>
+                <td>1148</td><td>23/04/2020</td><td>12349</td><td>29999</td><td>En proceso</td><td>$10000</td><td>Tarjeta</td>
+              </tr>
+              <tr>
+                <td>1147</td><td>09/04/2020</td><td>12348</td><td>27898</td><td>En proceso</td><td>$9500</td><td>Tarjeta</td>
+              </tr>
+              <tr>
+                <td>1146</td><td>30/03/2020</td><td>12346</td><td>25000</td><td>En proceso</td><td>$6000</td><td>Efectivo</td>
+              </tr>
+              <tr>
+                <td>1145</td><td>24/03/2020</td><td>45678</td><td>24500</td><td>¡Terminado!</td><td>$3000</td><td>Efectivo</td>
+              </tr>
+              <tr>
+                <td>1144</td><td>10/03/2020</td><td>10054</td><td>23333</td><td>En Proceso</td><td>$16000</td><td>Tarjeta</td>
+              </tr>
+              <tr>
+                <td>1143</td><td>08/03/2020</td><td>34562</td><td>23222</td><td>¡Terminado!</td><td>$4000</td><td>Efectivo</td>
+              </tr>
+              <tr>
+                <td>1142</td><td>27/02/2020</td><td>34882</td><td>22322</td><td>¡Terminado!</td><td>$10000</td><td>Tarjeta</td>
+              </tr>
+              <tr>
+                <td>1141</td><td>20/02/2020</td><td>35562</td><td>23212</td><td>¡Terminado!</td><td>$5000</td><td>Efectivo</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>   
+        
+        <a href="Layoutproveedores.pdf" target="_blank" style="width:auto; height:auto; font-size: 22px; margin-left: 0%; margin-top:5%; background: #102e4d; border-color: #102e4d; margin-bottom: 20px;" class="btn btn-info">IMPRIMIR REPORTE</a>
+        
+        <div>
+          <h3 style="margin-top: 20px;">Ingrese el producto del cual desea el reporte  de ventas:</h3>
+          <input type="text" id="usuario" class="form-control" placeholder="Producto" maxlength="40"/>
+          <div>
+            <a href="informeProductosVentas.html" target="_blank"style="width:auto; height:auto; font-size: 22px; margin-left: 0%; margin-top:2%; margin-bottom: 20px; background: #102e4d; border-color: #102e4d;" class="btn btn-info">BUSCAR</a>
+            </a>
+          </div>
+        </div>    
 
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -140,9 +127,6 @@
 
   <!-- Page level custom scripts -->
   <script src="src/js/datatables-demo.js"></script>
-
-<!--ENLACE JS POPUP-->
-<script src="popup.js"></script>
 
 </body>
 

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>PRODUCTO</title>
+  <title>INFOME PROVEEDORES</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -38,7 +38,6 @@
 
     <!-- Template Main CSS File -->
     <link href="src/css/style.css" rel="stylesheet">
-  
     <!--estlos tablas-->
     <link rel="stylesheet" href="estilostablas.css">
 </head>
@@ -50,49 +49,36 @@
     <div class="logo d-lg-block ml-5">
       <h1 class="text-light mt-3"><img src="src/imagenes/logo.png" alt="" style="top:-6px ; left: 0%;"
           class="izquierda"><a href="menuventas.html">Reci<span>plas</span></a></h1>
-  </header>
+    </div>
 
   <div class="main-container">
-    <!--datos producto-->
-    <h3>Producto</h3>
+    <h3 style="margin-top: 60px;">Listado de proveedores</h3>
     <table>
       <thead>
         <tr>
-          <th>NOMBRE</th><th>CÓDIGO</th><th>DESCRIPCIÓN</th><th>CANTIDAD MP P/UN</th><th>CANTIDAD MP P/KG</th><th>TIPO MP</th><th>PRECIO P/UN</th><th>PRECIO P/KG</th>
+          <th>PROVEEDOR</th><th>CONTACTO PRINCIPAL</th><th>DIRECCIÓN</th><th>CIUDAD</th><th>TELÉFONO</th><th>CORREO ELECTRÓNICO</th><th>FORMAS DE PAGO</th><th>MP QUE DISTRIBUYE</th><th>DIAS DE ENTREGA</th>
         </tr>
       </thead>
         <tr>
-          <td>Bolsa</td><td>1234</td><td>Tamaño mediano</td><td>200gr</td><td>4kg</td><td>Plástico</td><td>$30</td><td>$600</td>
-        </tr>
-    <!--end datos producto-->  
-    <!--tabla datos-->
-    <table class="tabla-datos">
-      <h3 style="margin-top: 10px;">Historial de movimientos</h3>
-      <thead>
-        <tr>
-          <th>FECHA</th><th>TIPO MOVIMIENTO</th><th>DETALLE MOVIMIENTO</th><th>NOMBRE EMPLEADO</th><th>CODIGO EMPLEADO</th>
-        </tr>
-      </thead>
-        <tr>
-          <td>20/024/20</td><td>Alta</td><td>se dio de alta producto</td><td>Clara López</td><td>0404567</td>
+          <td>proveeuno</td><td>Juan Perez</td><td>calle falsa 123</td><td>Resistencia</td><td>3624565656</td><td>esteesuncorreofalso@hotmail.com</td><td><ul><li>efectivo</li><li>débito</li><li>crédito</li></ul></td><td><ul><li>tipoMP1</li><li>tipoMP2</li><li>tipoMP3</li></ul></td><td>del 5 al 10</td>
         </tr>
         <tr>
-            <td>10/03/20</td><td>Modificacion</td><td>Se modifico x atributo por x motivo</td><td>Hector Rodriguez</td><td>0505678</td>
+          <td>proveeuno</td><td>Juan Perez</td><td>calle falsa 123</td><td>Resistencia</td><td>3624565656</td><td>esteesuncorreofalso@hotmail.com</td><td><ul><li>efectivo</li><li>débito</li><li>crédito</li></ul></td><td><ul><li>tipoMP1</li><li>tipoMP2</li><li>tipoMP3</li></ul></td><td>del 5 al 10</td>
         </tr>
         <tr>
-            <td>20/02/20</td><td>Modificacion</td><td>Se modifico x atributo por x motivo</td><td>Hector Rodriguez</td><td>0505678</td>
+          <td>proveeuno</td><td>Juan Perez</td><td>calle falsa 123</td><td>Resistencia</td><td>3624565656</td><td>esteesuncorreofalso@hotmail.com</td><td><ul><li>efectivo</li><li>débito</li><li>crédito</li></ul></td><td><ul><li>tipoMP1</li><li>tipoMP2</li><li>tipoMP3</li></ul></td><td>del 5 al 10</td>
         </tr>
         <tr>
-            <td>04/02/20</td><td>Modificacion</td><td>Se modifico x atributo por x motivo</td><td>Clara López</td><td>0404567</td>
-        </tr>
-        <tr>
-            <td>02/02/20</td><td>Baja</td><td>Se dio de baja por x motivo</td><td>Clara López</td><td>0404567</td>
+          <td>proveeuno</td><td>Juan Perez</td><td>calle falsa 123</td><td>Resistencia</td><td>3624565656</td><td>esteesuncorreofalso@hotmail.com</td><td><ul><li>efectivo</li><li>débito</li><li>crédito</li></ul></td><td><ul><li>tipoMP1</li><li>tipoMP2</li><li>tipoMP3</li></ul></td><td>del 5 al 10</td>
         </tr>
     </table>
-    <!--end tabla datos-->
+    
+    <a href="informeproveedorparticular.html" target="_blank" style="width:auto; height:auto; font-size: 22px; margin-left: 0%; margin-top:10px; background: #102e4d; border-color: #102e4d; margin-bottom: 20px;" class="btn btn-info">BUSCAR PROVEEDOR</a>
+  
     <a href="Layoutproveedores.pdf" target="_blank" style="width:auto; height:auto; font-size: 22px; margin-left: 0%; margin-top:10px; background: #102e4d; border-color: #102e4d; margin-bottom: 20px;" class="btn btn-info">IMPRIMIR REPORTE</a>
+  
+  
   </div>
-
 
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -116,6 +102,11 @@
 
   <!-- Page level custom scripts -->
   <script src="src/js/datatables-demo.js"></script>
+
+<!--ENLACE JS POPUP-->
+<script src="popup.js"></script>
+
+
 
 </body>
 
