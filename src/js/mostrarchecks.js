@@ -15,7 +15,7 @@ $(document).ready(function () {
             }
     });
 
-    $('#reigstrar').click(function(){
+    $('#registrar').click(function(){
         var selected = '';    
         $('input[type=checkbox]').each(function(){
             if (this.checked) {
