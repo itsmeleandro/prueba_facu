@@ -135,7 +135,7 @@ h6 {
 a {
   transition: all 0.3s ease 0s;
   text-decoration: none;
-  color: rgb(6, 94, 107);
+  color:white;
 }
 
 a:hover {
@@ -362,7 +362,14 @@ div#preloader {
   white-space: nowrap;
   float: left;
 }
-
+.nav-item{
+  display: inline-block;
+  position: relative;
+  color: #fafefe;
+  padding: 8px 15px 12px 15px;
+  transition: 0.3s;
+  font-size: 20px;
+}
 .nav-menu a {
   display: inline-block;
   position: relative;

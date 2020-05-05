@@ -15,6 +15,7 @@ $('document').ready(
                     Registro completado satisfactorimente.
                 </div>`);
                 $('#registro').before(alert);
+                resetInputs();
                 setTimeout(deleteAlert, 3000);
                 e.preventDefault();
                 e.stopPropagation();
@@ -22,3 +23,11 @@ $('document').ready(
         )
     }
 );
+
+function resetInputs(){
+    $('#nombre').val('');
+    $('#tipo').val('');
+    $('#email').val('');
+    $('#telefono').val('');
+    $('#datepicker').val('');
+}
