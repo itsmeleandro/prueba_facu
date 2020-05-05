@@ -57,6 +57,10 @@ img {
   position: relative;
 }
 
+.gj-icon{
+  bottom:5px;
+}
+
 .btn-primary {
   font-family: Raleway-SemiBold;
   font-size: 23px;

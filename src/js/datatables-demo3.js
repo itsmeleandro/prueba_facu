@@ -2,7 +2,7 @@
 $(document).ready(function() {
     $('#dataTable').DataTable({
       order: [],
-      columnDefs: [ { orderable: false, targets: [0, 8] } ]
+      columnDefs: [ { orderable: false, targets: [0, 6] } ]
 
       })
     });
