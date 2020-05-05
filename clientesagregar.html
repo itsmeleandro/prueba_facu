@@ -14,7 +14,7 @@
   <link href="css/font-awesome.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
     integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-  <div class="container">
+<div class="container">
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
     <!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
@@ -49,8 +49,8 @@
           class="izquierda"><a href="menuventas.html">Reci<span>plas</span></a></h1>
     </div>
     <div class="dropdown show" style="position: absolute; top:27%; right:3%;">
-      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
+      <a class="btn btn-success dropdown-toggle" style="background-color: #172B4D; border-color: #172B4D; border: 0px;"
+        href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <img src="src/imagenes/avatar.png" class="w3-circle" style="height:35px; width: 35px;" alt="Avatar">
       </a>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="position: absolute; top:0%;">
@@ -68,23 +68,6 @@
           <li><a href="#pedidos">Pedidos</a></li>
           <li><a href="#ventas">Ventas</a></li>
           <li><a href="#reporte">Reporte</a></li>
-          <li class="drop-down"><a href="">Drop Down <i class='fas fa-sort-down' style='font-size:24px'></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li>
         </ul>
       </nav>
     </div>
@@ -92,8 +75,8 @@
 
 
 
-  <div  class="row justify-content-center mt-5 py-5">
-    <div  class="col-12 col-md-8 col-lg-6 pb-5 mt-5">
+  <div class="row justify-content-center mt-5 py-5">
+    <div class="col-12 col-md-8 col-lg-6 pb-5 mt-5">
       <!--Form with header-->
       <form id="registro" data-toggle="validator" role="form">
         <div class="card border-primary rounded-0">
@@ -131,10 +114,10 @@
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
                 </div>
-                <select id="tipo" class="form-control">
-                  <option selected>Tipo de Cliente</option>
-                  <option>Particular</option>
-                  <option>Empresa</option>
+                <select id="tipo" class="form-control" required>
+                  <option value="" hidden>Tipo de Cliente</option>
+                  <option value="particular">Particular</option>
+                  <option value="empresa">Empresa</option>
                 </select>
               </div>
             </div>
@@ -153,7 +136,8 @@
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="	fas fa-phone text-info"></i></div>
                 </div>
-                <input type="tel" class="form-control" pattern="\+{0,1}(-{0,1}\d)+" id="telefono" name="Telefono" placeholder="+54-362-4385867" required>
+                <input type="tel" class="form-control" pattern="\+{0,1}(-{0,1}\d)+" id="telefono" name="Telefono"
+                  placeholder="+54-362-4385867" required>
               </div>
             </div>
 
@@ -173,7 +157,7 @@
 
             <div class="text-center">
               <input type="submit" id="registrar" style="font-size: 22px;"
-                class="btn btn-info btn-block rounded-0 py-2 " value="Registrar Cliente"/>
+                class="btn btn-info btn-block rounded-0 py-2 " value="Registrar Cliente" />
             </div>
 
           </div>
@@ -185,7 +169,7 @@
 
     </div>
   </div>
-  
+
 
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
