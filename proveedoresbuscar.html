@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>PROVEEDORES</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="css/elegant-icons-style.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="src/vendor/icofont.min.css" rel="stylesheet">
+    <link href="src/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="src/css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="logo d-lg-block ml-5">
+            <h1 class="text-light mt-3"><img src="src/imagenes/logo.png" alt="" style="top:-6px ; left: 0%;"
+                    class="izquierda"><a href="menuventas.html">Reci<span>plas</span></a></h1>
+        </div>
+        <div class="dropdown show" style="position: absolute; top:27%; right:3%;">
+            <a class="btn btn-success dropdown-toggle"
+                style="background-color: #172B4D; border-color: #172B4D; border: 0px;" href="#" role="button"
+                id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="src/imagenes/avatar.png" class="w3-circle" style="height:35px; width: 35px;" alt="Avatar">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="position: absolute; top:0%;">
+                <a class="dropdown-item" href="#"><i class='fas fa-user-circle' style='font-size:24px'></i> &nbsp;
+                    Perfil</a>
+                <a class="dropdown-item" href="index.html"><i class='fas fa-door-open' style='font-size:24px'></i>
+                    Cerrar
+                    Sesión</a>
+            </div>
+        </div>
+
+        <div class="ml-4 d-lg-block ">
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li><a href="menucompras.html">Inicio</a></li>
+                    <li><a href="mpbuscar.html">Stock MP</a></li>
+                    <li><a href="productosbuscar.html">Productos</a></li>
+                    <li><a href="proveedoresbuscar.html">Proveedores</a></li>
+                    <li><a href="#reportecompras">Reportes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+
+        <!-- DataTales Example -->
+        <div class="card shadow ">
+            <div class="card-header mt-4 ">
+                <h1><a href="proventesagregar.html"
+                        style="width:auto; height:auto; margin-top: 10%; position: relative; font-size: 22px;"
+                        class="btn btn-info"><i class='	fas fa-plus' style='font-size:20px'></i>&nbsp; AGREGAR
+                        PROVEEDOR</a>
+                    <a href="proventesagregar.html"
+                        style="width:auto; height:auto; margin-top: 10%; position: relative; font-size: 22px;"
+                        class="btn btn-info"><i class='	fas fa-plus' style='font-size:20px'></i>&nbsp; GENERAR
+                        REPORTE</a>
+                    <div class="alert alert-info"
+                        style="text-align: center; position:absolute; right: 6px;line-height: 30px; ;font-size: 12px; width: 400px; height: 25px; padding:0px 0px 0px 0px;">
+                        <strong>Sugerencia</strong> Filtre la búsqueda para generar un reporte.
+                    </div>
+                </h1>
+
+            </div>
+            <div class="card-body">
+                <div class="table-responsive ">
+                    <table class="table table-bordered table-hover" style="border-color: #102e4d;  " id="dataTable"
+                        width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <td>
+                                    <a id="eliminarvarios" href="#borrarseleccionados" data-toggle="modal"
+                                        data-target="#myModal2">
+                                        <i class='fas fa-trash' style='font-size:24px; color: #102e4d;'></i>
+                                    </a>
+                                </td>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Dirección</th>
+                                <th>Email</th>
+                                <th>Teléfono</th>
+                                <th>Fecha de Alta</th>
+                                <th>Materias Primas que ofrece</th>
+                                <th> </th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Dirección</th>
+                                <th>Email</th>
+                                <th>Teléfono</th>
+                                <th>Fecha de Alta</th>
+                                <th>Materias Primas que ofrece</th>
+                                <th> </th>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox mb-3 ">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck0">
+                                        <label class="custom-control-label" for="customCheck0"></label>
+                                    </div>
+                                </td>
+                                <td> 3981</td>
+                                <td>Supermercado Los Alpes</td>
+                                <td>Las Heras 123</td>
+                                <td>prov1@gmail.com</td>
+                                <td>3624986745</td>
+                                <td>11/04/20</td>
+                                <td>Cartón, Plástico</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button"
+                                            data-toggle="dropdown" data-hover="dropdown">
+                                            Acciones <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="proventesmodificar.html"><i
+                                                    class='	far fa-edit'></i>Editar</a></li>
+                                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal"
+                                                href="#"><i class='fas fa-eraser'></i>Eliminar</a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1"></label>
+                                    </div>
+                                </td>
+                                <td> 3982</td>
+                                <td>OtraEmp</td>
+                                <td>Las Heras 123</td>
+                                <td>prov2@gmail.com</td>
+                                <td>3621186745</td>
+                                <td>11/03/20</td>
+                                <td>Cartón, Plástico, Vidrio</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button"
+                                            data-toggle="dropdown" data-hover="dropdown">
+                                            Acciones <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="proventesmodificar.html"><i
+                                                    class='	far fa-edit'></i>Editar</a></li>
+                                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal"
+                                                href="#"><i class='fas fa-eraser'></i>Eliminar</a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                        <label class="custom-control-label" for="customCheck2"></label>
+                                    </div>
+                                </td>
+                                <td> 3983</td>
+                                <td>Juan Rodriguez</td>
+                                <td>Juan B Justo 1234</td>
+                                <td>prov3@gmail.com</td>
+                                <td>3624986745</td>
+                                <td>01/04/18</td>
+                                <td>Cartón, Plástico</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button"
+                                            data-toggle="dropdown" data-hover="dropdown">
+                                            Acciones <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="proventesmodificar.html"><i
+                                                    class='	far fa-edit'></i>Editar</a></li>
+                                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal"
+                                                href="#"><i class='fas fa-eraser'></i>Eliminar</a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                        <label class="custom-control-label" for="customCheck3"></label>
+                                    </div>
+                                </td>
+                                <td> 3984</td>
+                                <td>NuevaEmp</td>
+                                <td>las heras 1234</td>
+                                <td>prov4@gmail.com</td>
+                                <td>3624977745</td>
+                                <td>10/02/20</td>
+                                <td>Papel</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button"
+                                            data-toggle="dropdown" data-hover="dropdown">
+                                            Acciones <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="proventesmodificar.html"><i
+                                                    class='	far fa-edit'></i>Editar</a></li>
+                                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal"
+                                                href="#"><i class='fas fa-eraser'></i>Eliminar</a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                        <label class="custom-control-label" for="customCheck4"></label>
+                                    </div>
+                                </td>
+                                <td> 3985</td>
+                                <td>Maria Romero</td>
+                                <td>Juan B Justo 1234</td>
+                                <td>prov5@gmail.com</td>
+                                <td>3699986745</td>
+                                <td>29/03/20</td>
+                                <td>Plástico, Papel</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button"
+                                            data-toggle="dropdown" data-hover="dropdown">
+                                            Acciones <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="proventesmodificar.html"><i
+                                                    class='	far fa-edit'></i>Editar</a></li>
+                                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal"
+                                                href="#"><i class='fas fa-eraser'></i>Eliminar</a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                        <label class="custom-control-label" for="customCheck5"></label>
+                                    </div>
+                                </td>
+                                <td> 3986</td>
+                                <td>Maria Alvarez</td>
+                                <td>Juan B Justo 1234</td>
+                                <td>prov6@gmail.com</td>
+                                <td>3633986745</td>
+                                <td>24/01/20</td>
+                                <td>Papel, Cartón</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button"
+                                            data-toggle="dropdown" data-hover="dropdown">
+                                            Acciones <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="proventesmodificar.html"><i
+                                                    class='	far fa-edit'></i>Editar</a></li>
+                                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal"
+                                                href="#"><i class='fas fa-eraser'></i>Eliminar</a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                        <label class="custom-control-label" for="customCheck6"></label>
+                                    </div>
+                                </td>
+                                <td> 3987</td>
+                                <td>Pablo Romero</td>
+                                <td>Juan B Justo 12323</td>
+                                <td>prov7@gmail.com</td>
+                                <td>3698986745</td>
+                                <td>29/03/20</td>
+                                <td>Cartón, Plástico</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button"
+                                            data-toggle="dropdown" data-hover="dropdown">
+                                            Acciones <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="proventesmodificar.html"><i
+                                                    class='	far fa-edit'></i>Editar</a></li>
+                                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal"
+                                                href="#"><i class='fas fa-eraser'></i>Eliminar</a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck7">
+                                        <label class="custom-control-label" for="customCheck7"></label>
+                                    </div>
+                                </td>
+                                <td> 3988</td>
+                                <td>Juan Romero</td>
+                                <td>Juan B Justo 1902</td>
+                                <td>prov8@gmail.com</td>
+                                <td>3692496745</td>
+                                <td>29/03/17</td>
+                                <td>Plástico, Vidrio</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button"
+                                            data-toggle="dropdown" data-hover="dropdown">
+                                            Acciones <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="proventesmodificar.html"><i
+                                                    class='	far fa-edit'></i>Editar</a></li>
+                                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal"
+                                                href="#"><i class='fas fa-eraser'></i>Eliminar</a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck8">
+                                        <label class="custom-control-label" for="customCheck8"></label>
+                                    </div>
+                                </td>
+                                <td> 3989</td>
+                                <td>Pedro Sanchez</td>
+                                <td>Juan B Justo 1904</td>
+                                <td>prov9@gmail.com</td>
+                                <td>3676986745</td>
+                                <td>29/10/19</td>
+                                <td>Plástico</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button"
+                                            data-toggle="dropdown" data-hover="dropdown">
+                                            Acciones <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="proventesmodificar.html"><i
+                                                    class='	far fa-edit'></i>Editar</a></li>
+                                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal"
+                                                href="#"><i class='fas fa-eraser'></i>Eliminar</a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck9">
+                                        <label class="custom-control-label" for="customCheck9"></label>
+                                    </div>
+                                </td>
+                                <td> 39810</td>
+                                <td>Paula Sanchez</td>
+                                <td>Juan B Justo 19024</td>
+                                <td>prov10@gmail.com</td>
+                                <td>3676486445</td>
+                                <td>20/10/19</td>
+                                <td>Cartón, Plástico</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button"
+                                            data-toggle="dropdown" data-hover="dropdown">
+                                            Acciones <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="proventesmodificar.html"><i
+                                                    class='	far fa-edit'></i>Editar</a></li>
+                                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal"
+                                                href="#"><i class='fas fa-eraser'></i>Eliminar</a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck10">
+                                        <label class="custom-control-label" for="customCheck10"></label>
+                                    </div>
+                                </td>
+                                <td> 39811</td>
+                                <td>Paula Wagner</td>
+                                <td>Juan B Justo 124</td>
+                                <td>prov11@gmail.com</td>
+                                <td>3676486495</td>
+                                <td>20/12/19</td>
+                                <td>Cartón, Plástico</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button"
+                                            data-toggle="dropdown" data-hover="dropdown">
+                                            Acciones <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="proventesmodificar.html"><i
+                                                    class='	far fa-edit'></i>Editar</a></li>
+                                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal"
+                                                href="#"><i class='fas fa-eraser'></i>Eliminar</a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck11">
+                                        <label class="custom-control-label" for="customCheck11"></label>
+                                    </div>
+                                </td>
+                                <td> 39812</td>
+                                <td>Marcela Morales</td>
+                                <td>Juan B Justo 1242</td>
+                                <td>prov12@gmail.com</td>
+                                <td>3673486445</td>
+                                <td>11/11/19</td>
+                                <td>Plástico, Papel</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button"
+                                            data-toggle="dropdown" data-hover="dropdown">
+                                            Acciones <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="proventesmodificar.html"><i
+                                                    class='	far fa-edit'></i>Editar</a></li>
+                                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal"
+                                                href="#"><i class='fas fa-eraser'></i>Eliminar</a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck12">
+                                        <label class="custom-control-label" for="customCheck12"></label>
+                                    </div>
+                                </td>
+                                <td> 39813</td>
+                                <td>NovaEmpresa</td>
+                                <td>las heras 1234</td>
+                                <td>prov13@gmail.com</td>
+                                <td>3676486145</td>
+                                <td>20/10/19</td>
+                                <td>Cartón</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button"
+                                            data-toggle="dropdown" data-hover="dropdown">
+                                            Acciones <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="proventesmodificar.html"><i
+                                                    class='	far fa-edit'></i>Editar</a></li>
+                                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal"
+                                                href="#"><i class='fas fa-eraser'></i>Eliminar</a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck13">
+                                        <label class="custom-control-label" for="customCheck13"></label>
+                                    </div>
+                                </td>
+                                <td> 39814</td>
+                                <td>San Jose</td>
+                                <td>las heras 1234</td>
+                                <td>prov14@gmail.com</td>
+                                <td>3676556145</td>
+                                <td>20/07/19</td>
+                                <td>Cartón, Plástico</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button"
+                                            data-toggle="dropdown" data-hover="dropdown">
+                                            Acciones <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="proventesmodificar.html"><i
+                                                    class='	far fa-edit'></i>Editar</a></li>
+                                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal"
+                                                href="#"><i class='fas fa-eraser'></i>Eliminar</a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck14">
+                                        <label class="custom-control-label" for="customCheck14"></label>
+                                    </div>
+                                </td>
+                                <td> 39815</td>
+                                <td>San Martin</td>
+                                <td>las heras 1234</td>
+                                <td>prov15@gmail.com</td>
+                                <td>3676576145</td>
+                                <td>20/07/18</td>
+                                <td>Cartón, Plástico</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button"
+                                            data-toggle="dropdown" data-hover="dropdown">
+                                            Acciones <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="proventesmodificar.html"><i
+                                                    class='	far fa-edit'></i>Editar</a></li>
+                                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal"
+                                                href="#"><i class='fas fa-eraser'></i>Eliminar</a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck15">
+                                        <label class="custom-control-label" for="customCheck15"></label>
+                                    </div>
+                                </td>
+                                <td> 39816</td>
+                                <td>San Juan</td>
+                                <td>las heras 1234</td>
+                                <td>prov16@gmail.com</td>
+                                <td>36729356145</td>
+                                <td>20/05/19</td>
+                                <td>Plástico</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button"
+                                            data-toggle="dropdown" data-hover="dropdown">
+                                            Acciones <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="proventesmodificar.html"><i
+                                                    class='	far fa-edit'></i>Editar</a></li>
+                                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal"
+                                                href="#"><i class='fas fa-eraser'></i>Eliminar</a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck16">
+                                        <label class="custom-control-label" for="customCheck16"></label>
+                                    </div>
+                                </td>
+                                <td> 39817</td>
+                                <td>Marcos Saez</td>
+                                <td>Juan B Justo 1242123</td>
+                                <td>prov17@gmail.com</td>
+                                <td>3676346145</td>
+                                <td>30/04/19</td>
+                                <td>Cartón, Plástico</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button"
+                                            data-toggle="dropdown" data-hover="dropdown">
+                                            Acciones <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="proventesmodificar.html"><i
+                                                    class='	far fa-edit'></i>Editar</a></li>
+                                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal"
+                                                href="#"><i class='fas fa-eraser'></i>Eliminar</a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck17">
+                                        <label class="custom-control-label" for="customCheck17"></label>
+                                    </div>
+                                </td>
+                                <td> 39818</td>
+                                <td>Marcos Silva</td>
+                                <td>Juan B Justo 12421213</td>
+                                <td>prov18@gmail.com</td>
+                                <td>3674346145</td>
+                                <td>29/04/19</td>
+                                <td>Cartón, Plástico</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button"
+                                            data-toggle="dropdown" data-hover="dropdown">
+                                            Acciones <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="proventesmodificar.html"><i
+                                                    class='	far fa-edit'></i>Editar</a></li>
+                                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal"
+                                                href="#"><i class='fas fa-eraser'></i>Eliminar</a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck18">
+                                        <label class="custom-control-label" for="customCheck18"></label>
+                                    </div>
+                                </td>
+                                <td> 39819</td>
+                                <td>Gloria Rios</td>
+                                <td>Juan B Justo 1242121123</td>
+                                <td>prov19@gmail.com</td>
+                                <td>36764536145</td>
+                                <td>30/04/18</td>
+                                <td>Cartón, Plástico</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button"
+                                            data-toggle="dropdown" data-hover="dropdown">
+                                            Acciones <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="proventesmodificar.html"><i
+                                                    class='	far fa-edit'></i>Editar</a></li>
+                                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal"
+                                                href="#"><i class='fas fa-eraser'></i>Eliminar</a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck19">
+                                        <label class="custom-control-label" for="customCheck19"></label>
+                                    </div>
+                                </td>
+                                <td> 39820</td>
+                                <td>Marta Saez</td>
+                                <td>Juan B Justo 12421211212</td>
+                                <td>prov20@gmail.com</td>
+                                <td>3676666145</td>
+                                <td>30/04/20</td>
+                                <td>Cartón, Plástico</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button"
+                                            data-toggle="dropdown" data-hover="dropdown">
+                                            Acciones <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="proventesmodificar.html"><i
+                                                    class='	far fa-edit'></i>Editar</a></li>
+                                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal"
+                                                href="#"><i class='fas fa-eraser'></i>Eliminar</a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <td>
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck20">
+                                    <label class="custom-control-label" for="customCheck20"></label>
+                                </div>
+                            </td>
+                            <td> 39821</td>
+                            <td>Paulo Sanchez</td>
+                            <td>Juan B Justo 112</td>
+                            <td>prov21@gmail.com</td>
+                            <td>36764834445</td>
+                            <td>20/10/17</td>
+                            <td>Cartón, Plástico</td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown"
+                                        data-hover="dropdown">
+                                        Acciones <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li> <a href="proventesmodificar.html"><i class='	far fa-edit'></i>Editar</a>
+                                        </li>
+                                        <li data-toggle="modal" data-target="#myModal"><a href="#"><i
+                                                    class='fas fa-eraser'></i>Eliminar</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck21">
+                                        <label class="custom-control-label" for="customCheck21"></label>
+                                    </div>
+                                </td>
+                                <td> 39822</td>
+                                <td>Antonio Wagner</td>
+                                <td>Juan B Justo 11223</td>
+                                <td>prov22@gmail.com</td>
+                                <td>3675686495</td>
+                                <td>20/12/17</td>
+                                <td>Cartón, Plástico</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button"
+                                            data-toggle="dropdown" data-hover="dropdown">
+                                            Acciones <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="proventesmodificar.html"><i
+                                                    class='	far fa-edit'></i>Editar</a></li>
+                                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal"
+                                                href="#"><i class='fas fa-eraser'></i>Eliminar</a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck22">
+                                        <label class="custom-control-label" for="customCheck22"></label>
+                                    </div>
+                                </td>
+                                <td> 39823</td>
+                                <td>Marcos Morales</td>
+                                <td>Juan B Justo 112231</td>
+                                <td>prov23@gmail.com</td>
+                                <td>3673486445</td>
+                                <td>11/11/18</td>
+                                <td>Cartón, Plástico</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button"
+                                            data-toggle="dropdown" data-hover="dropdown">
+                                            Acciones <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="proventesmodificar.html"><i
+                                                    class='	far fa-edit'></i>Editar</a></li>
+                                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal"
+                                                href="#"><i class='fas fa-eraser'></i>Eliminar</a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck23">
+                                        <label class="custom-control-label" for="customCheck23"></label>
+                                    </div>
+                                </td>
+                                <td> 39824</td>
+                                <td>NovaLibros</td>
+                                <td>Av 9 de Julio 123</td>
+                                <td>prov24@gmail.com</td>
+                                <td>3676286145</td>
+                                <td>20/12/19</td>
+                                <td>Cartón, Plástico</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button"
+                                            data-toggle="dropdown" data-hover="dropdown">
+                                            Acciones <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="proventesmodificar.html"><i
+                                                    class='	far fa-edit'></i>Editar</a></li>
+                                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal"
+                                                href="#"><i class='fas fa-eraser'></i>Eliminar</a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck24">
+                                        <label class="custom-control-label" for="customCheck24"></label>
+                                    </div>
+                                </td>
+                                <td> 39825</td>
+                                <td>San Antonio</td>
+                                <td>Av 9 de Julio 123</td>
+                                <td>prov25@gmail.com</td>
+                                <td>367356145</td>
+                                <td>20/07/18</td>
+                                <td>Cartón, Plástico</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button"
+                                            data-toggle="dropdown" data-hover="dropdown">
+                                            Acciones <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="proventesmodificar.html"><i
+                                                    class='	far fa-edit'></i>Editar</a></li>
+                                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal"
+                                                href="#"><i class='fas fa-eraser'></i>Eliminar</a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck25">
+                                        <label class="custom-control-label" for="customCheck25"></label>
+                                    </div>
+                                </td>
+                                <td> 39826</td>
+                                <td>PizzasCaseras</td>
+                                <td>Las Heras 123</td>
+                                <td>prov26@gmail.com</td>
+                                <td>3676576145</td>
+                                <td>20/07/16</td>
+                                <td>Cartón, Plástico</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button"
+                                            data-toggle="dropdown" data-hover="dropdown">
+                                            Acciones <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="proventesmodificar.html"><i
+                                                    class='	far fa-edit'></i>Editar</a></li>
+                                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal"
+                                                href="#"><i class='fas fa-eraser'></i>Eliminar</a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck26">
+                                        <label class="custom-control-label" for="customCheck26"></label>
+                                    </div>
+                                </td>
+                                <td> 39827</td>
+                                <td>PizzasRicas</td>
+                                <td>Las Heras 123</td>
+                                <td>prov27@gmail.com</td>
+                                <td>36729356145</td>
+                                <td>25/03/19</td>
+                                <td>Plástico</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button"
+                                            data-toggle="dropdown" data-hover="dropdown">
+                                            Acciones <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="proventesmodificar.html"><i
+                                                    class='	far fa-edit'></i>Editar</a></li>
+                                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal"
+                                                href="#"><i class='fas fa-eraser'></i>Eliminar</a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck27">
+                                        <label class="custom-control-label" for="customCheck27"></label>
+                                    </div>
+                                </td>
+                                <td> 39828</td>
+                                <td>Marcos Juan Pablo Saucedo</td>
+                                <td>Juan B Justo 1122313</td>
+                                <td>prov39foiejirej29@gmail.com</td>
+                                <td>3676346145</td>
+                                <td>30/01/19</td>
+                                <td>Plástico</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button"
+                                            data-toggle="dropdown" data-hover="dropdown">
+                                            Acciones <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="proventesmodificar.html"><i
+                                                    class='	far fa-edit'></i>Editar</a></li>
+                                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal"
+                                                href="#"><i class='fas fa-eraser'></i>Eliminar</a></li>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container-fluid -->
+
+    </div>
+    <!-- End of Main Content -->
+
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Confirmar Eliminación</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    ¿Está seguro que desea borrar el proveedor seleccionado?
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" style="width: 40px; height: 40px;" class="btn btn-danger"
+                        data-dismiss="modal">Si</button>
+                    <button type="button" style="width: 40px; height: 40px;" class="btn btn-secondary"
+                        data-dismiss="modal">No</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="myModal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Confirmar Eliminación</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    ¿Está seguro que desea borrar los proveedores seleccionados?
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" style="width: 40px; height: 40px;" class="btn btn-danger"
+                        data-dismiss="modal">Si</button>
+                    <button type="button" style="width: 40px; height: 40px;" class="btn btn-secondary"
+                        data-dismiss="modal">No</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="src/js/main2.js"></script>
+    <script src="src/js/check.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <!-- Page level plugins -->
+    <script src="src/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="src/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="src/js/datatables-demo3.js"></script>
+
+</body>
+
+</html>
