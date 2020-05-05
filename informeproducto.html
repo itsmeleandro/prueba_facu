@@ -101,45 +101,36 @@
     <table>
       <thead>
         <tr>
-          <th>NOMBRE</th><th>CÓDIGO</th><th>DESCRIPCIÓN</th><th>ESISTENCIAS MINIMAS</th><th>EXISTENCIAS MÁXIMAS</th>
+          <th>NOMBRE</th><th>CÓDIGO</th><th>DESCRIPCIÓN</th><th>CANTIDAD MP P/UN</th><th>CANTIDAD MP P/KG</th><th>TIPO MP</th><th>PRECIO P/UN</th><th>PRECIO P/KG</th>
         </tr>
       </thead>
         <tr>
-          <td>MATPRIMUNO</td><td>0303456</td><td>Esto es una descripción</td><td>Un poquito</td><td>Re mucho</td>
+          <td>PRODUCTOUNO</td><td>0303456</td><td>Esto es una descripción</td><td>un toque</td><td>un toque mas</td><td><ul><li>tipoMPuno</li><li>tipoMPdos</li><li>tipoMPtres</li></ul></td><td>$5</td><td>$500</td>
         </tr>
         <!--end datos materia prima-->  
-        <!--tabla movimientos-->
-        <table class="tabla-movimientos">
-          <thead>
-            <tr>
-              <th>MOVIMIENTO</th><th>ENTRADAS</th><th>SALIDAS</th><th>EXISTENCIAS</th>
-            </tr>
-          </thead>
-        </table>
-        <!--tabla movimientos-->
-        <!--tabla datos-->
+                <!--tabla datos-->
         <table class="tabla-datos">
+            <h3 style="margin-top: 10px;">Historial de movimientos</h3>
+
       <thead>
         <tr>
-          <th>ID.emp.</th><th>Fecha</th><th>Descrip</th><th>Cant.KG</th><th>Cant.Unit.</th><th>Total</th><th>Cant.KG</th><th>Cant.Unit.</th><th>Total</th><th>Cant.KG</th><th>Cant.Unit.</th><th>Total</th>
+          <th>FECHA</th><th>TIPO MOVIMIENTO</th><th>DETALLE MOVIMIENTO</th><th>NOMBRE EMPLEADO</th><th>CODIGO EMPLEADO</th>
         </tr>
       </thead>
         <tr>
-          <td>0303456</td><td>20/04/20</td><td>esto es una descip</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td>
-        </tr><tr>
-          <td>0303456</td><td>20/04/20</td><td>esto es una descip</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td>
-        </tr><tr>
-          <td>0303456</td><td>20/04/20</td><td>esto es una descip</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td>
-        </tr><tr>
-          <td>0303456</td><td>20/04/20</td><td>esto es una descip</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td>
-        </tr><tr>
-          <td>0303456</td><td>20/04/20</td><td>esto es una descip</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td>
-        </tr><tr>
-          <td>0303456</td><td>20/04/20</td><td>esto es una descip</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td>
-        </tr><tr>
-          <td>0303456</td><td>20/04/20</td><td>esto es una descip</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td>
-        </tr><tr>
-          <td>0303456</td><td>20/04/20</td><td>esto es una descip</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td><td>4561213</td><td>10000</td><td>222222</td>
+          <td>04/02/20</td><td>Alta</td><td>se dio de alta producto</td><td>Juan Perez</td><td>0303456</td>
+        </tr>
+        <tr>
+            <td>04/02/20</td><td>Modificacion</td><td>Se modifico x atributo por x motivo</td><td>Juan Perez</td><td>0303456</td>
+        </tr>
+        <tr>
+            <td>04/02/20</td><td>Modificacion</td><td>Se modifico x atributo por x motivo</td><td>Juan Perez</td><td>0303456</td>
+        </tr>
+        <tr>
+            <td>04/02/20</td><td>Modificacion</td><td>Se modifico x atributo por x motivo</td><td>Juan Perez</td><td>0303456</td>
+        </tr>
+        <tr>
+            <td>04/02/20</td><td>Baja</td><td>Se dio de baja por x motivo</td><td>Juan Perez</td><td>0303456</td>
         </tr>
     </table>
     <!--end tabla datos-->
