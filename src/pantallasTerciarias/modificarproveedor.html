@@ -60,11 +60,11 @@
     <div class="ml-4 d-lg-block ">
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li><a href="menucompras.html">Inicio</a></li>
-          <li><a href="mpbuscar.html">Stock MP</a></li>
-          <li><a href="productosbuscar.html">Productos</a></li>
+          <li><a href="../menusPrincipales/menucompras.html">Inicio</a></li>
           <li class="active"><a href="proveedoresbuscar.html">Proveedores</a></li>
-          <li><a href="#reportecompras">Reportes</a></li>
+          <li><a href="../pantallasSecundarias/materiaprimacompras.html">Stock MP</a></li>
+          <li><a href="../pantallasSecundarias/vercompras.html">Productos</a></li>
+          <li><a href="../pantallasTerciarias/BuscarMateriasPrimas.html">Reportes</a></li>
         </ul>
       </nav>
     </div>
@@ -77,8 +77,7 @@
         <div class="card  rounded-0 mt-5 " style="border-color: #102e4d;  ">
           <div class="card-header p-0" style="background-color:#102e4d; ">
             <div class=" text-center py-2">
-              <h3 style="color: #ffffff;"><i class="	far fa-plus-square"></i> Actualizar Proveedor</h3>
-              <p style="color: #ffffff;" class="m-0">Editar la información de proveedor</p>
+              <h3 style="color: #ffffff;"><i class="	far fa-edit"></i> Actualizar Proveedor</h3>
             </div>
           </div>
           <div class="card-body">
@@ -86,6 +85,7 @@
             <div class="form-group" id="formulario">
               <div class="form-row mt-0">
                 <div class="form-group col-md-4 mr-auto">
+                  <label>ID de Proveedor</label>
                   <div class="input-group mb-2">
                     <div class="input-group-prepend">
                       <div class="input-group-text"><i class="fa fa-user" style="color:#102e4d; "></i></div>
@@ -94,6 +94,7 @@
                   </div>
                 </div>
                 <div class="form-group col-md-8">
+                  <label>Nombre de Proveedor</label>
                   <div class="input-group mb-2">
                     <div class="input-group-prepend">
                       <div class="input-group-text"><i class="fa fa-user" style="color:#102e4d; "></i></div>
@@ -105,6 +106,7 @@
 
               <div class="form-row ">
                 <div class="form-group col-md-4 mr-auto">
+                  <label>Teléfono</label>
                   <div class="input-group mb-2">
                     <div class="input-group-prepend">
                       <div class="input-group-text"><i class="fas fa-phone" style="color:#102e4d; "></i></div>
@@ -114,6 +116,7 @@
                   </div>
                 </div>
                 <div class="form-group col-md-8">
+                  <label>Dirección</label>
                   <div class="input-group mb-2">
                     <div class="input-group-prepend">
                       <div class="input-group-text"><i class="fas fa-home" style="color:#102e4d; "></i></div>
@@ -125,6 +128,7 @@
 
               <div class="form-row">
                 <div class="form-group col-md-4 mr-auto">
+                  <label>Fecha de Alta</label>
                   <div class="input-group mb-2">
                     <div class="input-group-prepend" style="width: 150%;">
                       <input type="text" id="datepicker" class="form-control" name="fecha" value="11/04/20" required>
@@ -137,6 +141,7 @@
                   </div>
                 </div>
                 <div class="form-group col-md-8">
+                  <label>Email</label>
                   <div class="input-group mb-2">
                     <div class="input-group-prepend">
                       <div class="input-group-text"><i class="fa fa-envelope " style="color:#102e4d; "></i></div>

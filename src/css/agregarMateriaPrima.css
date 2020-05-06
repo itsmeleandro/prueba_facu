@@ -4,6 +4,9 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+#dataTable td{
+  padding: .25rem;
+}
 
 @charset "UTF-8";
 /*--------------------------------------------------------------

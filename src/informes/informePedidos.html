@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>BUSCAR PRODUCTOS</title>
+  <title>INFOME PEDIDOS</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -20,8 +20,6 @@
     <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 
@@ -37,7 +35,7 @@
 
     <!-- Template Main CSS File -->
     <link href="../css/style.css" rel="stylesheet">
-    
+
     <!--estlos tablas-->
     <link rel="stylesheet" href="../css/estilostablas.css">
 </head>
@@ -52,18 +50,74 @@
     </div>
   </header>
 
- <div>
-   <div>
-     <a href="../informes/informeStockdeProductos.html" style="width:auto; height:auto; font-size: 22px; margin-left: 0%; margin-top:150px;margin-bottom: 20px; background: #102e4d; border-color: #102e4d;" class="btn btn-info">CONSULTAR STOCK
-   </a>
-   </div>
-   <h4>Si desea el reporte de un producto en particualar, ingrese el mismo aquí:</h4>
-   <input type="text" id="usuario" class="form-control" placeholder="Producto" maxlength="40"/>
-   <div>
-     <a href="../informes/informeproducto.html" style="width:auto; height:auto; font-size: 22px; margin-left: 0%; margin-top:2%; background: #102e4d; border-color: #102e4d;" class="btn btn-info">BUSCAR
-     </a>
-   </div>
- </div> 
+  <div class="main-container">
+    <h3>Listado de Pedidos</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Nùmero Pedido</th>
+          <th>ID cliente</th>
+          <th>Productos</th>
+          <th>Estado Pedido</th>
+          <th>Monto</th>
+          <th>Monto Abonado</th>
+          <th>Fecha de Pedido</th>
+        </tr>
+      </thead> 
+      <tr>
+        <td>1007</td>
+        <td>1005</td>
+        <td>Estantes</td>
+        <td>Terminado</td>
+        <td>$400</td>
+        <td>$130</td>
+        <td>11/04/20</td>
+      </tr>
+      <tr>
+        <td>1001</td>
+        <td>1005</td>
+        <td>silla, mesas</td>
+        <td>En Proceso</td>
+        <td>$500</td>
+        <td>$230</td>
+        <td>11/04/20</td>
+      </tr>
+     
+        <td>1020</td>
+        <td>1003</td>
+        <td>Estantes</td>
+        <td>En Proceso</td>
+        <td>$500</td>
+        <td>$230</td>
+        <td>$11/04/20</td>
+      </tr>
+      <tr>
+        <td>1002</td>
+        <td>1005</td>
+        <td>Silla</td>
+        <td>Ingresado</td>
+        <td>$500</td>
+        <td>$230</td>
+        <td>09/03/20</td>
+      </tr>
+      <tr>
+        <td>1041</td>
+        <td>1006</td>
+        <td>sillas, mesas</td>
+        <td>En Proceso</td>
+        <td>$500</td>
+        <td>$230</td>
+        <td>02/02/20</td>
+      </tr>
+    </table>
+  </div>
+  <a href="../pantallasTerciarias/BuscarPedidoxd.html" target="_blank"
+    style="width:auto; height:auto; font-size: 22px; margin-left: 0%; margin-top:0%; background: #102e4d; border-color: #102e4d; margin-bottom: 20px;"
+    class="btn btn-info">BUSCAR PEDIDO</a>
+
+  <a href="../../pdfs/LayoutInformesPedidos.pdf" target="_blank"
+    style="width:auto; height:auto; font-size: 22px; margin-left: 0%; margin-top:0%; background: #102e4d; border-color: #102e4d; margin-bottom: 20px;"
+    class="btn btn-info">IMPRIMIR REPORTE</a>
 
   <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -75,6 +129,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+  <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <script src="../js/calendario.js"></script>
 
