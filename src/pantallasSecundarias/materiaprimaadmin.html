@@ -49,10 +49,10 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li><a href="../menusPrincipales/menuadmin.html">Home</a></li>
-          <li class="active"><a href="listaPersonal.html">Personal</a></li>
-          <li><a href="materiaPrimaadmin.html">Materia prima</a></li>
+          <li><a href="listaPersonal.html">Personal</a></li>
+          <li class="active"><a href="materiaPrimaadmin.html">Materia prima</a></li>
           <li><a href="productosadmin.html">Productos</a></li>
-          <li><a href="reportes.html">Reporte</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#modalReporte">Reporte</a></li>
         </ul>
       </nav>
     </div>
@@ -299,6 +299,42 @@
 
   </div>
   <!-- End of Main Content -->
+
+  <!-- Modal de reporte  -->
+  <div class="modal fade" id="modalReporte" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Seleccione el reporte que desea visualizar.</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <a id="buttonOfModal" href="../informes/informeclientes.html" class="col-8 mx-auto">CLIENTES</a>
+                </div>
+                <div class="row">
+                  <a id="buttonOfModal" href="../informes/informeproveedoresgeneral.html" class="col-8 mx-auto">PROVEEDORES</a>
+                </div>
+                <div class="row">
+                  <a id="buttonOfModal" href="../informes/informeVentasGeneral.html" class="col-8 mx-auto">VENTAS</a>
+                </div>
+                <div class="row">
+                  <a id="buttonOfModal" href="../pantallasTerciarias/BuscarInformeProductoParticular.html"
+                    class="col-8 mx-auto">PRODUCTOS</a>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+  <!-- fin modal reporte -->
 
   <div class="modal" id="myModal">
     <div class="modal-dialog">
