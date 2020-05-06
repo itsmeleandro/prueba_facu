@@ -110,7 +110,7 @@
               </tr>
             </tfoot>
             <tbody>
-              <tr>
+              <tr onclick="captureClick(this)">
                 <td>
                   <div class="custom-control custom-checkbox mb-3 ">
                     <input type="checkbox" class="custom-control-input" id="customCheck0">
@@ -124,7 +124,7 @@
                 <td>$500</td>
                 <td>$230</td>
                 <td>11/04/20</td>
-                <td>
+                <td id="acciones">
                   <div class="dropdown">
                     <button id="acciones" class="btn btn-info dropdown-toggle " type="button" data-toggle="dropdown"
                       data-hover="dropdown" >
@@ -139,7 +139,7 @@
                   </div>
                 </td>
               </tr>
-              <tr>
+              <tr onclick="captureClick(this)">
                 <td>
                   <div class="custom-control custom-checkbox mb-3">
                     <input type="checkbox" class="custom-control-input" id="customCheck1">
@@ -168,7 +168,7 @@
                   </div>
                 </td>
               </tr>
-              <tr>
+              <tr onclick="captureClick(this)">
                 <td>
                   <div class="custom-control custom-checkbox mb-3">
                     <input type="checkbox"   class="custom-control-input" id="customCheck2">
@@ -178,11 +178,11 @@
                 <td>10004</td>
                 <td>10010</td>
                 <td>Cajas</td> 
-                <td>En Proceso</td>
+                <td id="estado" value="En Proceso">En Proceso</td>
                 <td>$560</td>
                 <td>$230</td>
                 <td>11/04/20</td>
-                <td>
+                <td id="acciones">
                   <div class="dropdown">
                     <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown"
                       data-hover="dropdown">
@@ -284,7 +284,7 @@
                   </div>
                 </td>
               </tr>
-              <tr>
+              <tr onclick="captureClick(this)">
                 <td>
                   <div class="custom-control custom-checkbox mb-3">
                     <input type="checkbox"   class="custom-control-input" id="customCheck6">
@@ -294,11 +294,11 @@
                 <td>10020</td>
                 <td>10003</td>
                 <td>estantes</td> 
-                <td>En Proceso</td>
+                <td id="estado" value="En Proceso">En Proceso</td>
                 <td>$500</td>
                 <td>$230</td>
                 <td>11/04/20</td>
-                <td>
+                <td id="acciones">
                   <div class="dropdown">
                     <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown"
                       data-hover="dropdown">
@@ -313,7 +313,7 @@
                   </div>
                 </td>
               </tr>
-              <tr>
+              <tr onclick="captureClick(this)">
                 <td>
                   <div class="custom-control custom-checkbox mb-3">
                     <input type="checkbox"   class=" op custom-control-input" id="customCheck7" >
@@ -323,11 +323,11 @@
                 <td>10034</td>
                 <td>10006</td>
                 <td>Sillas, mesas</td> 
-                <td>En Proceso</td>
+                <td id="estado" value="En Proceso">En Proceso</td>
                 <td>$500</td>
                 <td>$230</td>
                 <td>03/03/20</td>
-                <td>
+                <td id="acciones">
                   <div class="dropdown">
                     <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown"
                       data-hover="dropdown">

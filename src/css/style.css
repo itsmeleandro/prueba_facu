@@ -126,6 +126,11 @@ h1 {
   line-height: 50px;
 }
 
+.isDisabled{
+  pointer-events: none;
+  color: gray;
+}
+
 h2 {
   font-size: 38px;
   line-height: 40px;
