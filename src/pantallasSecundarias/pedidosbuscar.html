@@ -48,11 +48,11 @@
     <div class="ml-4 d-lg-block ">
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li><a href="../menusPrincipales/menuventas.html">Home</a></li>
-          <li ><a href="clientesbuscar.html">Clientes</a></li>
+          <li><a href="../menusPrincipales/menuventas.html">Inicio</a></li>
+          <li><a href="clientesbuscar.html">Clientes</a></li>
           <li class="active"><a href="pedidosbuscar.html">Pedidos</a></li>
           <li><a href="ventas.html">Ventas</a></li>
-          <li><a href="reportes.html">Reporte</a></li>
+          <li><a data-toggle="modal" data-target="#modalReporte" href="" >Reporte</a></li>
         </ul>
       </nav>
     </div>
@@ -67,18 +67,19 @@
         <h1><a href="../pantallasTerciarias/pedidosagregar.html"
             style="width:auto; height:auto; margin-top: 10%; position: relative; font-size: 22px;"
             class="btn btn-info"><i class='	fas fa-plus' style='font-size:20px'></i>&nbsp; AGREGAR PEDIDO</a>
-            <a href="../informes/informePedidos.html"
+          <a href="../informes/informePedidos.html"
             style="width:auto; height:auto; margin-top: 10%; position: relative; font-size: 22px;"
             class="btn btn-info"><i class='	fas fa-plus' style='font-size:20px'></i>&nbsp; GENERAR REPORTE</a>
-            <div class="alert alert-info" style="text-align: center; position:absolute; right: 6px;line-height: 30px; ;font-size: 12px; width: 400px; height: 25px; padding:0px 0px 0px 0px;">
-              <strong>Sugerencia</strong> Filtre la búsqueda para generar un reporte.
-            </div>
-          </h1>
-          
+          <div class="alert alert-info"
+            style="text-align: center; position:absolute; right: 6px;line-height: 30px; ;font-size: 12px; width: 400px; height: 25px; padding:0px 0px 0px 0px;">
+            <strong>Sugerencia</strong> Filtre la búsqueda para generar un reporte.
+          </div>
+        </h1>
+
       </div>
       <div class="card-body">
         <div class="table-responsive ">
-          <table class="table table-bordered table-hover  " id="dataTable" width="100%" cellspacing="0">
+          <table class="table table-bordered table-hover  " id="dataTable7" width="100%" cellspacing="0">
             <thead>
               <tr>
                 <td>
@@ -119,7 +120,7 @@
                 </td>
                 <td>10001</td>
                 <td>10005</td>
-                <td>Sillas, mesas</td> 
+                <td>Sillas, mesas</td>
                 <td id="estado" value="En Proceso">En Proceso</td>
                 <td>$500</td>
                 <td>$230</td>
@@ -127,15 +128,16 @@
                 <td id="acciones">
                   <div class="dropdown">
                     <button id="acciones" class="btn btn-info dropdown-toggle " type="button" data-toggle="dropdown"
-                      data-hover="dropdown" >
+                      data-hover="dropdown">
                       Acciones <span class="caret"></span>
                     </button>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item " href="../pantallasTerciarias/verpedido.html"><i class='	fas fa-info-circle'></i>Ver Más</a></li>
-                      <a id="modificar" class="dropdown-item "  href="#"><i class='	far fa-edit'></i>Editar</a></li>
+                      <a class="dropdown-item " href="../pantallasTerciarias/verpedidoventas.html"><i
+                          class='	fas fa-info-circle'></i>Ver Más</a></li>
+                      <a id="modificar" class="dropdown-item " href="#"><i class='	far fa-edit'></i>Editar</a></li>
                       <a id="deshab" class="dropdown-item" data-toggle="modal" data-target="#myModal" href="#"><i
-                            class='fas fa-eraser'></i>Eliminar</a></li>
-                      </div>
+                          class='fas fa-eraser'></i>Eliminar</a></li>
+                    </div>
                   </div>
                 </td>
               </tr>
@@ -148,7 +150,7 @@
                 </td>
                 <td>10002</td>
                 <td>10005</td>
-                <td>Sillas</td> 
+                <td>Sillas</td>
                 <td>Ingresado</td>
                 <td>$500</td>
                 <td>$230</td>
@@ -160,24 +162,25 @@
                       Acciones <span class="caret"></span>
                     </button>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="../pantallasTerciarias/verpedido.html"><i class='	fas fa-info-circle'></i>Ver Más</a></li>
-                      <a id="modificar" class="dropdown-item "  href="#"><i class='	far fa-edit'></i>Editar</a></li>
+                      <a class="dropdown-item" href="../pantallasTerciarias/verpedidoventas.html"><i
+                          class='	fas fa-info-circle'></i>Ver Más</a></li>
+                      <a id="modificar" class="dropdown-item " href="#"><i class='	far fa-edit'></i>Editar</a></li>
                       <a id="deshab" class="dropdown-item" data-toggle="modal" data-target="#myModal" href="#"><i
-                            class='fas fa-eraser'></i>Eliminar</a></li>
-                      </div>
+                          class='fas fa-eraser'></i>Eliminar</a></li>
+                    </div>
                   </div>
                 </td>
               </tr>
               <tr onclick="captureClick(this)">
                 <td>
                   <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox"   class="custom-control-input" id="customCheck2">
+                    <input type="checkbox" class="custom-control-input" id="customCheck2">
                     <label class="custom-control-label" for="customCheck2"></label>
                   </div>
                 </td>
                 <td>10004</td>
                 <td>10010</td>
-                <td>Cajas</td> 
+                <td>Cajas</td>
                 <td id="estado" value="En Proceso">En Proceso</td>
                 <td>$560</td>
                 <td>$230</td>
@@ -189,24 +192,25 @@
                       Acciones <span class="caret"></span>
                     </button>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="../pantallasTerciarias/verpedido.html"><i class='	fas fa-info-circle'></i>Ver Más</a></li>
-                      <a id="modificar" class="dropdown-item  "  href="#"><i class='	far fa-edit'></i>Editar</a></li>
+                      <a class="dropdown-item" href="../pantallasTerciarias/verpedidoventas.html"><i
+                          class='	fas fa-info-circle'></i>Ver Más</a></li>
+                      <a id="modificar" class="dropdown-item  " href="#"><i class='	far fa-edit'></i>Editar</a></li>
                       <a id="deshab" class="dropdown-item  " data-toggle="modal" data-target="#myModal" href="#"><i
-                            class='fas fa-eraser'></i>Eliminar</a></li>
-                      </div>
+                          class='fas fa-eraser'></i>Eliminar</a></li>
+                    </div>
                   </div>
                 </td>
               </tr>
               <tr>
                 <td>
                   <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox"   class="custom-control-input" id="customCheck3" >
+                    <input type="checkbox" class="custom-control-input" id="customCheck3">
                     <label class="custom-control-label" for="customCheck3"></label>
                   </div>
                 </td>
                 <td>10007</td>
                 <td>10005</td>
-                <td>estantes</td> 
+                <td>estantes</td>
                 <td>Terminado</td>
                 <td>$400</td>
                 <td>$130</td>
@@ -218,11 +222,12 @@
                       Acciones <span class="caret"></span>
                     </button>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="../pantallasTerciarias/verpedido.html"><i class='	fas fa-info-circle'></i>Ver Más</a></li>
-                      <a id="modificar" class="dropdown-item  "  href="#"><i class='	far fa-edit'></i>Editar</a></li>
+                      <a class="dropdown-item" href="../pantallasTerciarias/verpedidoventas.html"><i
+                          class='	fas fa-info-circle'></i>Ver Más</a></li>
+                      <a id="modificar" class="dropdown-item  " href="#"><i class='	far fa-edit'></i>Editar</a></li>
                       <a id="deshab" class="dropdown-item  " data-toggle="modal" data-target="#myModal" href="#"><i
-                            class='fas fa-eraser'></i>Eliminar</a></li>
-                      </div>
+                          class='fas fa-eraser'></i>Eliminar</a></li>
+                    </div>
                   </div>
                 </td>
               </tr>
@@ -235,7 +240,7 @@
                 </td>
                 <td>10011</td>
                 <td>10003</td>
-                <td>Sillas, mesas</td> 
+                <td>Sillas, mesas</td>
                 <td>Ingresado</td>
                 <td>$500</td>
                 <td>$230</td>
@@ -247,11 +252,12 @@
                       Acciones <span class="caret"></span>
                     </button>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="p../pantallasTerciarias/verpedido.html"><i class='	fas fa-info-circle'></i>Ver Más</a></li>
-                      <a id="modificar" class="dropdown-item "  href="#"><i class='	far fa-edit'></i>Editar</a></li>
+                      <a class="dropdown-item" href="p../pantallasTerciarias/verpedidoventas.html"><i
+                          class='	fas fa-info-circle'></i>Ver Más</a></li>
+                      <a id="modificar" class="dropdown-item " href="#"><i class='	far fa-edit'></i>Editar</a></li>
                       <a id="deshab" class="dropdown-item" data-toggle="modal" data-target="#myModal" href="#"><i
-                            class='fas fa-eraser'></i>Eliminar</a></li>
-                      </div>
+                          class='fas fa-eraser'></i>Eliminar</a></li>
+                    </div>
                   </div>
                 </td>
               </tr>
@@ -264,7 +270,7 @@
                 </td>
                 <td>10011</td>
                 <td>10011</td>
-                <td>mesas</td> 
+                <td>mesas</td>
                 <td>Ingresado</td>
                 <td>$800</td>
                 <td>$290</td>
@@ -276,24 +282,25 @@
                       Acciones <span class="caret"></span>
                     </button>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="../pantallasTerciarias/verpedido.html"><i class='	fas fa-info-circle'></i>Ver Más</a></li>
-                      <a id="modificar" class="dropdown-item "  href="#"><i class='	far fa-edit'></i>Editar</a></li>
+                      <a class="dropdown-item" href="../pantallasTerciarias/verpedidoventas.html"><i
+                          class='	fas fa-info-circle'></i>Ver Más</a></li>
+                      <a id="modificar" class="dropdown-item " href="#"><i class='	far fa-edit'></i>Editar</a></li>
                       <a id="deshab" class="dropdown-item" data-toggle="modal" data-target="#myModal" href="#"><i
-                            class='fas fa-eraser'></i>Eliminar</a></li>
-                      </div>
+                          class='fas fa-eraser'></i>Eliminar</a></li>
+                    </div>
                   </div>
                 </td>
               </tr>
               <tr onclick="captureClick(this)">
                 <td>
                   <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox"   class="custom-control-input" id="customCheck6">
+                    <input type="checkbox" class="custom-control-input" id="customCheck6">
                     <label class="custom-control-label" for="customCheck6"></label>
                   </div>
                 </td>
                 <td>10020</td>
                 <td>10003</td>
-                <td>estantes</td> 
+                <td>estantes</td>
                 <td id="estado" value="En Proceso">En Proceso</td>
                 <td>$500</td>
                 <td>$230</td>
@@ -305,24 +312,25 @@
                       Acciones <span class="caret"></span>
                     </button>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="../pantallasTerciarias/verpedido.html"><i class='	fas fa-info-circle'></i>Ver Más</a></li>
+                      <a class="dropdown-item" href="../pantallasTerciarias/verpedidoventas.html"><i
+                          class='	fas fa-info-circle'></i>Ver Más</a></li>
                       <a id="modificar" class="dropdown-item  " href="#"><i class='	far fa-edit'></i>Editar</a></li>
-                      <a id="deshab" class="dropdown-item  "  data-toggle="modal" data-target="#myModal" href="#"><i
-                            class='fas fa-eraser'></i>Eliminar</a></li>
-                      </div>
+                      <a id="deshab" class="dropdown-item  " data-toggle="modal" data-target="#myModal" href="#"><i
+                          class='fas fa-eraser'></i>Eliminar</a></li>
+                    </div>
                   </div>
                 </td>
               </tr>
               <tr onclick="captureClick(this)">
                 <td>
                   <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox"   class=" op custom-control-input" id="customCheck7" >
+                    <input type="checkbox" class=" op custom-control-input" id="customCheck7">
                     <label class="custom-control-label" for="customCheck7"></label>
                   </div>
                 </td>
                 <td>10034</td>
                 <td>10006</td>
-                <td>Sillas, mesas</td> 
+                <td>Sillas, mesas</td>
                 <td id="estado" value="En Proceso">En Proceso</td>
                 <td>$500</td>
                 <td>$230</td>
@@ -334,24 +342,25 @@
                       Acciones <span class="caret"></span>
                     </button>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="../pantallasTerciarias/verpedido.html"><i class='	fas fa-info-circle'></i>Ver Más</a></li>
-                      <a id="modificar" class="dropdown-item  "  href="#"><i class='	far fa-edit'></i>Editar</a></li>
+                      <a class="dropdown-item" href="../pantallasTerciarias/verpedidoventas.html"><i
+                          class='	fas fa-info-circle'></i>Ver Más</a></li>
+                      <a id="modificar" class="dropdown-item  " href="#"><i class='	far fa-edit'></i>Editar</a></li>
                       <a id="deshab" class="dropdown-item  " data-toggle="modal" data-target="#myModal" href="#"><i
-                            class='fas fa-eraser'></i>Eliminar</a></li>
-                      </div>
+                          class='fas fa-eraser'></i>Eliminar</a></li>
+                    </div>
                   </div>
                 </td>
               </tr>
               <tr>
                 <td>
                   <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox"   class="custom-control-input" id="customCheck8">
+                    <input type="checkbox" class="custom-control-input" id="customCheck8">
                     <label class="custom-control-label" for="customCheck8"></label>
                   </div>
                 </td>
                 <td>10041</td>
                 <td>10001</td>
-                <td>Mesas</td> 
+                <td>Mesas</td>
                 <td>Terminado</td>
                 <td>$500</td>
                 <td>$230</td>
@@ -363,15 +372,16 @@
                       Acciones <span class="caret"></span>
                     </button>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="../pantallasTerciarias/verpedido.html"><i class='	fas fa-info-circle'></i>Ver Más</a></li>
-                      <a id="modificar" class="dropdown-item  "  href="#"><i class='	far fa-edit'></i>Editar</a></li>
+                      <a class="dropdown-item" href="../pantallasTerciarias/verpedidoventas.html"><i
+                          class='	fas fa-info-circle'></i>Ver Más</a></li>
+                      <a id="modificar" class="dropdown-item  " href="#"><i class='	far fa-edit'></i>Editar</a></li>
                       <a id="deshab" class="dropdown-item  " data-toggle="modal" data-target="#myModal" href="#"><i
-                            class='fas fa-eraser'></i>Eliminar</a></li>
-                      </div>
+                          class='fas fa-eraser'></i>Eliminar</a></li>
+                    </div>
                   </div>
                 </td>
               </tr>
-              
+
 
 
             </tbody>
@@ -385,6 +395,39 @@
 
   </div>
   <!-- End of Main Content -->
+
+  <!-- MODAL REPORTE -->
+  <div class="modal fade" id="modalReporte" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Seleccione el reporte que desea visualizar.</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <a id="buttonOfModal" href="" class="col-8 mx-auto">CLIENTES</a>
+          </div>
+          <div class="row">
+            <a id="buttonOfModal" href="" class="col-8 mx-auto">PROVEEDORES</a>
+          </div>
+          <div class="row">
+            <a id="buttonOfModal" href="" class="col-8 mx-auto">VENTAS</a>
+          </div>
+          <div class="row">
+            <a id="buttonOfModal" href="" class="col-8 mx-auto">PRODUCTOS</a>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END MODAL REPORTE -->
 
   <div class="modal" id="myModal">
     <div class="modal-dialog">
@@ -454,8 +497,7 @@
   <script src="../js/check.js"></script>
   <script src="../js/estados.js"></script>
 
-  <script
-src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -467,7 +509,7 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- Page level custom scripts -->
   <script src="../js/datatables-demo.js"></script>
 
-  
+
 
 
 </body>
