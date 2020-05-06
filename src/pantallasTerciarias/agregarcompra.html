@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>PROVEEDORES</title>
+  <title>NUEVA COMPRA</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -71,7 +71,7 @@
     </header>
 
   <div class="row justify-content-center mt-5 py-5">
-    <div class="col-12 col-md-10 pb-5 mt-5">
+    <div class="col-8 col-md-8 pb-5 mt-5">
       <!--Form with header-->
       <form id="registro" data-toggle="validator" role="form">
         <div class="card  rounded-0 mt-5 " style="border-color: #102e4d;  ">
@@ -85,105 +85,74 @@
             <div class="form-group" id="formulario">
               <div class="form-row mt-0">
                 <div class="form-group col-md-4 mr-auto">
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text"><i class="fa fa-user" style="color:#102e4d; "></i></div>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text"><i class="fas fa-file-invoice-dollar" style="color:#102e4d; "></i></div>
+                      </div>
+                      <input type="text" class="form-control" id="id" placeholder="ID Compra: 36981" required readonly>
                     </div>
-                    <input type="text" class="form-control" id="id" placeholder="ID: 6981" required readonly>
                   </div>
-                </div>
-                <div class="form-group col-md-8">
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text"><i class="fa fa-user" style="color:#102e4d; "></i></div>
+                  <div class="form-group col-md-5 mr-0">
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend" style="width: 150%;">
+                        <input type="text" id="datepicker" class="form-control" name="fecha"
+                          placeholder="Seleccionar fecha" required>
+                        <script>
+                          $('#datepicker').datepicker({
+                            uiLibrary: 'bootstrap4'
+                          });
+                        </script>
+                      </div>
                     </div>
-                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre y Apellido"
-                      required>
-                  </div>
-                </div>
+              </div>
               </div>
 
               <div class="form-row ">
                 <div class="form-group col-md-4 mr-auto">
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text"><i class="fas fa-phone" style="color:#102e4d; "></i></div>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text"><i class="fa fa-user" style="color:#102e4d; "></i></div>
+                      </div>
+                      <input type="text" class="form-control" id="id" placeholder="ID Proveedor" required >
                     </div>
-                    <input type="tel" class="form-control" pattern="\+{0,1}(-{0,1}\d)+" id="telefono" name="Telefono"
-                      placeholder="+54-362-4385867" required>
                   </div>
-                </div>
-                <div class="form-group col-md-8">
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text"><i class="fas fa-home" style="color:#102e4d; "></i></div>
+                  <div class="form-group col-md-8">
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text"><i class="fa fa-user" style="color:#102e4d; "></i></div>
+                      </div>
+                      <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre Proveedor"
+                        required>
                     </div>
-                    <input type="text" class="form-control" id="direccion" placeholder="Dirección" required>
                   </div>
-                </div>
               </div>
-
-              <div class="form-row">
-                <div class="form-group col-md-4 mr-auto">
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend" style="width: 150%;">
-                      <input type="text" id="datepicker" class="form-control" name="fecha"
-                        placeholder="Seleccionar fecha" required>
-                      <script>
-                        $('#datepicker').datepicker({
-                          uiLibrary: 'bootstrap4'
-                        });
-                      </script>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group col-md-8">
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text"><i class="fa fa-envelope " style="color:#102e4d; "></i></div>
-                    </div>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-                  </div>
-                </div>
-              </div>
-
-
-
-              <label>Seleccionar Materia Prima que ofrece</label>
-              <div class="form-row col-md-12">
-                <div class="form-group col-md-6 mr-auto">
-                  <div class="custom-control custom-checkbox mb-3 ">
-                    <input type="checkbox" class="custom-control-input" id="check21">
-                    <label class="custom-control-label" for="check21">PET (Polietileno tereftalato)</label>
-                  </div> 
-
-                  <div class="custom-control custom-checkbox mb-3 ">
-                    <input type="checkbox" class="custom-control-input" id="check22">
-                    <label class="custom-control-label" for="check22">HDPE (Polietileno de alta densidad)</label>
-                  </div>
-
-                  <div class="custom-control custom-checkbox mb-3 ">
-                    <input type="checkbox" class="custom-control-input" id="check23">
-                    <label class="custom-control-label" for="check23">PVC (Cloruro de polivinilo)</label>
-                  </div>
-                </div>
-                <div class="form-group col-md-6 mr-auto">
-                  <div class="custom-control custom-checkbox mb-3 ">
-                    <input type="checkbox" class="custom-control-input" id="check24">
-                    <label class="custom-control-label" for="check24">LDPE (Polietileno de baja densidad)</label>
-                  </div>
-                  <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox" class="custom-control-input" id="check25">
-                    <label class="custom-control-label" for="check25">PP (Polipropileno)</label>
-                  </div>
-                  <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox" class="custom-control-input" id="check26">
-                    <label class="custom-control-label" for="check26">PS (Poliestireno)</label>
-                  </div>
-                </div>
-              </div>
-
-
+              
+                    <div class="card-body mt-0">
+                        <label>Indicar Materia Prima Comprada</label>
+                        <div class="table-responsive ">
+                          <table class="table table-bordered table-hover" style="border-color: #102e4d;" id="dataTable"
+                            width="100%" cellspacing="0">
+                            <thead>
+                              <tr>
+                                <th>Cantidad</th>
+                                <th>Materia Prima</th>
+                                <th>Precio</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <td><input type="Descripcion" class="form-control" id="descripcion" name="cant"></td>
+                              <td>PET (Polietileno tereftalato)</td>
+                              <td><input type="Descripcion" class="form-control" id="precio" name="precio"></td>
+                              <tr>
+                                <td><input type="Descripcion" class="form-control" id="descripcion" name="cant"></td>
+                                <td>HDPE (Polietileno de alta densidad)</td>
+                                <td><input type="Descripcion" class="form-control" id="descripcion" name="precio"></td>
+                              </tr>
+                            
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
               <div class="text-center">
                 <input type="submit" id="registrar" style="font-size: 22px;"
                   class="btn btn-info btn-block rounded-0 py-2 " value="Registrar Proveedor" />
