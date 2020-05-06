@@ -16,5 +16,10 @@ $(document).ready(function () {
     columnDefs: [{ orderable: false, targets: [5] }]
 
   })
+  $('#dataTable3').DataTable({
+    order: [],
+    columnDefs: [{ orderable: false, targets: [6] }]
+
+  })
 });
 
