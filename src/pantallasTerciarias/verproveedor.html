@@ -60,17 +60,15 @@
     <div class="ml-4 d-lg-block ">
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li><a href="menucompras.html">Inicio</a></li>
-          <li><a href="mpbuscar.html">Stock MP</a></li>
-          <li><a href="productosbuscar.html">Productos</a></li>
+          <li><a href="../menusPrincipales/menucompras.html">Inicio</a></li>
           <li class="active"><a href="proveedoresbuscar.html">Proveedores</a></li>
-          <li><a href="#reportecompras">Reportes</a></li>
+          <li><a href="../pantallasSecundarias/materiaprimacompras.html">Stock MP</a></li>
+          <li><a href="../pantallasSecundarias/vercompras.html">Compras</a></li>
+          <li><a href="../pantallasTerciarias/BuscarMateriasPrimas.html">Reportes</a></li>
         </ul>
       </nav>
     </div>
   </header>
-
-
 
   <div class="row justify-content-center mt-5 py-5">
     <div class="col-12 col-md-10 pb-5 mt-5">
@@ -86,88 +84,85 @@
             <!--Body-->
             <div class="form-group" id="formulario">
               <div class="form-row mt-3">
-                  <div class="form-group col-md-4 mr-auto">
-                      <label for="idpedido">ID del Proveedor</label>
-                      <input type="text" class="form-control" id="numpedido" readonly value="3981">
-                  </div>
-                  <div class="form-group col-md-8">
-                      <label for="inputPassword4">Nombre del Proveedor</label>
-                      <input type="text" class="form-control" id="nombrecli" readonly
-                          value="Supermercado Los Alpes">
-                  </div>
-              </div>
-          </div>
-
-          <div class="form-group" id="formulario">
-            <div class="form-row mt-3">
                 <div class="form-group col-md-4 mr-auto">
-                    <label for="idpedido">Teléfono del Proveedor</label>
-                    <input type="text" class="form-control" id="numpedido" readonly value="+54-362-4986745">
+                  <label for="idpedido">ID del Proveedor</label>
+                  <input type="text" class="form-control" id="numpedido" readonly value="3981">
                 </div>
                 <div class="form-group col-md-8">
-                    <label for="inputPassword4">Domicilio del Proveedor</label>
-                    <input type="text" class="form-control" id="nombrecli" readonly
-                        value="Las Heras 123">
+                  <label for="inputPassword4">Nombre del Proveedor</label>
+                  <input type="text" class="form-control" id="nombrecli" readonly value="Supermercado Los Alpes">
                 </div>
+              </div>
             </div>
-        </div>
 
-        <div class="form-group" id="formulario">
-          <div class="form-row mt-3">
-              <div class="form-group col-md-4 mr-auto">
+            <div class="form-group" id="formulario">
+              <div class="form-row mt-3">
+                <div class="form-group col-md-4 mr-auto">
+                  <label for="idpedido">Teléfono del Proveedor</label>
+                  <input type="text" class="form-control" id="numpedido" readonly value="+54-362-4986745">
+                </div>
+                <div class="form-group col-md-8">
+                  <label for="inputPassword4">Domicilio del Proveedor</label>
+                  <input type="text" class="form-control" id="nombrecli" readonly value="Las Heras 123">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group" id="formulario">
+              <div class="form-row mt-3">
+                <div class="form-group col-md-4 mr-auto">
                   <label for="idpedido">Fecha de Alta del Proveedor</label>
                   <input type="text" class="form-control" id="numpedido" readonly value="11/04/20">
-              </div>
-              <div class="form-group col-md-8">
+                </div>
+                <div class="form-group col-md-8">
                   <label for="inputPassword4">Email del Proveedor</label>
-                  <input type="text" class="form-control" id="nombrecli" readonly
-                      value="prov1@gmail.com">
-              </div>
-          </div>
-      </div>
-
-              <label>Materia Prima que ofrece</label>
-              <div class="form-row col-md-12">
-                <div class="form-group col-md-6 mr-auto">
-                  <div class="custom-control custom-checkbox mb-3 ">
-                    <input type="checkbox" class="custom-control-input" id="check21" onclick="return false;">
-                    <label class="custom-control-label" for="check21">PET (Polietileno tereftalato)</label>
-                  </div>
-
-                  <div class="custom-control custom-checkbox mb-3 ">
-                    <input type="checkbox" class="custom-control-input" id="check22" checked onclick="return false;">
-                    <label class="custom-control-label" for="check22">HDPE (Polietileno de alta densidad)</label>
-                  </div>
-
-                  <div class="custom-control custom-checkbox mb-3 ">
-                    <input type="checkbox" class="custom-control-input" id="check23" onclick="return false;">
-                    <label class="custom-control-label" for="check23">PVC (Cloruro de polivinilo)</label>
-                  </div>
-                </div>
-                <div class="form-group col-md-6 mr-auto">
-                  <div class="custom-control custom-checkbox mb-3 ">
-                    <input type="checkbox" class="custom-control-input" id="check24" checked onclick="return false;">
-                    <label class="custom-control-label" for="check24">LDPE (Polietileno de baja densidad)</label>
-                  </div>
-                  <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox" class="custom-control-input" id="check25" onclick="return false;">
-                    <label class="custom-control-label" for="check25">PP (Polipropileno)</label>
-                  </div>
-                  <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox" class="custom-control-input" id="check26" onclick="return false;">
-                    <label class="custom-control-label" for="check26">PS (Poliestireno)</label>
-                  </div>
+                  <input type="text" class="form-control" id="nombrecli" readonly value="prov1@gmail.com">
                 </div>
               </div>
+            </div>
 
-              <div class="text-center">
-                <input type="submit" id="registrar" style="font-size: 22px;"
-                  class="btn btn-info btn-block rounded-0 py-2 " value="Aceptar" />
+            <label>Materia Prima que ofrece</label>
+            <div class="form-row col-md-12">
+              <div class="form-group col-md-6 mr-auto">
+                <div class="custom-control custom-checkbox mb-3 ">
+                  <input type="checkbox" class="custom-control-input" id="check21" onclick="return false;">
+                  <label class="custom-control-label" for="check21">PET (Polietileno tereftalato)</label>
+                </div>
+
+                <div class="custom-control custom-checkbox mb-3 ">
+                  <input type="checkbox" class="custom-control-input" id="check22" checked onclick="return false;">
+                  <label class="custom-control-label" for="check22">HDPE (Polietileno de alta densidad)</label>
+                </div>
+
+                <div class="custom-control custom-checkbox mb-3 ">
+                  <input type="checkbox" class="custom-control-input" id="check23" onclick="return false;">
+                  <label class="custom-control-label" for="check23">PVC (Cloruro de polivinilo)</label>
+                </div>
               </div>
+              <div class="form-group col-md-6 mr-auto">
+                <div class="custom-control custom-checkbox mb-3 ">
+                  <input type="checkbox" class="custom-control-input" id="check24" checked onclick="return false;">
+                  <label class="custom-control-label" for="check24">LDPE (Polietileno de baja densidad)</label>
+                </div>
+                <div class="custom-control custom-checkbox mb-3">
+                  <input type="checkbox" class="custom-control-input" id="check25" onclick="return false;">
+                  <label class="custom-control-label" for="check25">PP (Polipropileno)</label>
+                </div>
+                <div class="custom-control custom-checkbox mb-3">
+                  <input type="checkbox" class="custom-control-input" id="check26" onclick="return false;">
+                  <label class="custom-control-label" for="check26">PS (Poliestireno)</label>
+                </div>
+              </div>
+            </div>
 
+            <div class="text-center">
+              <input type="submit" id="registrar" style="font-size: 22px;"
+                class="btn btn-info btn-block rounded-0 py-2 " value="Aceptar" />
             </div>
 
           </div>
+
+        </div>
       </form>
 
 
