@@ -60,10 +60,10 @@
     <div class="ml-4 d-lg-block ">
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li><a href="../menusPrincipales/menuventas.html">Inicio</a></li>
-          <li><a href="clientesbuscar.html">Stock MP</a></li>
+          <li><a href="../menusPrincipales/menuprod.html">Inicio</a></li>
+          <li><a href="materiaPrima.html">Stock MP</a></li>
           <li class="active"><a href="#">Stock Productos</a></li>
-          <li><a href="ventas.html">Pedidos</a></li>
+          <li><a href="pedidosbuscar.html">Pedidos</a></li>
           <li><a href="reportes.html">Reportes</a></li>
         </ul>
       </nav>
@@ -79,7 +79,7 @@
         <div class="card  rounded-0 mt-5" style="border-color: #102e4d;  ">
           <div class="card-header p-0" style="background-color:#102e4d; ">
             <div class=" text-center py-2">
-              <h3 style="color: #ffffff;"><i class="	far fa-plus-square"></i> Agregar Stock de Nuevo Producto</h3>
+              <h3 style="color: #ffffff;"><i class="	far fa-edit"></i>Actualizar Stock de Nuevo Producto</h3>
             </div>
           </div>
           <div class="card-body p-3 ">
@@ -100,10 +100,10 @@
                     <div class="input-group-prepend">
                       <div class="input-group-text"><i class="fas fa-pallet" style="color:#102e4d; "></i></div>
                     </div>
-                    <select id="tipo" class="form-control" required>
+                    <select id="tipo" class="form-control" required disabled>
                       <option value="" hidden>Producto</option>
-                      <option value="silla">Silla</option>
-                      <option value="Maceta 3L">Maceta 3L</option>
+                      <option value="silla" >Silla</option>
+                      <option value="Maceta 3L" selected>Maceta 3L</option>
                       <option value="Maceta 5L">Maceta 5L</option>
                       <option value="Maceta 3L">Mesa desmontable</option>
                       <option value="Maceta 3L">Mesa redonda</option>
@@ -155,7 +155,7 @@
             </div>
             <div class="text-center">
               <input type="submit" id="registrar" style="font-size: 22px;"
-                class="btn btn-info btn-block rounded-0 py-2 " value="Registrar Stock" />
+                class="btn btn-info btn-block rounded-0 py-2 " value="Actualizar Stock" />
             </div>
 
           </div>
@@ -180,7 +180,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 
-  <script src="../js/clientesAgregar.js"></script>
+  <script src="../js/actualiza.js"></script>
 
 
 </body>
