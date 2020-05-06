@@ -5,13 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>INFORME CLIENTE</title>
+  <title>STOCK</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link href="css/elegant-icons-style.css" rel="stylesheet" />
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="../../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
     integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <div class="container">
@@ -32,14 +31,14 @@
       rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="src/vendor/icofont.min.css" rel="stylesheet">
-    <link href="src/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/icofont.min.css" rel="stylesheet">
+    <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="src/css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
     <!--estlos tablas-->
-    <link rel="stylesheet" href="estilostablas.css">
+    <link rel="stylesheet" href="../css/estilostablas.css">
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example">
@@ -47,46 +46,84 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="logo d-lg-block ml-5">
-      <h1 class="text-light mt-3"><img src="src/imagenes/logo.png" alt="" style="top:-6px ; left: 0%;"
-          class="izquierda"><a href="menuventas.html">Reci<span>plas</span></a></h1>
+      <h1 class="text-light mt-3"><img src="../imagenes/logo.png" alt="" style="top:-6px ; left: 0%;"
+          class="izquierda"><a href="../menusPrincipales/menuventas.html">Reci<span>plas</span></a></h1>
   </header>
 
   <div class="main-container">
-    <h3>Cliente</h3>
-     <table >
-        <thead>
-            <tr>
-              <th>CÓDIGO</th><th>NOMBRE</th><th>TIPO</th><th>CORREO ELECTRÓNICO</th><th>TELÉFONO</th>
-            </tr>
-          </thead>
-          <tr>
-            <td>0303456</td><td>Juan Perez</td><td>personal</td><td>esteesuncorreofalso@hotmail.com</td><td>3624565656</td>
-          </tr>
-     </table> 
+    <h3>Stock de Productos</h3>
     <table>
       <thead>
         <tr>
-          <th>FECHA<th>ID EMPLEADO</th><th>NOMBRE EMPLEADO</th><th>MEDIO DE PAGO</th><th>MONTO</th><th>ANOTACIONES</th>
+          <th>NOMBRE</th>
+          <th>CÓDIGO</th>
+          <th>PEDIDO AL QUE PERTENECE</th>
+          <th>CANTIDAD</th>
+          <th>ESTADO</th>
+          <th>TOTAL</th>
         </tr>
       </thead>
+      <tbody>
         <tr>
-          <td>20/04/20</td><td>0404567</td><td>Clara López</td><td>Efectivo</td><td>$12000</td><td>-</td>
+          <td rowspan="3">Bolsa</td>
+          <td rowspan="3">1234</td>
+          <td>10001</td>
+          <td>200</td>
+          <td>Por entregar: 23/06/20</td>
+          <td rowspan="3">950</td>
         </tr>
         <tr>
-            <td>10/03/20</td><td>0505678</td><td>Hector Rodriguez</td><td>Tarjeta</td><td>$16500</td><td>Pagó $500 en efectivo y $16000 con tarjeta</td>
+          <td>12001</td>
+          <td>350</td>
+          <td>Entrega postergada: 04/06/20</td>
         </tr>
         <tr>
-            <td>02/02/20</td><td>0404567</td><td>Clara López</td><td>Tarjeta</td><td>$15000</td><td>-</td>
+          <td>16789</td>
+          <td>400</td>
+          <td>Por entragar: 10/07/20</td>
         </tr>
         <tr>
-            <td>04/02/20</td><td>0505678</td><td>Hector Rodriguez</td><td>Efectivo</td><td>$11000</td><td>-</td>
+          <td rowspan="3">Cesto</td>
+          <td rowspan="3">5678</td>
+          <td>10001</td>
+          <td>50</td>
+          <td>Entrga postergada: 23/06/20</td>
+          <td rowspan="3">140</td>
         </tr>
+        <tr>
+          <td>12001</td>
+          <td>30</td>
+          <td>Por entragar: 04/06/20</td>
+        </tr>
+        <tr>
+          <td>12345</td>
+          <td>60</td>
+          <td>¡Se entrega hoy!</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Silla</td>
+          <td rowspan="2">4567</td>
+          <td>10001</td>
+          <td>25</td>
+          <td>Por entregar: 23/06/20</td>
+          <td rowspan="3">75</td>
+        </tr>
+        <tr>
+          <td>12345</td>
+          <td>50</td>
+          <td>¡Se entrega hoy!</td>
+        </tr>
+      </tbody>
     </table>
   </div>
-  
-  <a href="Layoutproveedores.pdf" target="_blank" style="width:auto; height:auto; font-size: 22px; margin-left: 0%; margin-top:0%; background: #102e4d; border-color: #102e4d; margin-bottom: 20px;" class="btn btn-info">IMPRIMIR REPORTE</a>
+  <a href="../../pdfs/Layoutproveedores.pdf" target="_blank"
+    style="width:auto; height:auto; font-size: 22px; margin-left: 0%; margin-top:0%; background: #102e4d; border-color: #102e4d; margin-bottom: 20px;"
+    class="btn btn-info">IMPRIMIR REPORTE</a>
 
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <h4>Imagen del producto:</h4>
+  <img src="src/imagenes/bolsita.png">
+
+  <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -96,18 +133,15 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="src/js/main2.js"></script>
-  <script src="src/js/check.js"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-  <script src="js/calendario.js"></script>
+  <script src="../js/calendario.js"></script>
 
   <!-- Page level plugins -->
-  <script src="src/vendor/datatables/jquery.dataTables.min.js"></script>
-  <script src="src/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+  <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
   <!-- Page level custom scripts -->
-  <script src="src/js/datatables-demo.js"></script>
+  <script src="../js/datatables-demo.js"></script>
 
 </body>
 
