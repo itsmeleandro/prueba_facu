@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>PROVEEDORES</title>
+  <title>NUEVO PRODUCTO</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -34,7 +34,7 @@
     <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/agregarMateriaPrima.css" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example">
@@ -60,11 +60,11 @@
     <div class="ml-4 d-lg-block ">
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li><a href="menucompras.html">Inicio</a></li>
-          <li><a href="mpbuscar.html">Stock MP</a></li>
-          <li><a href="productosbuscar.html">Productos</a></li>
-          <li class="active"><a href="proveedoresbuscar.html">Proveedores</a></li>
-          <li><a href="#reportecompras">Reportes</a></li>
+          <li><a href="../menusPrincipales/menuventas.html">Inicio</a></li>
+          <li><a href="clientesbuscar.html">Stock MP</a></li>
+          <li class="active"><a href="#">Stock Productos</a></li>
+          <li><a href="ventas.html">Pedidos</a></li>
+          <li><a href="reportes.html">Reportes</a></li>
         </ul>
       </nav>
     </div>
@@ -76,32 +76,32 @@
     <div class="col-12 col-md-10 pb-5 mt-5">
       <!--Form with header-->
       <form id="registro" data-toggle="validator" role="form">
-        <div class="card  rounded-0 mt-5 " style="border-color: #102e4d;  ">
+        <div class="card  rounded-0" style="border-color: #102e4d;  ">
           <div class="card-header p-0" style="background-color:#102e4d; ">
             <div class=" text-center py-2">
-              <h3 style="color: #ffffff;"><i class="	far fa-plus-square"></i> Nuevo Proveedor</h3>
-              <p style="color: #ffffff;" class="m-0">Se asignará automáticamente número de proveedor</p>
+              <h3 style="color: #ffffff;"><i class="	far fa-plus-square"></i> Nuevo Producto</h3>
+              <p style="color: #ffffff;" class="m-0">Se asignará automáticamente un número de Producto</p>
             </div>
           </div>
-          <div class="card-body">
+          <div class="card-body p-3">
             <!--Body-->
             <div class="form-group" id="formulario">
-              <div class="form-row mt-0">
+              <div class="form-row ">
                 <div class="form-group col-md-4 mr-auto">
                   <div class="input-group mb-2">
                     <div class="input-group-prepend">
-                      <div class="input-group-text"><i class="fa fa-user" style="color:#102e4d; "></i></div>
+                      <div class="input-group-text"><i class="fas fa-info-circle" style="color:#102e4d; "></i></div>
                     </div>
-                    <input type="text" class="form-control" id="id" placeholder="ID: 6981" required readonly>
+                    <input type="text" id="disabledTextInput" class="form-control" placeholder="ID: 10029">
                   </div>
                 </div>
                 <div class="form-group col-md-8">
                   <div class="input-group mb-2">
                     <div class="input-group-prepend">
-                      <div class="input-group-text"><i class="fa fa-user" style="color:#102e4d; "></i></div>
+                      <div class="input-group-text"><i class="fas fa-pallet" style="color:#102e4d; "></i></div>
                     </div>
-                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre y Apellido"
-                      required>
+                    <input type="text" class="form-control" id="nombre" name="Nombre de Producto"
+                      placeholder="Nombre de Producto" required>
                   </div>
                 </div>
               </div>
@@ -110,27 +110,15 @@
                 <div class="form-group col-md-4 mr-auto">
                   <div class="input-group mb-2">
                     <div class="input-group-prepend">
-                      <div class="input-group-text"><i class="fas fa-phone" style="color:#102e4d; "></i></div>
+                      <div class="input-group-text"><i class="fas fa-money-bill-wave" style="color:#102e4d; "></i></div>
                     </div>
-                    <input type="tel" class="form-control" pattern="\+{0,1}(-{0,1}\d)+" id="telefono" name="Telefono"
-                      placeholder="+54-362-4385867" required>
+                    <input type="text" class="form-control" id="precio" name="precio" placeholder="Precio" required>
                   </div>
                 </div>
                 <div class="form-group col-md-8">
                   <div class="input-group mb-2">
                     <div class="input-group-prepend">
-                      <div class="input-group-text"><i class="fas fa-home" style="color:#102e4d; "></i></div>
-                    </div>
-                    <input type="text" class="form-control" id="direccion" placeholder="Dirección" required>
-                  </div>
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="form-group col-md-4 mr-auto">
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend" style="width: 150%;">
-                      <input type="text" id="datepicker" class="form-control" name="fecha"
+                      <input type="text" id="datepicker" width="300" class="form-control" name="fecha"
                         placeholder="Seleccionar fecha" required>
                       <script>
                         $('#datepicker').datepicker({
@@ -140,61 +128,105 @@
                     </div>
                   </div>
                 </div>
-                <div class="form-group col-md-8">
+              </div>
+
+              <div class="form-row ">
+                <div class="form-group col-md-12 mr-auto">
                   <div class="input-group mb-2">
                     <div class="input-group-prepend">
-                      <div class="input-group-text"><i class="fa fa-envelope " style="color:#102e4d; "></i></div>
+                      <div class="input-group-text"><i class="fas fa-edit" style="color:#102e4d; "></i></div>
                     </div>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                    <input type="text" class="form-control" id="descripcion" name="descripcion"
+                      placeholder="Descripción" required>
                   </div>
                 </div>
               </div>
 
 
-
-              <label>Seleccionar Materia Prima que ofrece</label>
-              <div class="form-row col-md-12">
-                <div class="form-group col-md-6 mr-auto">
-                  <div class="custom-control custom-checkbox mb-3 ">
-                    <input type="checkbox" class="custom-control-input" id="check21">
-                    <label class="custom-control-label" for="check21">PET (Polietileno tereftalato)</label>
-                  </div> 
-
-                  <div class="custom-control custom-checkbox mb-3 ">
-                    <input type="checkbox" class="custom-control-input" id="check22">
-                    <label class="custom-control-label" for="check22">HDPE (Polietileno de alta densidad)</label>
-                  </div>
-
-                  <div class="custom-control custom-checkbox mb-3 ">
-                    <input type="checkbox" class="custom-control-input" id="check23">
-                    <label class="custom-control-label" for="check23">PVC (Cloruro de polivinilo)</label>
-                  </div>
-                </div>
-                <div class="form-group col-md-6 mr-auto">
-                  <div class="custom-control custom-checkbox mb-3 ">
-                    <input type="checkbox" class="custom-control-input" id="check24">
-                    <label class="custom-control-label" for="check24">LDPE (Polietileno de baja densidad)</label>
-                  </div>
-                  <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox" class="custom-control-input" id="check25">
-                    <label class="custom-control-label" for="check25">PP (Polipropileno)</label>
-                  </div>
-                  <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox" class="custom-control-input" id="check26">
-                    <label class="custom-control-label" for="check26">PS (Poliestireno)</label>
-                  </div>
+              <div class="card-body mt-0">
+                <label>Seleccionar Materia Prima Necesaria</label>
+                <div class="table-responsive ">
+                  <table class="table table-bordered table-hover" style="border-color: #102e4d;  " id="dataTable"
+                    width="100%" cellspacing="0">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Materia Prima</th>
+                        <th>Cantidad</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <td>
+                        <div class="custom-control custom-checkbox mb-2">
+                          <input type="checkbox" class="custom-control-input" id="customCheck20">
+                          <label class="custom-control-label" for="customCheck20"></label>
+                        </div>
+                      </td>
+                      <td>PET (Polietileno tereftalato)</td>
+                      <td><input type="Descripcion" class="form-control" id="descripcion" name="cant"></td>
+                      <tr>
+                        <td>
+                          <div class="custom-control custom-checkbox mb-2">
+                            <input type="checkbox" class="custom-control-input" id="customCheck22">
+                            <label class="custom-control-label" for="customCheck22"></label>
+                          </div>
+                        </td>
+                        <td>HDPE (Polietileno de alta densidad)</td>
+                        <td><input type="Descripcion" class="form-control" id="descripcion" name="cant"></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="custom-control custom-checkbox mb-2">
+                            <input type="checkbox" class="custom-control-input" id="customCheck23">
+                            <label class="custom-control-label" for="customCheck23"></label>
+                          </div>
+                        </td>
+                        <td>PVC (Cloruro de polivinilo)</td>
+                        <td><input type="Descripcion" class="form-control" id="descripcion" name="cant"></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="custom-control custom-checkbox mb-2">
+                            <input type="checkbox" class="custom-control-input" id="customCheck24">
+                            <label class="custom-control-label" for="customCheck24"></label>
+                          </div>
+                        </td>
+                        <td>LDPE (Polietileno de baja densidad)</td>
+                        <td><input type="Descripcion" class="form-control" id="descripcion" name="cant"></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="custom-control custom-checkbox mb-2">
+                            <input type="checkbox" class="custom-control-input" id="customCheck25">
+                            <label class="custom-control-label" for="customCheck25"></label>
+                          </div>
+                        </td>
+                        <td>PP (Polipropileno)</td>
+                        <td><input type="Descripcion" class="form-control" id="descripcion" name="cant"></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="custom-control custom-checkbox mb-2">
+                            <input type="checkbox" class="custom-control-input" id="customCheck26">
+                            <label class="custom-control-label" for="customCheck26"></label>
+                          </div>
+                        </td>
+                        <td>PS (Poliestireno)</td>
+                        <td><input type="Descripcion" class="form-control" id="descripcion" name="cant"></td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
-
 
               <div class="text-center">
                 <input type="submit" id="registrar" style="font-size: 22px;"
-                  class="btn btn-info btn-block rounded-0 py-2 " value="Registrar Proveedor" />
+                  class="btn btn-info btn-block rounded-0 py-2 " value="Registrar Producto" />
               </div>
 
             </div>
+
           </div>
-        </div>
       </form>
 
 
@@ -219,9 +251,6 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 
   <script src="../js/clientesAgregar.js"></script>
-  <script src="../js/seleccionarmp.js"></script>
-  <script src="../js/mostrarchecks.js"></script>
-
 
 
 </body>
