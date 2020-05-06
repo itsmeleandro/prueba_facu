@@ -11,5 +11,10 @@ $(document).ready(function () {
     columnDefs: [{ orderable: false, targets: [0, 5] }]
 
   })
+  $('#dataTable2').DataTable({
+    order: [],
+    columnDefs: [{ orderable: false, targets: [5] }]
+
+  })
 });
 
