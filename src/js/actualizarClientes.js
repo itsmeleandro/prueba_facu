@@ -40,5 +40,5 @@ $('#confirmacionDeEliminacion').click(
 );
 
 function saveRow(event){
-    console.log($(event).attr('id','seleccionadoParaEliminar'))
+    $(event).attr('id','seleccionadoParaEliminar')
 }

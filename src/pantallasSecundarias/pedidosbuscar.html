@@ -39,7 +39,8 @@
         <img src="../imagenes/avatar.png" class="w3-circle" style="height:35px; width: 35px;" alt="Avatar">
       </a>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="position: absolute; top:0%;">
-        <a class="dropdown-item" href="../pantallasSecundarias/perfilVentas.html"><i class='fas fa-user-circle' style='font-size:24px'></i> &nbsp; Perfil</a>
+        <a class="dropdown-item" href="../pantallasSecundarias/perfilVentas.html"><i class='fas fa-user-circle'
+            style='font-size:24px'></i> &nbsp; Perfil</a>
         <a class="dropdown-item" href="../../index.html"><i class='fas fa-door-open' style='font-size:24px'></i> Cerrar
           Sesión</a>
       </div>
@@ -64,9 +65,13 @@
     <!-- DataTales Example -->
     <div class="card shadow ">
       <div class="card-header mt-4 ">
-        <h1><a href="../pantallasTerciarias/pedidosagregar.html"
-            style="width:auto; height:auto; margin-top: 10%; position: relative; font-size: 22px;"
+        <h1 id="agregarPedidoButton" style="margin-top: 10%;">
+          <a href="../pantallasTerciarias/pedidosagregar.html"
+            style="width:auto; height:auto;position: relative; font-size: 22px;"
             class="btn btn-info"><i class='	fas fa-plus' style='font-size:20px'></i>&nbsp; AGREGAR PEDIDO</a>
+          <a href="../informes/informePedidos.html"
+            style="width:auto; height:auto;position: relative; font-size: 22px;"
+            class="btn btn-info"><i class='	fas fa-plus' style='font-size:20px'></i>&nbsp; GENERAR REPORTE</a>
           <div class="alert alert-info"
             style="text-align: center; position:absolute; right: 6px;line-height: 30px; ;font-size: 12px; width: 400px; height: 25px; padding:0px 0px 0px 0px;">
             <strong>Sugerencia</strong> Filtre la búsqueda para generar un reporte.
@@ -109,7 +114,7 @@
             </tfoot>
             <tbody>
               <tr onclick="captureClick(this)">
-                <td>
+                <td id="checkbox">
                   <div class="custom-control custom-checkbox mb-3 ">
                     <input type="checkbox" class="custom-control-input" id="customCheck0">
                     <label class="custom-control-label" for="customCheck0"></label>
@@ -131,15 +136,14 @@
                     <div class="dropdown-menu">
                       <a class="dropdown-item " href="../pantallasTerciarias/verpedidoventas.html"><i
                           class='	fas fa-info-circle'></i>Ver Más</a></li>
-                          <fieldset disabled>
                       <a id="modificar" class="dropdown-item " href="../pantallasTerciarias/pedidosmodificar.html"><i class='	far fa-edit'></i>Editar</a></li>
-                      <a id="deshab" class="dropdown-item" data-toggle="modal" data-target="#myModal" href="#"><i
-                          class='fas fa-eraser'></i>Eliminar</a></li></fieldset>
+                      <a id=" deshab" class="dropdown-item" data-toggle="modal" data-target="#myModal" href="#"><i
+                          class='fas fa-eraser'></i>Eliminar</a></li>
                     </div>
                   </div>
                 </td>
               </tr>
-              <tr>
+              <tr onclick="captureClick(this)">
                 <td>
                   <div class="custom-control custom-checkbox mb-3">
                     <input type="checkbox" class="custom-control-input" id="customCheck1">
@@ -149,7 +153,7 @@
                 <td>10002</td>
                 <td>10005</td>
                 <td>Sillas</td>
-                <td>Ingresado</td>
+                <td id="estado" value="Ingresado">Ingresado</td>
                 <td>$500</td>
                 <td>$230</td>
                 <td>09/02/19</td>
@@ -200,7 +204,7 @@
                   </div>
                 </td>
               </tr>
-              <tr>
+              <tr onclick="captureClick(this)">
                 <td>
                   <div class="custom-control custom-checkbox mb-3">
                     <input type="checkbox" class="custom-control-input" id="customCheck3">
@@ -210,7 +214,7 @@
                 <td>10007</td>
                 <td>10005</td>
                 <td>estantes</td>
-                <td>Terminado</td>
+                <td id="estado" value="Terminado">Terminado</td>
                 <td>$400</td>
                 <td>$130</td>
                 <td>11/04/20</td>
@@ -231,7 +235,7 @@
                   </div>
                 </td>
               </tr>
-              <tr>
+              <tr onclick="captureClick(this)">
                 <td>
                   <div class="custom-control custom-checkbox mb-3">
                     <input type="checkbox" class="custom-control-input" id="customCheck4">
@@ -241,7 +245,7 @@
                 <td>10011</td>
                 <td>10003</td>
                 <td>Sillas, mesas</td>
-                <td>Ingresado</td>
+                <td id="estado" value="Ingresado">Ingresado</td>
                 <td>$500</td>
                 <td>$230</td>
                 <td>19/04/19</td>
@@ -261,7 +265,7 @@
                   </div>
                 </td>
               </tr>
-              <tr>
+              <tr onclick="captureClick(this)">
                 <td>
                   <div class="custom-control custom-checkbox mb-3">
                     <input type="checkbox" class="custom-control-input" id="customCheck5">
@@ -271,7 +275,7 @@
                 <td>10011</td>
                 <td>10011</td>
                 <td>mesas</td>
-                <td>Ingresado</td>
+                <td id="estado" value="Ingresado">Ingresado</td>
                 <td>$800</td>
                 <td>$290</td>
                 <td>20/04/20</td>
@@ -353,7 +357,7 @@
                   </div>
                 </td>
               </tr>
-              <tr>
+              <tr onclick="captureClick(this)">
                 <td>
                   <div class="custom-control custom-checkbox mb-3">
                     <input type="checkbox" class="custom-control-input" id="customCheck8">
@@ -363,7 +367,7 @@
                 <td>10041</td>
                 <td>10001</td>
                 <td>Mesas</td>
-                <td>Terminado</td>
+                <td id="estado" value="Terminado">Terminado</td>
                 <td>$500</td>
                 <td>$230</td>
                 <td>17/02/20</td>
@@ -444,13 +448,13 @@
 
         <!-- Modal body -->
         <div class="modal-body">
-          ¿Está seguro que desea borrar el cliente seleccionado?
+          ¿Está seguro que desea borrar el pedido seleccionado?
         </div>
 
         <!-- Modal footer -->
         <div class="modal-footer">
-          <button type="button" style="width: 40px; height: 40px;" class="btn btn-danger"
-            data-dismiss="modal">Si</button>
+          <button id="confirmacionDeEliminacionIndividual" type="button" style="width: 40px; height: 40px;"
+            class="btn btn-danger" data-dismiss="modal">Si</button>
           <button type="button" style="width: 40px; height: 40px;" class="btn btn-secondary"
             data-dismiss="modal">No</button>
         </div>
@@ -471,13 +475,13 @@
 
         <!-- Modal body -->
         <div class="modal-body">
-          ¿Está seguro que desea borrar los clientes seleccionados?
+          ¿Está seguro que desea borrar los pedidos seleccionados?
         </div>
 
         <!-- Modal footer -->
         <div class="modal-footer">
-          <button type="button" style="width: 40px; height: 40px;" class="btn btn-danger"
-            data-dismiss="modal">Si</button>
+          <button id="confirmacionDeEliminacionGrupal" type="button" style="width: 40px; height: 40px;"
+            class="btn btn-danger" data-dismiss="modal">Si</button>
           <button type="button" style="width: 40px; height: 40px;" class="btn btn-secondary"
             data-dismiss="modal">No</button>
         </div>
