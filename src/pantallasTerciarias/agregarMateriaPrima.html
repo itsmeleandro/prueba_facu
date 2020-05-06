@@ -15,14 +15,14 @@
     integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <div class="container">
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-     <!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
-     <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+    <!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
 
-     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-     <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
-     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900"
@@ -76,14 +76,14 @@
     <div class="col-12 col-md-8 col-lg-6 pb-5 mt-5">
       <!--Form with header-->
       <form id="registro" data-toggle="validator" role="form">
-        <div class="card  rounded-0" style="border-color: #102e4d;  ">
+        <div class="card  rounded-0 mt-5" style="border-color: #102e4d;  ">
           <div class="card-header p-0" style="background-color:#102e4d; ">
             <div class=" text-center py-2">
               <h3 style="color: #ffffff;"><i class="	far fa-plus-square"></i> Nueva Materia Prima</h3>
-              <p style="color: #ffffff;" class="m-0">Se le asignará un número de Materia Prima</p>
+              <p style="color: #ffffff;" class="m-0">Se asignará automáticamente un número de Materia Prima</p>
             </div>
           </div>
-          <div class="card-body p-3">
+          <div class="card-body p-3 ">
             <!--Body-->
             <div class="form-group" id="formulario">
               <fieldset disabled>
@@ -101,18 +101,8 @@
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pallet" style="color:#102e4d; "></i></div>
                 </div>
-                <input type="text" class="form-control" id="nombre" name="Tipo de Plastico" placeholder="Tipo de Plastico"
-                  required>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="input-group mb-2">
-                <div class="input-group-prepend">
-                  <div class="input-group-text"><i class="fas fa-money-bill-wave" style="color:#102e4d; "></i></div>
-                </div>
-                <input type="text" class="form-control" id="precio" name="Precio por KG" placeholder="Precio por KG"
-                required>
+                <input type="text" class="form-control" id="nombre" name="Tipo de Plastico"
+                  placeholder="Tipo de Plástico" required>
               </div>
             </div>
 
@@ -121,17 +111,8 @@
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-edit" style="color:#102e4d; "></i></div>
                 </div>
-                <input type="Descripcion" class="form-control" id="descripcion" name="descripcion" placeholder="Descripcion" required>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="input-group mb-2">
-                <div class="input-group-prepend">
-                  <div class="input-group-text"><i class="fas fa-balance-scale" style="color:#102e4d; "></i></div>
-                </div>
-                <input type="Kgdisp" class="form-control" id="KG" name="Cantidad KG"
-                  placeholder="Cantidad kg" required>
+                <input type="Descripcion" class="form-control" id="descripcion" name="descripcion"
+                  placeholder="Descripcion" required>
               </div>
             </div>
 
@@ -139,7 +120,7 @@
               <div class="form-group mb-2">
                 <div class="input-group-prepend">
                   <input type="text" id="datepicker" width="508" class="form-control" name="fecha"
-                    placeholder="Seleccionar fecha" required>
+                    placeholder="Seleccionar fecha de alta" required>
                   <script>
                     $('#datepicker').datepicker({
                       uiLibrary: 'bootstrap4'
@@ -153,14 +134,9 @@
               <input type="submit" id="registrar" style="font-size: 22px;"
                 class="btn btn-info btn-block rounded-0 py-2 " value="Registrar Materia Prima" />
             </div>
-
           </div>
-
         </div>
       </form>
-
-
-
     </div>
   </div>
 
@@ -181,8 +157,6 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 
   <script src="../js/clientesAgregar.js"></script>
-
-
 </body>
 
 </html>
