@@ -32,3 +32,13 @@ if(dataOfClient){
     $('#tabla tbody').append($(rowOfClient));
     localStorage.clear();
 }
+
+$('#confirmacionDeEliminacion').click(
+    function(){
+        $('#seleccionadoParaEliminar').remove()
+    }
+);
+
+function saveRow(event){
+    console.log($(event).attr('id','seleccionadoParaEliminar'))
+}
