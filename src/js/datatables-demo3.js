@@ -22,6 +22,12 @@ $(document).ready(function () {
 
   })
 
+  $('#dataTable8').DataTable({
+   
+   
+
+  })
+
 
 
 
