@@ -48,11 +48,11 @@
     <div class="ml-4 d-lg-block ">
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li><a href="../menusPrincipales/menuventas.html">Home</a></li>
-          <li ><a href="clientesbuscar.html">Clientes</a></li>
-          <li ><a href="pedidosbuscar.html">Pedidos</a></li>
+          <li><a href="../menusPrincipales/menuventas.html">Inicio</a></li>
+          <li><a href="clientesbuscar.html">Clientes</a></li>
+          <li><a href="pedidosbuscar.html">Pedidos</a></li>
           <li class="active"><a href="ventasBuscar.html">Ventas</a></li>
-          <li><a href="reportes.html">Reporte</a></li>
+          <li><a href="" data-toggle="modal" data-target="#modalReporte">Reportes</a></li>
         </ul>
       </nav>
     </div>
@@ -67,8 +67,6 @@
         <h1><a href="../pantallasTerciarias/pedidosagregar.html"
             style="width:auto; height:auto; margin-top: 10%; position: relative; font-size: 22px;"
             class="btn btn-info"><i class='	fas fa-plus' style='font-size:20px'></i>&nbsp; AGREGAR VENTA</a>
-            
-            
             <div class="alert alert-info" style="text-align: center; position:absolute; right: 6px;line-height: 30px; ;font-size: 12px; width: 400px; height: 25px; padding:0px 0px 0px 0px;">
               <strong>Sugerencia</strong> Filtre la búsqueda para generar un reporte.
             </div>
@@ -77,33 +75,29 @@
       </div>
       <div class="card-body">
         <div class="table-responsive ">
-          <table class="table table-bordered table-hover  " id="dataTable" width="100%" cellspacing="0">
+          <table class="table table-bordered table-hover  " id="dataTable8" width="100%" cellspacing="0">
             <thead>
               <tr>
-                <td>
-                  <a id="eliminarvarios" href="#borrarseleccionados" data-toggle="modal" data-target="#myModal2">
-                    <i class='fas fa-trash' style='font-size:24px; color: #102e4d;'></i>
-                  </a>
-                </td>
+                
                 <th>Número de venta</th>
                 <th>Fecha</th>
                 <th>Cliente</th>
                 <th>Pedido</th>
                 <th>Estado</th>
                 <th>Monto </th>
-                <th>Forma de pago  </th>
+                <th>Forma de pago </th>
               </tr>
             </thead>
             <tfoot>
               <tr>
-                <th></th>
+                
                 <th>Número de venta</th>
                 <th>Fecha</th>
                 <th>Cliente</th>
                 <th>Pedido</th>
                 <th>Estado</th>
                 <th>Monto </th>
-                <th>Forma de pago  </th>
+                <th>Forma de pago </th>
               </tr>
             </tfoot>
             <tbody>
@@ -116,22 +110,17 @@
                 </td>
                 <td>10001</td>
                 <td>10/05/20</td>
-                <td>549815</td> 
+                <td>549815</td>
                 <td>116861</td>
                 <td>En proceso</td>
                 <td>$23570</td>
                 <td>Efectivo</td>
               </tr>
               <tr>
-                <td>
-                  <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                    <label class="custom-control-label" for="customCheck1"></label>
-                  </div>
-                </td>
+               
                 <td>10001</td>
                 <td>10/05/20</td>
-                <td>549815</td> 
+                <td>549815</td>
                 <td>116861</td>
                 <td>¡Terminado!</td>
                 <td>$23570</td>
@@ -146,52 +135,37 @@
                 </td>
                 <td>10001</td>
                 <td>10/05/20</td>
-                <td>549815</td> 
+                <td>549815</td>
                 <td>116861</td>
                 <td>En proceso</td>
                 <td>$23570</td>
                 <td>Efectivo</td>
               </tr>
               <tr>
-                <td>
-                  <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox"   class="custom-control-input" id="customCheck3" >
-                    <label class="custom-control-label" for="customCheck3"></label>
-                  </div>
-                </td>
+                
                 <td>10001</td>
                 <td>10/05/20</td>
-                <td>549815</td> 
+                <td>549815</td>
                 <td>116861</td>
                 <td>En proceso</td>
                 <td>$23570</td>
-                <td>Efectivo</td>>
+                <td>Efectivo</td>
               </tr>
               <tr>
-                <td>
-                  <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox" class="custom-control-input" id="customCheck4">
-                    <label class="custom-control-label" for="customCheck4"></label>
-                  </div>
-                </td>
+              
                 <td>10001</td>
                 <td>10/05/20</td>
-                <td>549815</td> 
+                <td>549815</td>
                 <td>116861</td>
                 <td>¡Terminado!</td>
                 <td>$23570</td>
-                <td>Tarjeta</td>>
+                <td>Tarjeta</td>
               </tr>
               <tr>
-                <td>
-                  <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox" class="custom-control-input" id="customCheck5">
-                    <label class="custom-control-label" for="customCheck5"></label>
-                  </div>
-                </td>
+            
                 <td>10001</td>
                 <td>10/05/20</td>
-                <td>549815</td> 
+                <td>549815</td>
                 <td>116861</td>
                 <td>En proceso</td>
                 <td>$23570</td>
@@ -206,7 +180,7 @@
                 </td>
                 <td>10001</td>
                 <td>10/05/20</td>
-                <td>549815</td> 
+                <td>549815</td>
                 <td>116861</td>
                 <td>¡Terminado!</td>
                 <td>$23570</td>
@@ -221,39 +195,64 @@
                 </td>
                 <td>10001</td>
                 <td>10/05/20</td>
-                <td>549815</td> 
+                <td>549815</td>
                 <td>116861</td>
                 <td>¡Terminado!</td>
                 <td>$23570</td>
                 <td>Tarjeta</td>
               </tr>
               <tr>
-                <td>
-                  <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox"   class="custom-control-input" id="customCheck8">
-                    <label class="custom-control-label" for="customCheck8"></label>
-                  </div>
-                </td>
+             
                 <td>10001</td>
                 <td>10/05/20</td>
-                <td>549815</td> 
+                <td>549815</td>
                 <td>116861</td>
                 <td>En proceso</td>
                 <td>$23570</td>
-                <td>Efectivo</td>>
+                <td>Efectivo</td>
               </tr>
-              
+
             </tbody>
           </table>
         </div>
       </div>
     </div>
-
   </div>
-  <!-- /.container-fluid -->
 
+  
+
+  <!-- MODAL REPORTE -->
+  <div class="modal fade" id="modalReporte" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Seleccione el reporte que desea visualizar.</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <a id="buttonOfModal" href="" class="col-8 mx-auto">CLIENTES</a>
+          </div>
+          <div class="row">
+            <a id="buttonOfModal" href="" class="col-8 mx-auto">PROVEEDORES</a>
+          </div>
+          <div class="row">
+            <a id="buttonOfModal" href="" class="col-8 mx-auto">VENTAS</a>
+          </div>
+          <div class="row">
+            <a id="buttonOfModal" href="" class="col-8 mx-auto">PRODUCTOS</a>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
-  <!-- End of Main Content -->
+  <!-- END MODAL REPORTE -->
 
   <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -269,8 +268,7 @@
   <script src="../js/check.js"></script>
   <script src="../js/estados.js"></script>
 
-  <script
-src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -280,9 +278,9 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
   <!-- Page level custom scripts -->
-  <script src="../js/datatables-demo.js"></script>
+  <script src="../js/datatables-demo3.js"></script>
 
-  
+
 
 
 </body>
