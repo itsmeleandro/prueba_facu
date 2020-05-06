@@ -49,7 +49,7 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li><a href="../menusPrincipales/menuventas.html">Inicio</a></li>
-          <li ><a href="clientesbuscar.html">Stock MP</a></li>
+          <li><a href="clientesbuscar.html">Stock MP</a></li>
           <li class="active"><a href="#">Stock Productos</a></li>
           <li><a href="ventas.html">Pedidos</a></li>
           <li><a href="reportes.html">Reportes</a></li>
@@ -64,7 +64,7 @@
     <!-- DataTales Example -->
     <div class="card shadow ">
       <div class="card-header mt-4 ">
-        <h1><a href="../pantallasTerciarias/agregarProductos.html"
+        <h1><a href="../pantallasTerciarias/agregarstockproductos.html"
             style="width:auto; height:auto; margin-top: 10%; position: relative; font-size: 22px;"
             class="btn btn-info"><i class='	fas fa-plus' style='font-size:20px'></i>&nbsp; AGREGAR STOCK DE PRODUCTO</a>
           <div class="alert alert-info"
@@ -76,7 +76,8 @@
       </div>
       <div class="card-body">
         <div class="table-responsive ">
-          <table class="table table-bordered table-hover" style="border-color: #102e4d;  " id="dataTable" width="100%" cellspacing="0">
+          <table class="table table-bordered table-hover" style="border-color: #102e4d;  " id="dataTable" width="100%"
+            cellspacing="0">
             <thead>
               <tr>
                 <td>
@@ -85,10 +86,10 @@
                   </a>
                 </td>
                 <th>ID</th>
-                <th>Nombre</th>
-                 
-                <th>Materia Prima</th>
+                <th>Nombre de Producto</th>
                 <th>Cantidad</th>
+                <th>Materia Prima</th>
+
                 <th>Fecha Actualización</th>
                 <th> </th>
               </tr>
@@ -97,45 +98,45 @@
               <tr>
                 <td></td>
                 <th>ID</th>
-                <th>Nombre</th>
-                 
-                <th>Materia Prima</th>
+                <th>Nombre de Producto</th>
                 <th>Cantidad</th>
+                <th>Materia Prima</th>
+
                 <th>Fecha Actualización</th>
                 <th> </th>
               </tr>
             </tfoot>
             <tbody>
-              
-          
-            <tr>
-              <td>
-                <div class="custom-control custom-checkbox mb-3">
-                  <input type="checkbox" class="custom-control-input" id="customCheck20">
-                  <label class="custom-control-label" for="customCheck20"></label>
-                </div>
-              </td>
-              <td>100021</td>
-              <td>Silla</td>
-              
-              <td>silla con respaldo de 5kg </td>
-              <td>100</td>
-              <td>20/10/17</td>
-              <td>
-                <div class="dropdown">
-                  <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown"
-                    data-hover="dropdown">
-                    Acciones <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li> <a href="../pantallasTerciarias/modifProducto.html"><i class='	far fa-edit'></i>Editar</a></li>
-                    <li data-toggle="modal" data-target="#myModal"><a href="#"><i class='fas fa-eraser'></i>Eliminar</a>
-                    </li>
-                  </ul>
-                </div>
-              </td>
-              
-            </tr>
+              <tr>
+                <td>
+                  <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" id="customCheck20">
+                    <label class="custom-control-label" for="customCheck20"></label>
+                  </div>
+                </td>
+                <td>100021</td>
+                <td>Silla</td>
+                <td>100</td>
+                <td>PS (Poliestireno)</td>
+
+                <td>20/10/17</td>
+                <td>
+                  <div class="dropdown">
+                    <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown"
+                      data-hover="dropdown">
+                      Acciones <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li> <a href="../pantallasTerciarias/modifProducto.html"><i class='	far fa-edit'></i>Actualizar
+                          stock</a></li>
+                      <li data-toggle="modal" data-target="#myModal"><a href="#"><i
+                            class='fas fa-eraser'></i>Eliminar</a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+
+              </tr>
               <tr>
                 <td>
                   <div class="custom-control custom-checkbox mb-3">
@@ -145,9 +146,9 @@
                 </td>
                 <td>100023</td>
                 <td>Maceta 3L</td>
-               
-                <td>maceta capacidad 3L </td>
                 <td>300</td>
+                <td>PP (Polipropileno)</td>
+
                 <td>11/11/18</td>
                 <td>
                   <div class="dropdown">
@@ -156,7 +157,8 @@
                       Acciones <span class="caret"></span>
                     </button>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="../pantallasTerciarias/modifProducto.html"><i class='	far fa-edit'></i>Editar</a></li>
+                      <a class="dropdown-item" href="../pantallasTerciarias/modifProducto.html"><i
+                          class='	far fa-edit'></i>Actualizar stock</a></li>
                       <a class="dropdown-item" data-toggle="modal" data-target="#myModal" href="#"><i
                           class='fas fa-eraser'></i>Eliminar</a></li>
                     </div>
@@ -172,9 +174,9 @@
                 </td>
                 <td>100024</td>
                 <td>Maceta 5L</td>
-                
-                <td>Maceta capacidad 5L</td>
                 <td>150</td>
+                <td>PP (Polipropileno)</td>
+
                 <td>20/12/19</td>
                 <td>
                   <div class="dropdown">
@@ -183,7 +185,8 @@
                       Acciones <span class="caret"></span>
                     </button>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="../pantallasTerciarias/modifProducto.html"><i class='	far fa-edit'></i>Editar</a></li>
+                      <a class="dropdown-item" href="../pantallasTerciarias/modifProducto.html"><i
+                          class='	far fa-edit'></i>Actualizar stock</a></li>
                       <a class="dropdown-item" data-toggle="modal" data-target="#myModal" href="#"><i
                           class='fas fa-eraser'></i>Eliminar</a></li>
                     </div>
@@ -199,9 +202,9 @@
                 </td>
                 <td>100025</td>
                 <td>Mesa desmontable</td>
-            
-                <td>Mesa de 1.5m x 0.80m. Patas desmontables</td>
                 <td>100</td>
+                <td>PS (Poliestireno)</td>
+
                 <td>20/07/18</td>
                 <td>
                   <div class="dropdown">
@@ -210,7 +213,8 @@
                       Acciones <span class="caret"></span>
                     </button>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="../pantallasTerciarias/modifProducto.html"><i class='	far fa-edit'></i>Editar</a></li>
+                      <a class="dropdown-item" href="../pantallasTerciarias/modifProducto.html"><i
+                          class='	far fa-edit'></i>Actualizar stock</a></li>
                       <a class="dropdown-item" data-toggle="modal" data-target="#myModal" href="#"><i
                           class='fas fa-eraser'></i>Eliminar</a></li>
                     </div>
@@ -226,9 +230,9 @@
                 </td>
                 <td>100026</td>
                 <td>Mesa redonda</td>
-                
-                <td>Mesa redonda de radio 1m. Patas desmontables</td>
                 <td>80</td>
+                <td>PS (Poliestireno)</td>
+
                 <td>20/07/16</td>
                 <td>
                   <div class="dropdown">
@@ -237,7 +241,8 @@
                       Acciones <span class="caret"></span>
                     </button>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="../pantallasTerciarias/modifProducto.html"><i class='	far fa-edit'></i>Editar</a></li>
+                      <a class="dropdown-item" href="../pantallasTerciarias/modifProducto.html"><i
+                          class='	far fa-edit'></i>Actualizar stock</a></li>
                       <a class="dropdown-item" data-toggle="modal" data-target="#myModal" href="#"><i
                           class='fas fa-eraser'></i>Eliminar</a></li>
                     </div>
@@ -253,9 +258,9 @@
                 </td>
                 <td>100027</td>
                 <td>Tubo PVC 1.5 pulgadas</td>
-               
-                <td>tubo PVC 1.5 pulgadas. Longitud 2m </td>
                 <td>145</td>
+                <td>PVC (Cloruro de polivinilo)</td>
+
                 <td>25/03/19</td>
                 <td>
                   <div class="dropdown">
@@ -264,7 +269,8 @@
                       Acciones <span class="caret"></span>
                     </button>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="../pantallasTerciarias/modifProducto.html"><i class='	far fa-edit'></i>Editar</a></li>
+                      <a class="dropdown-item" href="../pantallasTerciarias/modifProducto.html"><i
+                          class='	far fa-edit'></i>Actualizar stock</a></li>
                       <a class="dropdown-item" data-toggle="modal" data-target="#myModal" href="#"><i
                           class='fas fa-eraser'></i>Eliminar</a></li>
                     </div>
@@ -280,9 +286,9 @@
                 </td>
                 <td>100028</td>
                 <td>Codo PVC 90° s/r</td>
-                
-                <td>Codo PVC 90 grados sin rosca</td>
                 <td>41</td>
+                <td>PVC (Cloruro de polivinilo)</td>
+
                 <td>30/01/19</td>
                 <td>
                   <div class="dropdown">
@@ -291,7 +297,8 @@
                       Acciones <span class="caret"></span>
                     </button>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="../pantallasTerciarias/modifProducto.html"><i class='	far fa-edit'></i>Editar</a></li>
+                      <a class="dropdown-item" href="../pantallasTerciarias/modifProducto.html"><i
+                          class='	far fa-edit'></i>Actualizar stock</a></li>
                       <a class="dropdown-item" data-toggle="modal" data-target="#myModal" href="#"><i
                           class='fas fa-eraser'></i>Eliminar</a></li>
                     </div>
@@ -308,9 +315,9 @@
 
                 <td>100028</td>
                 <td>Codo PVC 90° c/r</td>
-               
-                <td>Codo PVC a 90 grados con rosca</td>
                 <td>120</td>
+                <td>PVC (Cloruro de polivinilo)</td>
+
                 <td>30/01/19</td>
                 <td>
                   <div class="dropdown">
@@ -319,7 +326,8 @@
                       Acciones <span class="caret"></span>
                     </button>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="../pantallasTerciarias/modifProducto.html"><i class='	far fa-edit'></i>Editar</a></li>
+                      <a class="dropdown-item" href="../pantallasTerciarias/modifProducto.html"><i
+                          class='	far fa-edit'></i>Actualizar stock</a></li>
                       <a class="dropdown-item" data-toggle="modal" data-target="#myModal" href="#"><i
                           class='fas fa-eraser'></i>Eliminar</a></li>
                     </div>
@@ -336,9 +344,9 @@
                 </td>
                 <td>100028</td>
                 <td>Codo PVC a 45° s/r</td>
-                
-                <td>Codo PVC 45 grados sin rosca</td>
                 <td>205</td>
+                <td>PVC (Cloruro de polivinilo)</td>
+
                 <td>30/01/19</td>
                 <td>
                   <div class="dropdown">
@@ -347,7 +355,8 @@
                       Acciones <span class="caret"></span>
                     </button>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="../pantallasTerciarias/modifProducto.html"><i class='	far fa-edit'></i>Editar</a></li>
+                      <a class="dropdown-item" href="../pantallasTerciarias/modifProducto.html"><i
+                          class='	far fa-edit'></i>Actualizar stock</a></li>
                       <a class="dropdown-item" data-toggle="modal" data-target="#myModal" href="#"><i
                           class='fas fa-eraser'></i>Eliminar</a></li>
                     </div>
