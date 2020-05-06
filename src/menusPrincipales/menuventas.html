@@ -38,7 +38,7 @@
         <img src="../imagenes/avatar.png" class="w3-circle" style="height:35px; width: 35px;" alt="Avatar">
       </a>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <a class="dropdown-item" href="#"><i class='fas fa-user-circle' style='font-size:24px'></i> &nbsp; Perfil</a>
+        <a class="dropdown-item" href="../pantallasSecundarias/perfilVentas.html"><i class='fas fa-user-circle' style='font-size:24px'></i> &nbsp; Perfil</a>
         <a class="dropdown-item" href="../../index.html"><i class='fas fa-door-open' style='font-size:24px'></i> Cerrar
           Sesión</a>
       </div>
@@ -94,11 +94,11 @@
           <div style="color: transparent;" class="card text-center  border-0 bg-light">
             <div class="card-block">
               <div class="py-5">
-                <a href="../pantallasSecundarias/reportes.html"><img src="../imagenes/reporte.png" alt=""
+                <a data-toggle="modal" data-target="#modalReporte" href=""><img src="../imagenes/reporte.png" alt=""
                     style="width:auto;height:auto;  " class="img-fluid"></a>
               </div>
             </div>
-            <a href="../pantallasSecundarias/reportes.html" style="width:auto; height:auto; position: relative;"
+            <a data-toggle="modal" data-target="#modalReporte" href="" style="width:auto; height:auto; position: relative;"
               class="card-footer btn btn-primary">REPORTES</a>
           </div>
         </div>
@@ -107,6 +107,40 @@
     </div>
   </div>
 
+<!-- MODAL REPORTE -->
+  <div class="modal fade" id="modalReporte" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Seleccione el reporte que desea visualizar.</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <a id="buttonOfModal" href="" class="col-8 mx-auto">CLIENTES</a>
+          </div>
+          <div class="row">
+            <a id="buttonOfModal" href=""
+              class="col-8 mx-auto">PROVEEDORES</a>
+          </div>
+          <div class="row">
+            <a id="buttonOfModal" href="" class="col-8 mx-auto">VENTAS</a>
+          </div>
+          <div class="row">
+            <a id="buttonOfModal" href=""
+              class="col-8 mx-auto">PRODUCTOS</a>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END MODAL REPORTE -->
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
