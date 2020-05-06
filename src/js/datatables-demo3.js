@@ -22,8 +22,6 @@ $(document).ready(function () {
 
   })
 
-  $('#dataTable4').DataTable({
-    
-  })
+  
 });
 
