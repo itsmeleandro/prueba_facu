@@ -68,12 +68,44 @@
                     <li><a href="../menusPrincipales/menuventas.html">Inicio</a></li>
                     <li><a href="../pantallasSecundarias/clientesbuscar.html">Clientes</a></li>
                     <li class="active"><a href="../pantallasSecundarias/pedidosbuscar.html">Pedidos</a></li>
-                    <li><a href="../pantallasSecundarias/ventas.html">Ventas</a></li>
-                    <li><a href="../informes/informePedidos.html">Reporte</a></li>
+                    <li><a href="../pantallasSecundarias/ventasBuscar.html">Ventas</a></li>
+                    <li><a data-toggle="modal" data-target="#modalReporte" href="" >Reportes</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <!-- MODAL REPORTE -->
+    <div class="modal fade" id="modalReporte" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Seleccione el reporte que desea visualizar.</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <a id="buttonOfModal" href="../informes/informeclientes.html" class="col-8 mx-auto">CLIENTES</a>
+                    </div>
+                    <div class="row">
+                        <a id="buttonOfModal" href="../informes/informeVentasGeneral.html"
+                            class="col-8 mx-auto">VENTAS</a>
+                    </div>
+                    <div class="row">
+                        <a id="buttonOfModal" href="../pantallasTerciarias/BuscarInformeProductoParticular.html"
+                            class="col-8 mx-auto">PRODUCTOS</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MODAL REPORTE -->
 
 
 
@@ -85,9 +117,10 @@
 
             <form id="registro" data-toggle="validator" role="form">
                 <div class="card rounded-0" style="border-color: #102e4d; ">
-                    <div class="card-header p-0" >
-                        <div class="text-center py-2" style="background-color: #102e4d; " >
-                            <h3 style="color: #ffffff;"><i class="fas fa-info-circle"  style="color: #ffffff;"></i> Información sobre el Pedido</h3>
+                    <div class="card-header p-0">
+                        <div class="text-center py-2" style="background-color: #102e4d; ">
+                            <h3 style="color: #ffffff;"><i class="fas fa-info-circle" style="color: #ffffff;"></i>
+                                Información sobre el Pedido</h3>
                         </div>
                     </div>
                     <div class="card-body p-3">
@@ -166,23 +199,28 @@
 
                 </div>
             </form>
-    
-    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="../js/main2.js"></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 
-    <script src="../js/clientesAgregar.js"></script>
+
+
+
+
+
+            <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+            <script src="../js/main2.js"></script>
+            <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+
+            <script src="../js/clientesAgregar.js"></script>
 
 
 </body>
