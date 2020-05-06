@@ -52,7 +52,7 @@
                 <img src="../imagenes/avatar.png" class="w3-circle" style="height:35px; width: 35px;" alt="Avatar">
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="position: absolute; top:0%;">
-                <a class="dropdown-item" href="#"><i class='fas fa-user-circle' style='font-size:24px'></i> &nbsp;
+                <a class="dropdown-item" href="../pantallasSecundarias/perfilVentas.html"><i class='fas fa-user-circle' style='font-size:24px'></i> &nbsp;
                     Perfil</a>
                 <a class="dropdown-item" href="../../index.html"><i class='fas fa-door-open' style='font-size:24px'></i>
                     Cerrar
@@ -66,8 +66,8 @@
                     <li><a href="../menusPrincipales/menuventas.html">Inicio</a></li>
                     <li><a href="../pantallasSecundarias/clientesbuscar.html">Clientes</a></li>
                     <li class="active"><a href="../pantallasSecundarias/pedidosbuscar.html">Pedidos</a></li>
-                    <li><a href="../pantallasSecundarias/ventas.html">Ventas</a></li>
-                    <li><a href="../informes/informePedidos.html">Reporte</a></li>
+                    <li><a href="../pantallasSecundarias/ventasBuscar.html">Ventas</a></li>
+                    <li><a href="" data-toggle="modal" data-target="#modalReporte">Reportes</a></li>
                 </ul>
             </nav>
         </div>
@@ -128,79 +128,86 @@
                                 <div class="col">
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
-                                          <div class="input-group-text">
-                                            <input type="checkbox" aria-label="Checkbox for following text input">
-                                          </div>
+                                            <div class="input-group-text">
+                                                <input type="checkbox" aria-label="Checkbox for following text input">
+                                            </div>
                                         </div>
-                                        <input type="text" class="form-control" style="min-width: 55%;" aria-label="Text input with checkbox" value="Sillas">
+                                        <input type="text" class="form-control" style="min-width: 55%;"
+                                            aria-label="Text input with checkbox" value="Sillas">
                                         <input type="number" class="form-control" value="0" min="0">
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="col">
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
-                                          <div class="input-group-text">
-                                            <input type="checkbox" aria-label="Checkbox for following text input">
-                                          </div>
+                                            <div class="input-group-text">
+                                                <input type="checkbox" aria-label="Checkbox for following text input">
+                                            </div>
                                         </div>
-                                        <input type="text" class="form-control" style="min-width: 55%;" aria-label="Text input with checkbox" value="Mesas">
+                                        <input type="text" class="form-control" style="min-width: 55%;"
+                                            aria-label="Text input with checkbox" value="Mesas">
                                         <input type="number" class="form-control" value="0" min="0">
-                                      </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                          <div class="input-group-text">
-                                            <input type="checkbox" aria-label="Checkbox for following text input">
-                                          </div>
-                                        </div>
-                                        <input type="text" class="form-control" style="min-width: 55%;" aria-label="Text input with checkbox" value="Cajas">
-                                        <input type="number" class="form-control" value="0" min="0">
-                                      </div>
-                                </div>
-                                <div class="col">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                          <div class="input-group-text">
-                                            <input type="checkbox" aria-label="Checkbox for following text input">
-                                          </div>
-                                        </div>
-                                        <input type="text" class="form-control" style="min-width: 55%;" aria-label="Text input with checkbox" value="Estantes">
-                                        <input type="number" class="form-control" value="0" min="0">
-                                      </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col">
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
-                                          <div class="input-group-text">
-                                            <input type="checkbox" aria-label="Checkbox for following text input">
-                                          </div>
+                                            <div class="input-group-text">
+                                                <input type="checkbox" aria-label="Checkbox for following text input">
+                                            </div>
                                         </div>
-                                        <input type="text" class="form-control" style="min-width: 55%;" aria-label="Text input with checkbox" value="Cuadernos">
+                                        <input type="text" class="form-control" style="min-width: 55%;"
+                                            aria-label="Text input with checkbox" value="Cajas">
                                         <input type="number" class="form-control" value="0" min="0">
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="col">
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
-                                          <div class="input-group-text">
-                                            <input type="checkbox" aria-label="Checkbox for following text input">
-                                          </div>
+                                            <div class="input-group-text">
+                                                <input type="checkbox" aria-label="Checkbox for following text input">
+                                            </div>
                                         </div>
-                                        <input type="text" class="form-control" style="min-width: 55%;" aria-label="Text input with checkbox" value="Protectores faciales">
+                                        <input type="text" class="form-control" style="min-width: 55%;"
+                                            aria-label="Text input with checkbox" value="Estantes">
                                         <input type="number" class="form-control" value="0" min="0">
-                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <input type="checkbox" aria-label="Checkbox for following text input">
+                                            </div>
+                                        </div>
+                                        <input type="text" class="form-control" style="min-width: 55%;"
+                                            aria-label="Text input with checkbox" value="Cuadernos">
+                                        <input type="number" class="form-control" value="0" min="0">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <input type="checkbox" aria-label="Checkbox for following text input">
+                                            </div>
+                                        </div>
+                                        <input type="text" class="form-control" style="min-width: 55%;"
+                                            aria-label="Text input with checkbox" value="Protectores faciales">
+                                        <input type="number" class="form-control" value="0" min="0">
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col">
                                     <div class="input-group">
-                                        <input type="submit" class="form-control btn btn-outline-secondary"value="Añadir producto personalizado">
-                                      </div>
+                                        <input type="submit" class="form-control btn btn-outline-secondary"
+                                            value="Añadir producto personalizado">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -220,7 +227,7 @@
                         </div>
                         <div class="form-group">
                             <div class="input-group mb-2">
-                                
+
                                 <input type="text" id="disabledTextInput" class="form-control"
                                     placeholder="Monto Total:" disabled>
                                 <div class="input-group-prepend">
@@ -260,6 +267,35 @@
         })
     </script>
 
+    <!-- MODAL REPORTE -->
+    <div class="modal fade" id="modalReporte" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Seleccione el reporte que desea visualizar.</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <a id="buttonOfModal" href="" class="col-8 mx-auto">CLIENTES</a>
+                    </div>
+                    <div class="row">
+                        <a id="buttonOfModal" href="" class="col-8 mx-auto">VENTAS</a>
+                    </div>
+                    <div class="row">
+                        <a id="buttonOfModal" href="" class="col-8 mx-auto">PRODUCTOS</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MODAL REPORTE -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
