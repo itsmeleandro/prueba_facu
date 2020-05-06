@@ -21,5 +21,9 @@ $(document).ready(function () {
     columnDefs: [{ orderable: false, targets: [6] }]
 
   })
+
+  $('#dataTable4').DataTable({
+    
+  })
 });
 
