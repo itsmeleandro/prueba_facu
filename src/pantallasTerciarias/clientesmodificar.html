@@ -76,109 +76,114 @@
 
 
     <div class="row justify-content-center mt-5 py-5">
-        <div class="col-12 col-md-8 col-lg-6 pb-5 mt-5">
-
-
+        <div class="col-12 col-md-8  pb-5 mt-5">
             <!--Form with header-->
             <form id="registro" data-toggle="validator" role="form">
                 <div class="card  rounded-0 mt-5" style="border-color: #102e4d;  ">
                     <div class="card-header p-0" style="background-color:#102e4d; ">
                         <div class=" text-center py-2">
                             <h3 style="color: #ffffff;"><i class="fas fa-edit"></i>Actualizar Cliente</h3>
-                            <p style="color: #ffffff;" class="m-0">Editar la información de cliente</p>
                         </div>
                     </div>
-                    <div class="card-body p-5">
+                    <div class="card-body">
                         <!--Body-->
                         <div class="form-group" id="formulario">
-                            <fieldset disabled>
-                                <div class="input-group mb-2">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text"><i class="fas fa-info-circle"
-                                                style="color:#102e4d; "></i></div>
-                                    </div>
-                                    <input type="text" id="disabledTextInput" class="form-control"
-                                        placeholder="ID: 10001">
-                                </div>
-                            </fieldset>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="input-group mb-2">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text"><i class="fa fa-user " style="color:#102e4d; "></i>
+                            <div class="form-row mt-0">
+                                <div class="form-group col-md-4 mr-auto">
+                                    <label>ID de Cliente</label>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fas fa-info-circle"
+                                                    style="color:#102e4d; "></i></div>
+                                        </div>
+                                        <input type="text" id="disabledTextInput" class="form-control"
+                                            placeholder="ID: 10001" readonly>
                                     </div>
                                 </div>
-                                <input type="text" class="form-control" id="nombre" name="nombre"
-                                    value="Libreria Los Alpes" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="input-group mb-2">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text"><i class="fa fa-user" style="color:#102e4d; "></i>
+                                <div class="form-group col-md-8 mr-auto">
+                                    <label>Nombre de Cliente</label>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-user "
+                                                    style="color:#102e4d; "></i>
+                                            </div>
+                                        </div>
+                                        <input type="text" class="form-control" id="nombre" name="nombre"
+                                            value="Libreria Los Alpes" required>
                                     </div>
                                 </div>
-                                <select id="tipo" class="form-control">
-                                    <option selected>Empresa</option>
-                                    <option>Particular</option>
-
-                                </select>
                             </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="input-group mb-2">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text"><i class="fa fa-envelope" style="color:#102e4d; "></i>
+                            <div class="form-group">
+                                <div class="form-row mt-0">
+                                    <div class="form-group col-md-4 mr-auto">
+                                        <label>Tipo de Cliente</label>
+                                        <div class="input-group mb-2">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text"><i class="fa fa-user"
+                                                        style="color:#102e4d; "></i>
+                                                </div>
+                                            </div>
+                                            <select id="tipo" class="form-control">
+                                                <option selected>Empresa</option>
+                                                <option>Particular</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-8 mr-auto">
+                                        <label>Email</label>
+                                        <div class="input-group mb-2">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text"><i class="fa fa-envelope"
+                                                        style="color:#102e4d; "></i>
+                                                </div>
+                                            </div>
+                                            <input type="email" class="form-control" id="email" name="email"
+                                                value="cli1@gmail.com" required>
+                                        </div>
                                     </div>
                                 </div>
-                                <input type="email" class="form-control" id="email" name="email" value="cli1@gmail.com"
-                                    required>
                             </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="input-group mb-2">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text"><i class="fas fa-phone" style="color:#102e4d; "></i>
+                            <div class="form-group">
+                                <div class="form-row mt-0">
+                                    <div class="form-group col-md-4 mr-auto">
+                                        <label>Teléfono</label>
+                                        <div class="input-group mb-2">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text"><i class="fas fa-phone"
+                                                        style="color:#102e4d; "></i>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" id="nombre" name="Telefono"
+                                                value="3624986745" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-8 mr-auto">
+                                        <label>Fecha de Alta</label>
+                                        <div class="form-group mb-2">
+                                            <div class="input-group-prepend">
+                                                <input type="text" id="datepicker" width="508" class="form-control"
+                                                    name="fecha" value="11/04/20" required>
+                                                <script>
+                                                    $('#datepicker').datepicker({
+                                                        uiLibrary: 'bootstrap4'
+                                                    });
+                                                </script>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <input type="text" class="form-control" id="nombre" name="Telefono" value="3624986745"
-                                    required>
+                            </div>
+                            <div class="text-center">
+                                <input id="registrar" type="submit" value="Actualizar Cliente" style="font-size: 22px;"
+                                    class="btn btn-info btn-block rounded-0 ">
                             </div>
                         </div>
-
-                        <div class="form-group">
-                            <div class="form-group mb-2">
-                                <div class="input-group-prepend">
-                                    <input type="text" id="datepicker" width="508" class="form-control" name="fecha"
-                                        value="11/04/20" required>
-                                    <script>
-                                        $('#datepicker').datepicker({
-                                            uiLibrary: 'bootstrap4'
-                                        });
-                                    </script>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="text-center">
-                            <input id="registrar" type="submit" value="Actualizar Cliente" style="font-size: 22px;"
-                                class="btn btn-info btn-block rounded-0 py-2 ">
-                        </div>
-
                     </div>
-
                 </div>
             </form>
-
-
-
         </div>
     </div>
-    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
