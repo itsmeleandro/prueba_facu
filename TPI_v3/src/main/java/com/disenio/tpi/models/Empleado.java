@@ -1,7 +1,12 @@
 package com.disenio.tpi.models;
 
 import java.util.Date;
+import lombok.Getter;
+import lombok.Setter;
 
+
+@Getter
+@Setter
 public class Empleado {
 	protected String nombre;
 	protected String apellido;
@@ -11,6 +16,8 @@ public class Empleado {
 	protected String direccion;
 	protected String telefono;
 	protected String email;
+	
+	public Empleado(){} //para que se pueda crear clase sin tener que pasarle parametros
 	
 	public Empleado(String nombre, String apellido, int dni, Date fecha_Nac, String direccion, String telefono, String email ){
 		this.nombre=nombre;
