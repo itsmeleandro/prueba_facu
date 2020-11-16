@@ -1,6 +1,8 @@
 package com.disenio.tpi.models;
 
 import java.util.Date;
+import java.util.List;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,6 +13,6 @@ public class Reciplas {
 	private Date fecha_inicio;
 	private String email;
 	private String telefono;
-	
+	private List<Empleado> LTE;
 
 }
