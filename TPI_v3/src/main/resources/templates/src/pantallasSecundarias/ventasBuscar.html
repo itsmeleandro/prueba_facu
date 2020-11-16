@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>VENTAS</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="../../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/icofont.min.css" rel="stylesheet">
+  <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="logo d-lg-block ml-5">
+      <h1 class="text-light mt-3"><img src="../imagenes/logo.png" alt="" style="top:-6px ; left: 0%;"
+          class="izquierda"><a href="../menusPrincipales/menuventas.html">Reci<span>plas</span></a></h1>
+    </div>
+    <div class="dropdown show" style="position: absolute; top:27%; right:3%;">
+      <a class="btn btn-success dropdown-toggle" style="background-color: #172B4D; border-color: #172B4D; border: 0px;"
+        href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img src="../imagenes/avatar.png" class="w3-circle" style="height:35px; width: 35px;" alt="Avatar">
+      </a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="position: absolute; top:0%;">
+        <a class="dropdown-item" href="../pantallasSecundarias/perfilVentas.html"><i class='fas fa-user-circle' style='font-size:24px'></i> &nbsp; Perfil</a>
+        <a class="dropdown-item" href="../../index.html"><i class='fas fa-door-open' style='font-size:24px'></i> Cerrar
+          Sesión</a>
+      </div>
+    </div>
+
+    <div class="ml-4 d-lg-block ">
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="../menusPrincipales/menuventas.html">Inicio</a></li>
+          <li><a href="clientesbuscar.html">Clientes</a></li>
+          <li><a href="pedidosbuscar.html">Pedidos</a></li>
+          <li class="active"><a href="ventasBuscar.html">Ventas</a></li>
+          <li><a href="" data-toggle="modal" data-target="#modalReporte">Reportes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Begin Page Content -->
+  <div class="container-fluid">
+
+    <!-- DataTales Example -->
+    <div class="card shadow" style="margin-top: 13%; position: relative;">
+      <div class="card-body">
+        <div class="table-responsive ">
+          <table class="table table-bordered table-hover  " id="dataTable8" width="100%" cellspacing="0">
+            <thead>
+              <tr>
+                
+                <th>Número de venta</th>
+                <th>Fecha</th>
+                <th>Cliente</th>
+                <th>Pedido</th>
+                <th>Estado</th>
+                <th>Monto </th>
+                <th>Forma de pago </th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                
+                <th>Número de venta</th>
+                <th>Fecha</th>
+                <th>Cliente</th>
+                <th>Pedido</th>
+                <th>Estado</th>
+                <th>Monto </th>
+                <th>Forma de pago </th>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                
+                <td>10001</td>
+                <td>10/05/20</td>
+                <td>549815</td>
+                <td>116861</td>
+                <td>En proceso</td>
+                <td>$23570</td>
+                <td>Efectivo</td>
+              </tr>
+              <tr>
+               
+                <td>10001</td>
+                <td>10/05/20</td>
+                <td>549815</td>
+                <td>116861</td>
+                <td>¡Terminado!</td>
+                <td>$23570</td>
+                <td>Tarjeta</td>
+              </tr>
+              <tr>
+               
+                <td>10001</td>
+                <td>10/05/20</td>
+                <td>549815</td>
+                <td>116861</td>
+                <td>En proceso</td>
+                <td>$23570</td>
+                <td>Efectivo</td>
+              </tr>
+              <tr>
+                
+                <td>10001</td>
+                <td>10/05/20</td>
+                <td>549815</td>
+                <td>116861</td>
+                <td>En proceso</td>
+                <td>$23570</td>
+                <td>Efectivo</td>
+              </tr>
+              <tr>
+              
+                <td>10001</td>
+                <td>10/05/20</td>
+                <td>549815</td>
+                <td>116861</td>
+                <td>¡Terminado!</td>
+                <td>$23570</td>
+                <td>Tarjeta</td>
+              </tr>
+              <tr>
+            
+                <td>10001</td>
+                <td>10/05/20</td>
+                <td>549815</td>
+                <td>116861</td>
+                <td>En proceso</td>
+                <td>$23570</td>
+                <td>Tarjeta</td>
+              </tr>
+              <tr>
+               
+                <td>10001</td>
+                <td>10/05/20</td>
+                <td>549815</td>
+                <td>116861</td>
+                <td>¡Terminado!</td>
+                <td>$23570</td>
+                <td>Efectivo</td>
+              </tr>
+              <tr>
+             
+                <td>10001</td>
+                <td>10/05/20</td>
+                <td>549815</td>
+                <td>116861</td>
+                <td>¡Terminado!</td>
+                <td>$23570</td>
+                <td>Tarjeta</td>
+              </tr>
+              <tr>
+             
+                <td>10001</td>
+                <td>10/05/20</td>
+                <td>549815</td>
+                <td>116861</td>
+                <td>En proceso</td>
+                <td>$23570</td>
+                <td>Efectivo</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- MODAL REPORTE -->
+  <div class="modal fade" id="modalReporte" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Seleccione el reporte que desea visualizar.</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <a id="buttonOfModal" href="../informes/informeclientes.html" class="col-8 mx-auto">CLIENTES</a>
+          </div>
+          <div class="row">
+            <a id="buttonOfModal" href="../informes/informeVentasGeneral.html" class="col-8 mx-auto">VENTAS</a>
+          </div>
+          <div class="row">
+            <a id="buttonOfModal" href="../pantallasTerciarias/BuscarInformeProductoParticular.html"
+              class="col-8 mx-auto">PRODUCTOS</a>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END MODAL REPORTE -->
+
+  <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="../js/main2.js"></script>
+  <script src="../js/check.js"></script>
+  <script src="../js/estados.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+  <!-- Page level plugins -->
+  <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="../js/datatables-demo3.js"></script>
+
+
+
+
+</body>
+
+</html>

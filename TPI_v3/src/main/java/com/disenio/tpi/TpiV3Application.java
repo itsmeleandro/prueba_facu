@@ -9,21 +9,12 @@ public class TpiV3Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TpiV3Application.class, args);
-		empleadoRRHH fabrica = fabrica new empleadoRRHH ();
-		
-		idPersona Vendedor = Fabrica.getPersona("vendedor");
-		
-		idPersona JefeDeposito = Fabrica.getPersona("Jefe deposito");
-		idPersona EmpleadoCompras = Fabrica.getPersona("Empleado Compras");
-		idPersona EmpleadoComercializacion = Fabrica.getPersona("EmpleadoComercializacion ");
-		idPersona SecretarioAdministracion = Fabrica.getPersona("SeretarioAdministracion");
-		
 		
 	}
 
 }
 
-public class Fabrica {
+/*public class Fabrica {
 	public idpersona (string puesto);
 	if (puesto == "vendedor") {
 		return new Vendedor();
@@ -42,6 +33,6 @@ public class Fabrica {
 		}
 	
 }
-
+*/
 
 

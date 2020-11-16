@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>STOCK</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="../../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <div class="container">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900"
+      rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/icofont.min.css" rel="stylesheet">
+    <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="../css/style.css" rel="stylesheet">
+    <!--estlos tablas-->
+    <link rel="stylesheet" href="../css/estilostablas.css">
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="logo d-lg-block ml-5">
+      <h1 class="text-light mt-3"><img src="../imagenes/logo.png" alt="" style="top:-6px ; left: 0%;"
+          class="izquierda"><a href="../menusPrincipales/menuventas.html">Reci<span>plas</span></a></h1>
+  </header>
+
+  <div class="main-container">
+    <h3>Stock de Productos</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>NOMBRE</th>
+          <th>CÓDIGO</th>
+          <th>PEDIDO AL QUE PERTENECE</th>
+          <th>CANTIDAD</th>
+          <th>ESTADO</th>
+          <th>TOTAL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3">Bolsa</td>
+          <td rowspan="3">1234</td>
+          <td>10001</td>
+          <td>200</td>
+          <td>Por entregar: 23/06/20</td>
+          <td rowspan="3">950</td>
+        </tr>
+        <tr>
+          <td>12001</td>
+          <td>350</td>
+          <td>Entrega postergada: 04/06/20</td>
+        </tr>
+        <tr>
+          <td>16789</td>
+          <td>400</td>
+          <td>Por entragar: 10/07/20</td>
+        </tr>
+        <tr>
+          <td rowspan="3">Cesto</td>
+          <td rowspan="3">5678</td>
+          <td>10001</td>
+          <td>50</td>
+          <td>Entrga postergada: 23/06/20</td>
+          <td rowspan="3">140</td>
+        </tr>
+        <tr>
+          <td>12001</td>
+          <td>30</td>
+          <td>Por entragar: 04/06/20</td>
+        </tr>
+        <tr>
+          <td>12345</td>
+          <td>60</td>
+          <td>¡Se entrega hoy!</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Silla</td>
+          <td rowspan="2">4567</td>
+          <td>10001</td>
+          <td>25</td>
+          <td>Por entregar: 23/06/20</td>
+          <td rowspan="3">75</td>
+        </tr>
+        <tr>
+          <td>12345</td>
+          <td>50</td>
+          <td>¡Se entrega hoy!</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <a href="../../pdfs/LayoutStock.pdf" target="_blank"
+    style="width:auto; height:auto; font-size: 22px; margin-left: 0%; margin-top:0%; background: #102e4d; border-color: #102e4d; margin-bottom: 20px;"
+    class="btn btn-info">IMPRIMIR REPORTE</a>
+
+  <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script src="../js/calendario.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="../js/datatables-demo.js"></script>
+
+</body>
+
+</html>
