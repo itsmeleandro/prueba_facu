@@ -1,0 +1,20 @@
+name: disenio
+
+server:
+  port: ${PORT:8080}
+  servlet:
+    context-path: /api/${name}/v1
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:db;DB_CLOSE_DELAY=-1
+    driverClassName: org.h2.Driver
+    username: sa
+    password: sa
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      show-sql: true
+      ddl-auto: create-drop

@@ -10,11 +10,17 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity
 @Getter
 @Setter
 public class Reciplas {
+<<<<<<< HEAD
+
+=======
 	@Id
+<<<<<<< Updated upstream
+=======
+>>>>>>> 2b25130075ba09bcc17bfbd803f9d5a5711d719d
+>>>>>>> Stashed changes
 	private Long id;
 	
 	private String direccion;
