@@ -1,14 +1,9 @@
 package com.disenio.tpi;
 
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.SQLException;
 import com.mysql.jdbc.Connection;
-import com.mysql.jdbc.PreparedStatement;
-import com.mysql.jdbc.Statement;
 
-
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 
 public class ServingWebContentApplication {
@@ -25,9 +20,9 @@ public class ServingWebContentApplication {
 			Connection conn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/disenio","root","12345");
 			System.out.println("Conexion okis");
 
-			Statement stmt = (Statement) conn.createStatement();
-			String query1 = "INSERT INTO empleado " + "VALUES (4, 'leandro')";
-			stmt.executeUpdate(query1);
+			//Statement stmt = (Statement) conn.createStatement();
+			//String query1 = "INSERT INTO empleado " + "VALUES (4, 'leandro')";
+			//stmt.executeUpdate(query1);
 
 		} catch (ClassNotFoundException | SQLException e) {
 			System.out.println("Conexion no okis");
