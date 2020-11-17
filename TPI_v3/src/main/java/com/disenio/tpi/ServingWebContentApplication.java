@@ -1,14 +1,33 @@
 package com.disenio.tpi;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
-@SpringBootApplication
+
 public class ServingWebContentApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ServingWebContentApplication.class, args);
-	}
+		// String url = "jdbc:mysql://localhost:3306/disenio";
+		// String user = "root";
+		// String password = "12345";
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
 
+			DriverManager.getConnection("jdbc:mysql://localhost:3306/disenio","root","12345");
+
+			System.out.println("Conexion okis");
+
+
+		} catch (ClassNotFoundException | SQLException e) {
+			System.out.println("Conexion no okis");
+			e.printStackTrace();
+
+		}
+	}
 }
+
+
+
+
 
